@@ -17,8 +17,8 @@ namespace LibraryManagementSystem
 
         private void frmFine_Load(object sender, EventArgs e)
         {
-       
-        
+
+            int i;
             txtFine.Value = Properties.Settings.Default.dailyFine;
             txtDaysToIssue.Value= Properties.Settings.Default.daysToIssue;
         }
@@ -31,16 +31,12 @@ namespace LibraryManagementSystem
         private void btnSave_Click(object sender, EventArgs e)
         {
             
-          
-            
 
             Properties.Settings.Default.dailyFine =Convert.ToInt32(txtFine.Value);
             Properties.Settings.Default.daysToIssue =Convert.ToInt32(txtDaysToIssue.Value);
             Properties.Settings.Default.Save();
             this.Close();
       
-
-            //integer check
         }
 
         
