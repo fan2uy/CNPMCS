@@ -17,15 +17,8 @@ namespace LibraryManagementSystem
 
         private void frmFine_Load(object sender, EventArgs e)
         {
-
-            int i;
             txtFine.Value = Properties.Settings.Default.dailyFine;
             txtDaysToIssue.Value= Properties.Settings.Default.daysToIssue;
-        }
-
-        private void btnEdit_Click(object sender, EventArgs e)
-        {
-            
         }
 
         private void btnSave_Click(object sender, EventArgs e)
