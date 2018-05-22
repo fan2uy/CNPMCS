@@ -42,18 +42,21 @@
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(23, 31);
+            this.label14.Location = new System.Drawing.Point(31, 38);
+            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(109, 20);
+            this.label14.Size = new System.Drawing.Size(135, 24);
             this.label14.TabIndex = 120;
             this.label14.Text = "Fine per Day : ";
+            
             // 
             // btnSave
             // 
             this.btnSave.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave.Location = new System.Drawing.Point(66, 371);
+            this.btnSave.Location = new System.Drawing.Point(88, 457);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(276, 37);
+            this.btnSave.Size = new System.Drawing.Size(368, 46);
             this.btnSave.TabIndex = 123;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
@@ -63,50 +66,54 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(23, 88);
+            this.label1.Location = new System.Drawing.Point(31, 108);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(111, 20);
+            this.label1.Size = new System.Drawing.Size(139, 24);
             this.label1.TabIndex = 124;
             this.label1.Text = "Days to issue : ";
             // 
             // txtFine
             // 
             this.txtFine.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFine.Location = new System.Drawing.Point(138, 29);
+            this.txtFine.Location = new System.Drawing.Point(184, 36);
+            this.txtFine.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtFine.Maximum = new decimal(new int[] {
             100000,
             0,
             0,
             0});
             this.txtFine.Name = "txtFine";
-            this.txtFine.Size = new System.Drawing.Size(238, 25);
+            this.txtFine.Size = new System.Drawing.Size(317, 29);
             this.txtFine.TabIndex = 128;
             // 
             // txtDaysToIssue
             // 
             this.txtDaysToIssue.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDaysToIssue.Location = new System.Drawing.Point(138, 83);
+            this.txtDaysToIssue.Location = new System.Drawing.Point(184, 102);
+            this.txtDaysToIssue.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtDaysToIssue.Maximum = new decimal(new int[] {
             100000,
             0,
             0,
             0});
             this.txtDaysToIssue.Name = "txtDaysToIssue";
-            this.txtDaysToIssue.Size = new System.Drawing.Size(238, 25);
+            this.txtDaysToIssue.Size = new System.Drawing.Size(317, 29);
             this.txtDaysToIssue.TabIndex = 129;
             // 
             // frmOptions
             // 
             this.AcceptButton = this.btnSave;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(409, 420);
+            this.ClientSize = new System.Drawing.Size(545, 517);
             this.Controls.Add(this.txtDaysToIssue);
             this.Controls.Add(this.txtFine);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.label14);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmOptions";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Set Options";
