@@ -57,21 +57,16 @@ namespace LibraryManagementSystem
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-
             try
-            {
-
-                
+            {               
                 string pass1, pass2,uname;
                 uname = txtAddUname.Text;
-
                 if (String.IsNullOrEmpty(uname.Trim()))
                 {
                     MessageBox.Show("Please Enter User Name.", "Alert !", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                     txtAddUname.Clear();
                     return;
                 }
-
                 cmd.CommandText =string.Format("SELECT COUNT(*) FROM UserDetails WHERE UserName='{0}';",uname);
                 string c = cmd.ExecuteScalar().ToString();
                 if (c != "0")
@@ -80,7 +75,6 @@ namespace LibraryManagementSystem
                     txtAddUname.Clear();
                     return;
                 }
-
                 pass1 = txtAddPass1.Text;
                 pass2 = txtAddPass2.Text;
 
@@ -134,7 +128,6 @@ namespace LibraryManagementSystem
                     Properties.Settings.Default.Save();
                 }
                 lblStatus.Text = msg;
-
                 txtAddUname.Clear();
                 txtAddPass1.Clear();
                 txtAddPass2.Clear();
