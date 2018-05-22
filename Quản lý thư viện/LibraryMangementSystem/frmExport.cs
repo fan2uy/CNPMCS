@@ -35,7 +35,7 @@ namespace LibraryManagementSystem
     // Export Data into EXCEL Sheet
  Microsoft.Office.Interop.Excel.ApplicationClass ExcelApp = new                                            
  Microsoft.Office.Interop.Excel.ApplicationClass();
-    ExcelApp.Application.Workbooks.Add(Type.Missing);
+ ExcelApp.Application.Workbooks.Add(Type.Missing);
     // ExcelApp.Cells.CopyFromRecordset(objRS);
     for (int i = 1; i < dtMainSQLData.Rows.Count + 2; i++)
     {
@@ -51,15 +51,12 @@ namespace LibraryManagementSystem
         }
     }
 
-    
-    //ExcelApp.ActiveWorkbook.SaveCopyAs("C:\\Users\\arun\\Desktop\\test.xls");
 
-    
-     
+            //ExcelApp.ActiveWorkbook.SaveCopyAs("C:\\Users\\arun\\Desktop\\test.xls");
     string fileName=tabname+".xlsx";
     string destination = Path.Combine(cur, fileName);
 
-   ExcelApp.ActiveWorkbook.SaveCopyAs(destination);
+    ExcelApp.ActiveWorkbook.SaveCopyAs(destination);
     ExcelApp.ActiveWorkbook.Saved = true;
   
     lblStatus.Text = "File Saved as " + destination;
