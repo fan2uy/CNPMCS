@@ -44,36 +44,40 @@ namespace LibraryManagementSystem
             // 
             this.pictureBox1.BackgroundImage = global::LibraryManagementSystem.Properties.Resources.LMSsplashfinalgif;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBox1.Location = new System.Drawing.Point(-13, -6);
+            this.pictureBox1.Location = new System.Drawing.Point(-17, -7);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(507, 189);
+            this.pictureBox1.Size = new System.Drawing.Size(676, 233);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
             // txtPass
             // 
             this.txtPass.Font = new System.Drawing.Font("Trebuchet MS", 11.25F);
-            this.txtPass.Location = new System.Drawing.Point(254, 251);
+            this.txtPass.Location = new System.Drawing.Point(339, 309);
+            this.txtPass.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtPass.Name = "txtPass";
             this.txtPass.PasswordChar = '*';
-            this.txtPass.Size = new System.Drawing.Size(151, 25);
+            this.txtPass.Size = new System.Drawing.Size(200, 29);
             this.txtPass.TabIndex = 3;
             // 
             // txtUname
             // 
             this.txtUname.Font = new System.Drawing.Font("Trebuchet MS", 11.25F);
-            this.txtUname.Location = new System.Drawing.Point(254, 211);
+            this.txtUname.Location = new System.Drawing.Point(339, 260);
+            this.txtUname.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtUname.Name = "txtUname";
-            this.txtUname.Size = new System.Drawing.Size(151, 25);
+            this.txtUname.Size = new System.Drawing.Size(200, 29);
             this.txtUname.TabIndex = 1;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(96, 249);
+            this.label2.Location = new System.Drawing.Point(128, 306);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(81, 20);
+            this.label2.Size = new System.Drawing.Size(102, 24);
             this.label2.TabIndex = 2;
             this.label2.Text = "Password :";
             // 
@@ -81,18 +85,21 @@ namespace LibraryManagementSystem
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(96, 209);
+            this.label1.Location = new System.Drawing.Point(128, 257);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(92, 20);
+            this.label1.Size = new System.Drawing.Size(112, 24);
             this.label1.TabIndex = 0;
             this.label1.Text = "User name :";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // cmdLogin
             // 
             this.cmdLogin.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdLogin.Location = new System.Drawing.Point(100, 304);
+            this.cmdLogin.Location = new System.Drawing.Point(133, 374);
+            this.cmdLogin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cmdLogin.Name = "cmdLogin";
-            this.cmdLogin.Size = new System.Drawing.Size(88, 38);
+            this.cmdLogin.Size = new System.Drawing.Size(117, 47);
             this.cmdLogin.TabIndex = 5;
             this.cmdLogin.Text = "Login";
             this.cmdLogin.UseVisualStyleBackColor = true;
@@ -103,9 +110,10 @@ namespace LibraryManagementSystem
             this.cmdCancel.Cursor = System.Windows.Forms.Cursors.Default;
             this.cmdCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.cmdCancel.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdCancel.Location = new System.Drawing.Point(254, 304);
+            this.cmdCancel.Location = new System.Drawing.Point(339, 374);
+            this.cmdCancel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cmdCancel.Name = "cmdCancel";
-            this.cmdCancel.Size = new System.Drawing.Size(78, 38);
+            this.cmdCancel.Size = new System.Drawing.Size(104, 47);
             this.cmdCancel.TabIndex = 6;
             this.cmdCancel.Text = "Cancel";
             this.cmdCancel.UseVisualStyleBackColor = true;
@@ -113,14 +121,15 @@ namespace LibraryManagementSystem
             // 
             // lblStatus
             // 
-            this.lblStatus.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblStatus.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblStatus.BackColor = System.Drawing.Color.Lavender;
             this.lblStatus.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblStatus.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStatus.Location = new System.Drawing.Point(0, 362);
+            this.lblStatus.Location = new System.Drawing.Point(0, 446);
+            this.lblStatus.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblStatus.Name = "lblStatus";
-            this.lblStatus.Size = new System.Drawing.Size(495, 30);
+            this.lblStatus.Size = new System.Drawing.Size(659, 36);
             this.lblStatus.TabIndex = 187;
             this.lblStatus.Text = "Status";
             this.lblStatus.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -128,11 +137,11 @@ namespace LibraryManagementSystem
             // LoginForm
             // 
             this.AcceptButton = this.cmdLogin;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.CancelButton = this.cmdCancel;
-            this.ClientSize = new System.Drawing.Size(496, 392);
+            this.ClientSize = new System.Drawing.Size(661, 482);
             this.Controls.Add(this.lblStatus);
             this.Controls.Add(this.cmdCancel);
             this.Controls.Add(this.cmdLogin);
@@ -142,6 +151,7 @@ namespace LibraryManagementSystem
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.Name = "LoginForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

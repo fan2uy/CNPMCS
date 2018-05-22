@@ -19,8 +19,7 @@ namespace LibraryManagementSystem
         SQLiteConnection con;
         SQLiteCommand cmd;
 
-        
-       
+  
         public LoginForm()
         {
             try
@@ -29,8 +28,7 @@ namespace LibraryManagementSystem
                con.Open();
                 InitializeComponent();
                // SplashForm sp = new SplashForm();
-                //sp.ShowDialog();
-               
+                //sp.ShowDialog();            
             }
             catch(Exception ex)
             {
@@ -47,7 +45,6 @@ namespace LibraryManagementSystem
         private void LoginForm_Load(object sender, EventArgs e)
         {
           //  con.Open();
-
             
         }        
         
@@ -69,11 +66,9 @@ namespace LibraryManagementSystem
 
         private bool authenticateLogin()
         {
-            
-            
+       
                  userName = txtUname.Text;
                  passWord = txtPass.Text;
-
                  //Validation
                  // Check for invalid userName.           
                  if ((null == userName) || (0 == userName.Length))
@@ -82,7 +77,6 @@ namespace LibraryManagementSystem
                      lblStatus.Text = "Enter User Name";
 
                      return false;
-
                  }
 
                  // Check for invalid passWord.            
@@ -106,8 +100,7 @@ namespace LibraryManagementSystem
 
                      lblStatus.Text = "User does not exist !";
                      txtUname.Clear();
-                     txtUname.Focus();
-                   
+                     txtUname.Focus();           
                      return false;
                  }
                  string usertype = dataReader["Type"].ToString();
@@ -126,17 +119,10 @@ namespace LibraryManagementSystem
                  {
                      lblStatus.Text = "Enter the correct Password";
                      txtPass.Clear();
-                     txtPass.Clear();
-                     
+                     txtPass.Clear();               
                      return false;
                  }
-             
-                
-            
-            
-         
-                        
-            
+                     
            
         }
 
@@ -146,19 +132,15 @@ namespace LibraryManagementSystem
             {
                 txtUname.Text = Properties.Settings.Default.defaultuser;
                 txtPass.Focus();
-            }
-            
+            }          
         }
 
         private void btnTestLogin_Click(object sender, EventArgs e)
         {
             txtUname.Text = "admin";
             txtPass.Text = "admin";
-            cmdLogin_Click(null, null);
-            
+            cmdLogin_Click(null, null);          
         }
 
-        
-        
     }
 }
