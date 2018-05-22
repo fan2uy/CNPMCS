@@ -37,27 +37,21 @@ namespace LibraryManagementSystem
 
         private void btnChange_Click(object sender, EventArgs e)
         {
-            try{
-           
+            try{          
             string curpass = txtCurPass.Text;
             string pass1 = txtPass1.Text;
             string pass2 = txtPass2.Text;
                 string cmdstr = "select Password from UserDetails where UserName=@uname";
-                cmd.CommandText = cmdstr;
-                
+                cmd.CommandText = cmdstr;                
                 cmd.Parameters.Add("@uname", DbType.String);
                 cmd.Parameters["@uname"].Value = MainForm.globalstrLoggedUser;
                 string recpass = cmd.ExecuteScalar().ToString();
-                string decryptedstring = StringCipher.Decrypt(recpass, StringCipher.enckey);
-
-          
+                string decryptedstring = StringCipher.Decrypt(recpass, StringCipher.enckey);         
                 if (string.Compare(decryptedstring,curpass) != 0)
                 {
-                 MessageBox.Show("Enter the correct Current Password");
-                   
+                 MessageBox.Show("Enter the correct Current Password");                  
                     return;
-                }
-            
+                }            
             if (String.IsNullOrEmpty(pass1.Trim()))
             {
                 MessageBox.Show("Please Enter Password.", "Alert !", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
@@ -97,7 +91,6 @@ namespace LibraryManagementSystem
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
-
         }
 
         private void frmUserDetails_Shown(object sender, EventArgs e)
