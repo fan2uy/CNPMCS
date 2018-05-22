@@ -46,8 +46,7 @@ namespace LibraryManagementSystem
                 ExcelApp.Cells[i, j] = dcCollection[j - 1].ToString();
             }
             else
-                ExcelApp.Cells[i, j] = dtMainSQLData.Rows[i - 2][j - 1].ToString();
-            
+                ExcelApp.Cells[i, j] = dtMainSQLData.Rows[i - 2][j - 1].ToString();            
         }
     }
 

@@ -48,7 +48,6 @@
             this.label14.Size = new System.Drawing.Size(135, 24);
             this.label14.TabIndex = 120;
             this.label14.Text = "Fine per Day : ";
-            
             // 
             // btnSave
             // 
