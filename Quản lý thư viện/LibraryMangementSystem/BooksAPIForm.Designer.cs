@@ -59,7 +59,7 @@ namespace LibraryManagementSystem
             // 
             // btnSearch
             // 
-            this.btnSearch.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearch.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSearch.Location = new System.Drawing.Point(523, 11);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(120, 42);
@@ -70,7 +70,7 @@ namespace LibraryManagementSystem
             // 
             // textQuery
             // 
-            this.textQuery.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textQuery.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textQuery.Location = new System.Drawing.Point(106, 19);
             this.textQuery.Name = "textQuery";
             this.textQuery.Size = new System.Drawing.Size(400, 25);
@@ -79,7 +79,7 @@ namespace LibraryManagementSystem
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(12, 19);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(96, 20);
@@ -119,7 +119,7 @@ namespace LibraryManagementSystem
             // labelNoImage
             // 
             this.labelNoImage.AutoSize = true;
-            this.labelNoImage.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNoImage.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelNoImage.Location = new System.Drawing.Point(39, 80);
             this.labelNoImage.Name = "labelNoImage";
             this.labelNoImage.Size = new System.Drawing.Size(73, 20);
@@ -130,7 +130,7 @@ namespace LibraryManagementSystem
             // 
             this.textTitle.BackColor = System.Drawing.SystemColors.Control;
             this.textTitle.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textTitle.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textTitle.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textTitle.Location = new System.Drawing.Point(160, 11);
             this.textTitle.Multiline = true;
             this.textTitle.Name = "textTitle";
@@ -142,7 +142,7 @@ namespace LibraryManagementSystem
             // labelPub
             // 
             this.labelPub.AutoSize = true;
-            this.labelPub.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPub.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelPub.Location = new System.Drawing.Point(159, 142);
             this.labelPub.Name = "labelPub";
             this.labelPub.Size = new System.Drawing.Size(68, 20);
@@ -152,7 +152,7 @@ namespace LibraryManagementSystem
             // labelPage
             // 
             this.labelPage.AutoSize = true;
-            this.labelPage.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPage.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelPage.Location = new System.Drawing.Point(159, 119);
             this.labelPage.Name = "labelPage";
             this.labelPage.Size = new System.Drawing.Size(47, 20);
@@ -162,7 +162,7 @@ namespace LibraryManagementSystem
             // labelAuth
             // 
             this.labelAuth.AutoSize = true;
-            this.labelAuth.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelAuth.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelAuth.Location = new System.Drawing.Point(159, 97);
             this.labelAuth.Name = "labelAuth";
             this.labelAuth.Size = new System.Drawing.Size(54, 20);
@@ -182,7 +182,7 @@ namespace LibraryManagementSystem
             // btnSelect
             // 
             this.btnSelect.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.btnSelect.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSelect.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSelect.Location = new System.Drawing.Point(400, 136);
             this.btnSelect.Name = "btnSelect";
             this.btnSelect.Size = new System.Drawing.Size(96, 42);
@@ -203,7 +203,7 @@ namespace LibraryManagementSystem
             // 
             // labelSearchstatus
             // 
-            this.labelSearchstatus.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSearchstatus.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelSearchstatus.Location = new System.Drawing.Point(25, 66);
             this.labelSearchstatus.Name = "labelSearchstatus";
             this.labelSearchstatus.Size = new System.Drawing.Size(481, 22);
@@ -219,7 +219,7 @@ namespace LibraryManagementSystem
             // 
             // btnNext
             // 
-            this.btnNext.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNext.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNext.Location = new System.Drawing.Point(696, 54);
             this.btnNext.Name = "btnNext";
             this.btnNext.Size = new System.Drawing.Size(100, 42);
@@ -230,7 +230,7 @@ namespace LibraryManagementSystem
             // 
             // btnprev
             // 
-            this.btnprev.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnprev.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnprev.Location = new System.Drawing.Point(523, 56);
             this.btnprev.Name = "btnprev";
             this.btnprev.Size = new System.Drawing.Size(100, 42);
@@ -241,7 +241,7 @@ namespace LibraryManagementSystem
             // 
             // btnstop
             // 
-            this.btnstop.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnstop.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnstop.Location = new System.Drawing.Point(649, 11);
             this.btnstop.Name = "btnstop";
             this.btnstop.Size = new System.Drawing.Size(100, 42);
@@ -253,7 +253,7 @@ namespace LibraryManagementSystem
             // labelSearchPageNo
             // 
             this.labelSearchPageNo.AutoSize = true;
-            this.labelSearchPageNo.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSearchPageNo.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelSearchPageNo.Location = new System.Drawing.Point(636, 65);
             this.labelSearchPageNo.Name = "labelSearchPageNo";
             this.labelSearchPageNo.Size = new System.Drawing.Size(46, 20);
@@ -282,7 +282,7 @@ namespace LibraryManagementSystem
             // labelPercent
             // 
             this.labelPercent.AutoSize = true;
-            this.labelPercent.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPercent.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelPercent.Location = new System.Drawing.Point(869, 4);
             this.labelPercent.Name = "labelPercent";
             this.labelPercent.Size = new System.Drawing.Size(31, 20);

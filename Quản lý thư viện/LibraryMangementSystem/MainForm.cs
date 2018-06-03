@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 
 using System.IO;
 
@@ -56,7 +56,7 @@ namespace LibraryManagementSystem
         byte[] byteArrayMBimage = null;
 
 
-        string selectallbooks = "SELECT BookID,Title,Author,Category,Publisher,Language,Year,Price,Pages,Shelf,DateAdded,Type,ISBN,Available FROM BookDetails ";
+        string selectallbooks = "SELECT BookID,Title,Author,BookNo,Category,Publisher,Language,Year,Price,Pages,Shelf,DateAdded,Type,ISBN,Available FROM BookDetails ";
         public MainForm()
         {
             InitializeComponent();
@@ -276,7 +276,7 @@ namespace LibraryManagementSystem
                 return;
             }
             string cmdtext;
-            if(comboBDid.Text=="Book ID")
+            if(comboBDid.Text== "Mã cuốn sách")
             cmdtext = String.Format("select * from BookDetails where BookID='{0}';", bookid);
             else
             cmdtext = String.Format("select * from BookDetails where BookNo='{0}';", bookid);
@@ -1614,7 +1614,7 @@ VALUES(@bid,@bookno,@isbn,@title,@author,@desc,@categ,@pub,@lang,
             try
             {
                 string searchterm;
-                string selectcmd;
+                string selectcmd="";
 
                 searchterm = textIDsearch.Text;
                 if (string.IsNullOrEmpty(searchterm))
@@ -1625,12 +1625,34 @@ VALUES(@bid,@bookno,@isbn,@title,@author,@desc,@categ,@pub,@lang,
 
                 if (btnIDisudet.BackColor == Color.LightBlue)
                 {
-                    selectcmd = string.Format("select * from IssueDetails where {0} LIKE('%{1}%')", comboIDfield.Text, searchterm);
+                    if(comboIDfield.Text== "Mã cuốn sách")
+                        selectcmd = string.Format("select * from IssueDetails where BookID LIKE('%{0}%')", searchterm);
+                    if (comboIDfield.Text == "Mã độc giả")
+                        selectcmd = string.Format("select * from IssueDetails where MemberID LIKE('%{0}%')", searchterm);
+                    if (comboIDfield.Text == "Tựa sách")
+                        selectcmd = string.Format("select * from IssueDetails where BookTitle LIKE('%{0}%')", searchterm);
+                    if (comboIDfield.Text == "Tên độc giả")
+                        selectcmd = string.Format("select * from IssueDetails where MemberName LIKE('%{0}%')", searchterm);
+                    if (comboIDfield.Text == "Ngày mượn")
+                        selectcmd = string.Format("select * from IssueDetails where IssueDate LIKE('%{0}%')", searchterm);
+                    if (comboIDfield.Text == "Ngày hết hạn")
+                        selectcmd = string.Format("select * from IssueDetails where DueDate LIKE('%{0}%')", searchterm);
                 }
                 else
                 {
-                    selectcmd = string.Format("select * from SubmittedBooks where {0} LIKE('%{1}%')", comboIDfield.Text, searchterm);
-
+                    //selectcmd = string.Format("select * from SubmittedBooks where {0} LIKE('%{0}%')", searchterm);
+                    if (comboIDfield.Text == "Mã cuốn sách")
+                        selectcmd = string.Format("select * from IssueDetails where BookID LIKE('%{0}%')", searchterm);
+                    if (comboIDfield.Text == "Mã độc giả")
+                        selectcmd = string.Format("select * from IssueDetails where MemberID LIKE('%{0}%')", searchterm);
+                    if (comboIDfield.Text == "Tựa sách")
+                        selectcmd = string.Format("select * from IssueDetails where BookTitle LIKE('%{0}%')", searchterm);
+                    if (comboIDfield.Text == "Tên độc giả")
+                        selectcmd = string.Format("select * from IssueDetails where MemberName LIKE('%{0}%')", searchterm);
+                    if (comboIDfield.Text == "Ngày mượn")
+                        selectcmd = string.Format("select * from IssueDetails where IssueDate LIKE('%{0}%')", searchterm);
+                    if (comboIDfield.Text == "Ngày hết hạn")
+                        selectcmd = string.Format("select * from IssueDetails where DueDate LIKE('%{0}%')", searchterm);
                 }
                 SQLiteCommand cmd = new SQLiteCommand(con);
                 SQLiteDataReader dr;
@@ -1647,9 +1669,9 @@ VALUES(@bid,@bookno,@isbn,@title,@author,@desc,@categ,@pub,@lang,
                     textIDtitle.Text = dataGridID.SelectedRows[0].Cells["BookTitle"].Value.ToString();
                     textIDname.Text = dataGridID.SelectedRows[0].Cells["MemberName"].Value.ToString();
                     textIDidate.Text = dataGridID.SelectedRows[0].Cells["IssueDate"].Value.ToString();
-
-
                     textIDdd.Text = dataGridID.SelectedRows[0].Cells["DueDate"].Value.ToString();
+
+
 
                     if (btnIDsubdet.BackColor == Color.LightBlue)
                     {

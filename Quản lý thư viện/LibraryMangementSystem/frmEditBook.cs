@@ -111,6 +111,7 @@ namespace LibraryManagementSystem
                     textMBbid.Text = bookid;
                     // textMBbid.Text= dr["BookID"].ToString();
                     textMBisbn.Text = dr["ISBN"].ToString();
+                    textMBbookno.Text = dr["BookNo"].ToString();
                     textMBtitle.Text = dr["Title"].ToString();
                     textMBauthor.Text = dr["Author"].ToString();
                     comboMBcateg.Text = dr["Category"].ToString();
@@ -119,7 +120,7 @@ namespace LibraryManagementSystem
                     textMBpub.Text = dr["Publisher"].ToString();
                     comboMBlang.Text = dr["Language"].ToString();
 
-                    price = dr["Price"].ToString();
+                    textMBprice.Text = dr["Price"].ToString();
 
                     textMBpage.Text = dr["Pages"].ToString();
                     textMBshelf.Text = dr["Shelf"].ToString();

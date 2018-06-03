@@ -89,7 +89,7 @@
             // 
             // label1
             // 
-            this.label1.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(169, 22);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(628, 54);
@@ -106,7 +106,7 @@
             this.grpUsers.Controls.Add(this.btnDelUser);
             this.grpUsers.Controls.Add(this.btnEditUser);
             this.grpUsers.Controls.Add(this.btnAddNewUser);
-            this.grpUsers.Font = new System.Drawing.Font("Trebuchet MS", 11.25F);
+            this.grpUsers.Font = new System.Drawing.Font("Tahoma", 11.25F);
             this.grpUsers.Location = new System.Drawing.Point(17, 81);
             this.grpUsers.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.grpUsers.Name = "grpUsers";
@@ -118,7 +118,7 @@
             // 
             // btnMakeDefault
             // 
-            this.btnMakeDefault.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMakeDefault.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMakeDefault.Location = new System.Drawing.Point(573, 39);
             this.btnMakeDefault.Name = "btnMakeDefault";
             this.btnMakeDefault.Size = new System.Drawing.Size(164, 43);
@@ -199,7 +199,7 @@
             // txtAddEmail
             // 
             this.txtAddEmail.BackColor = System.Drawing.SystemColors.Window;
-            this.txtAddEmail.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAddEmail.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAddEmail.Location = new System.Drawing.Point(182, 413);
             this.txtAddEmail.Name = "txtAddEmail";
             this.txtAddEmail.Size = new System.Drawing.Size(238, 25);
@@ -208,7 +208,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(23, 416);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(61, 20);
@@ -218,7 +218,7 @@
             // txtAddPhone
             // 
             this.txtAddPhone.BackColor = System.Drawing.SystemColors.Window;
-            this.txtAddPhone.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAddPhone.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAddPhone.Location = new System.Drawing.Point(182, 371);
             this.txtAddPhone.Name = "txtAddPhone";
             this.txtAddPhone.Size = new System.Drawing.Size(238, 25);
@@ -227,7 +227,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(23, 374);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(123, 20);
@@ -237,7 +237,7 @@
             // txtAddAddress
             // 
             this.txtAddAddress.BackColor = System.Drawing.SystemColors.Window;
-            this.txtAddAddress.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAddAddress.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAddAddress.Location = new System.Drawing.Point(182, 245);
             this.txtAddAddress.Multiline = true;
             this.txtAddAddress.Name = "txtAddAddress";
@@ -247,7 +247,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(23, 248);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(76, 20);
@@ -257,7 +257,7 @@
             // txtAddName
             // 
             this.txtAddName.BackColor = System.Drawing.SystemColors.Window;
-            this.txtAddName.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAddName.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAddName.Location = new System.Drawing.Point(178, 192);
             this.txtAddName.Name = "txtAddName";
             this.txtAddName.Size = new System.Drawing.Size(238, 25);
@@ -266,7 +266,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(19, 195);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(64, 20);
@@ -276,7 +276,7 @@
             // txtAddPass2
             // 
             this.txtAddPass2.BackColor = System.Drawing.SystemColors.Window;
-            this.txtAddPass2.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAddPass2.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAddPass2.Location = new System.Drawing.Point(178, 152);
             this.txtAddPass2.Name = "txtAddPass2";
             this.txtAddPass2.PasswordChar = '*';
@@ -287,7 +287,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(19, 152);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(138, 20);
@@ -297,7 +297,7 @@
             // lblAmount
             // 
             this.lblAmount.AutoSize = true;
-            this.lblAmount.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAmount.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAmount.Location = new System.Drawing.Point(19, 114);
             this.lblAmount.Name = "lblAmount";
             this.lblAmount.Size = new System.Drawing.Size(81, 20);
@@ -308,7 +308,7 @@
             // 
             this.txtAddPass1.AcceptsTab = true;
             this.txtAddPass1.BackColor = System.Drawing.SystemColors.Window;
-            this.txtAddPass1.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAddPass1.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAddPass1.Location = new System.Drawing.Point(178, 109);
             this.txtAddPass1.Name = "txtAddPass1";
             this.txtAddPass1.PasswordChar = '*';
@@ -330,7 +330,7 @@
             // txtAddUname
             // 
             this.txtAddUname.BackColor = System.Drawing.SystemColors.Window;
-            this.txtAddUname.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAddUname.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAddUname.Location = new System.Drawing.Point(178, 65);
             this.txtAddUname.Name = "txtAddUname";
             this.txtAddUname.Size = new System.Drawing.Size(238, 25);
@@ -339,7 +339,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(19, 68);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(99, 20);
@@ -348,7 +348,7 @@
             // 
             // btnAdd
             // 
-            this.btnAdd.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdd.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.Location = new System.Drawing.Point(131, 475);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(220, 37);
@@ -363,7 +363,7 @@
                         | System.Windows.Forms.AnchorStyles.Right)));
             this.lblStatus.BackColor = System.Drawing.Color.Lavender;
             this.lblStatus.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblStatus.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStatus.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblStatus.Location = new System.Drawing.Point(1, 576);
             this.lblStatus.Name = "lblStatus";
             this.lblStatus.Size = new System.Drawing.Size(815, 30);
@@ -396,7 +396,7 @@
             // 
             // btnResetPass
             // 
-            this.btnResetPass.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnResetPass.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnResetPass.Location = new System.Drawing.Point(23, 102);
             this.btnResetPass.Name = "btnResetPass";
             this.btnResetPass.Size = new System.Drawing.Size(220, 37);
@@ -408,7 +408,7 @@
             // txtEditEmail
             // 
             this.txtEditEmail.BackColor = System.Drawing.SystemColors.Window;
-            this.txtEditEmail.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEditEmail.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEditEmail.Location = new System.Drawing.Point(178, 382);
             this.txtEditEmail.Name = "txtEditEmail";
             this.txtEditEmail.Size = new System.Drawing.Size(238, 25);
@@ -417,7 +417,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(19, 387);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(61, 20);
@@ -427,7 +427,7 @@
             // txtEditPhone
             // 
             this.txtEditPhone.BackColor = System.Drawing.SystemColors.Window;
-            this.txtEditPhone.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEditPhone.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEditPhone.Location = new System.Drawing.Point(178, 335);
             this.txtEditPhone.Name = "txtEditPhone";
             this.txtEditPhone.Size = new System.Drawing.Size(238, 25);
@@ -436,7 +436,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(19, 335);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(123, 20);
@@ -447,7 +447,7 @@
             // 
             this.txtEditAddress.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
             this.txtEditAddress.BackColor = System.Drawing.SystemColors.Window;
-            this.txtEditAddress.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEditAddress.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEditAddress.Location = new System.Drawing.Point(178, 214);
             this.txtEditAddress.Multiline = true;
             this.txtEditAddress.Name = "txtEditAddress";
@@ -457,7 +457,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(19, 215);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(76, 20);
@@ -468,7 +468,7 @@
             // 
             this.txtEditName.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
             this.txtEditName.BackColor = System.Drawing.SystemColors.Window;
-            this.txtEditName.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEditName.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEditName.Location = new System.Drawing.Point(178, 161);
             this.txtEditName.Name = "txtEditName";
             this.txtEditName.Size = new System.Drawing.Size(238, 25);
@@ -477,7 +477,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.Location = new System.Drawing.Point(19, 164);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(64, 20);
@@ -498,7 +498,7 @@
             // txtEditUname
             // 
             this.txtEditUname.BackColor = System.Drawing.SystemColors.Window;
-            this.txtEditUname.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEditUname.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEditUname.Location = new System.Drawing.Point(178, 65);
             this.txtEditUname.Name = "txtEditUname";
             this.txtEditUname.Size = new System.Drawing.Size(238, 25);
@@ -507,7 +507,7 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.Location = new System.Drawing.Point(19, 68);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(99, 20);
@@ -516,7 +516,7 @@
             // 
             // btnEditSave
             // 
-            this.btnEditSave.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditSave.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEditSave.Location = new System.Drawing.Point(118, 444);
             this.btnEditSave.Name = "btnEditSave";
             this.btnEditSave.Size = new System.Drawing.Size(220, 37);
@@ -536,7 +536,7 @@
             this.Controls.Add(this.grpUsers);
             this.Controls.Add(this.btnEnable);
             this.Controls.Add(this.label1);
-            this.Font = new System.Drawing.Font("Trebuchet MS", 11.25F);
+            this.Font = new System.Drawing.Font("Tahoma", 11.25F);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frmManageUsers";

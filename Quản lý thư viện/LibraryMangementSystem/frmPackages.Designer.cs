@@ -67,7 +67,7 @@
             this.grpDisable.Controls.Add(this.btnSaveMaxBooks);
             this.grpDisable.Controls.Add(this.label2);
             this.grpDisable.Controls.Add(this.txtMaxBooks);
-            this.grpDisable.Font = new System.Drawing.Font("Trebuchet MS", 11.25F);
+            this.grpDisable.Font = new System.Drawing.Font("Tahoma", 11.25F);
             this.grpDisable.Location = new System.Drawing.Point(53, 86);
             this.grpDisable.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.grpDisable.Name = "grpDisable";
@@ -114,7 +114,7 @@
             this.grpEnable.Controls.Add(this.btnDelPkg);
             this.grpEnable.Controls.Add(this.btnEditPkg);
             this.grpEnable.Controls.Add(this.btnAddPkg);
-            this.grpEnable.Font = new System.Drawing.Font("Trebuchet MS", 11.25F);
+            this.grpEnable.Font = new System.Drawing.Font("Tahoma", 11.25F);
             this.grpEnable.Location = new System.Drawing.Point(53, 245);
             this.grpEnable.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.grpEnable.Name = "grpEnable";
@@ -126,7 +126,7 @@
             // 
             // btnMakeDefault
             // 
-            this.btnMakeDefault.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMakeDefault.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMakeDefault.Location = new System.Drawing.Point(472, 26);
             this.btnMakeDefault.Name = "btnMakeDefault";
             this.btnMakeDefault.Size = new System.Drawing.Size(145, 56);
@@ -157,7 +157,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(19, 173);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(128, 20);
@@ -168,7 +168,7 @@
             // 
             this.txtAddPkgMaxBooks.AcceptsTab = true;
             this.txtAddPkgMaxBooks.BackColor = System.Drawing.SystemColors.Window;
-            this.txtAddPkgMaxBooks.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAddPkgMaxBooks.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAddPkgMaxBooks.Location = new System.Drawing.Point(178, 170);
             this.txtAddPkgMaxBooks.Name = "txtAddPkgMaxBooks";
             this.txtAddPkgMaxBooks.Size = new System.Drawing.Size(238, 25);
@@ -177,7 +177,7 @@
             // lblAmount
             // 
             this.lblAmount.AutoSize = true;
-            this.lblAmount.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAmount.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAmount.Location = new System.Drawing.Point(19, 122);
             this.lblAmount.Name = "lblAmount";
             this.lblAmount.Size = new System.Drawing.Size(72, 20);
@@ -188,7 +188,7 @@
             // 
             this.txtFee.AcceptsTab = true;
             this.txtFee.BackColor = System.Drawing.SystemColors.Window;
-            this.txtFee.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFee.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtFee.Location = new System.Drawing.Point(97, 119);
             this.txtFee.Name = "txtFee";
             this.txtFee.Size = new System.Drawing.Size(238, 25);
@@ -232,7 +232,7 @@
             // txtAddPkgTitle
             // 
             this.txtAddPkgTitle.BackColor = System.Drawing.SystemColors.Window;
-            this.txtAddPkgTitle.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAddPkgTitle.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAddPkgTitle.Location = new System.Drawing.Point(178, 40);
             this.txtAddPkgTitle.Name = "txtAddPkgTitle";
             this.txtAddPkgTitle.Size = new System.Drawing.Size(238, 25);
@@ -241,7 +241,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(19, 43);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(61, 20);
@@ -250,7 +250,7 @@
             // 
             // btnAdd
             // 
-            this.btnAdd.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdd.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.Location = new System.Drawing.Point(122, 222);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(220, 37);
@@ -320,7 +320,7 @@
             // radioEnable
             // 
             this.radioEnable.AutoSize = true;
-            this.radioEnable.Font = new System.Drawing.Font("Trebuchet MS", 11.25F);
+            this.radioEnable.Font = new System.Drawing.Font("Tahoma", 11.25F);
             this.radioEnable.Location = new System.Drawing.Point(26, 211);
             this.radioEnable.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.radioEnable.Name = "radioEnable";
@@ -332,7 +332,7 @@
             // 
             // label1
             // 
-            this.label1.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(50, 40);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(599, 41);
@@ -343,7 +343,7 @@
             // radioDisable
             // 
             this.radioDisable.AutoSize = true;
-            this.radioDisable.Font = new System.Drawing.Font("Trebuchet MS", 11.25F);
+            this.radioDisable.Font = new System.Drawing.Font("Tahoma", 11.25F);
             this.radioDisable.Location = new System.Drawing.Point(26, 11);
             this.radioDisable.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.radioDisable.Name = "radioDisable";
@@ -359,7 +359,7 @@
                         | System.Windows.Forms.AnchorStyles.Right)));
             this.lblStatus.BackColor = System.Drawing.Color.Lavender;
             this.lblStatus.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblStatus.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStatus.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblStatus.Location = new System.Drawing.Point(1, 666);
             this.lblStatus.Name = "lblStatus";
             this.lblStatus.Size = new System.Drawing.Size(874, 30);
@@ -378,7 +378,7 @@
             this.Controls.Add(this.radioEnable);
             this.Controls.Add(this.radioDisable);
             this.Controls.Add(this.grpDisable);
-            this.Font = new System.Drawing.Font("Trebuchet MS", 11.25F);
+            this.Font = new System.Drawing.Font("Tahoma", 11.25F);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frmPackages";

@@ -53,7 +53,7 @@ namespace LibraryManagementSystem
             // 
             // txtPass
             // 
-            this.txtPass.Font = new System.Drawing.Font("Trebuchet MS", 11.25F);
+            this.txtPass.Font = new System.Drawing.Font("Tahoma", 11.25F);
             this.txtPass.Location = new System.Drawing.Point(339, 309);
             this.txtPass.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtPass.Name = "txtPass";
@@ -63,7 +63,7 @@ namespace LibraryManagementSystem
             // 
             // txtUname
             // 
-            this.txtUname.Font = new System.Drawing.Font("Trebuchet MS", 11.25F);
+            this.txtUname.Font = new System.Drawing.Font("Tahoma", 11.25F);
             this.txtUname.Location = new System.Drawing.Point(339, 260);
             this.txtUname.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtUname.Name = "txtUname";
@@ -73,7 +73,7 @@ namespace LibraryManagementSystem
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(128, 306);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
@@ -84,7 +84,7 @@ namespace LibraryManagementSystem
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(128, 257);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
@@ -94,7 +94,7 @@ namespace LibraryManagementSystem
             // 
             // cmdLogin
             // 
-            this.cmdLogin.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdLogin.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmdLogin.Location = new System.Drawing.Point(133, 374);
             this.cmdLogin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cmdLogin.Name = "cmdLogin";
@@ -108,7 +108,7 @@ namespace LibraryManagementSystem
             // 
             this.cmdCancel.Cursor = System.Windows.Forms.Cursors.Default;
             this.cmdCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.cmdCancel.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdCancel.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmdCancel.Location = new System.Drawing.Point(339, 374);
             this.cmdCancel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cmdCancel.Name = "cmdCancel";
@@ -124,7 +124,7 @@ namespace LibraryManagementSystem
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblStatus.BackColor = System.Drawing.Color.Lavender;
             this.lblStatus.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblStatus.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStatus.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblStatus.Location = new System.Drawing.Point(0, 446);
             this.lblStatus.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblStatus.Name = "lblStatus";

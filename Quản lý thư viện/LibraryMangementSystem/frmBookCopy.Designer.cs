@@ -38,7 +38,7 @@
             // 
             this.textBid.BackColor = System.Drawing.SystemColors.Window;
             this.textBid.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBid.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBid.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBid.Location = new System.Drawing.Point(160, 57);
             this.textBid.Name = "textBid";
             this.textBid.Size = new System.Drawing.Size(148, 25);
@@ -47,7 +47,7 @@
             // label35
             // 
             this.label35.AutoSize = true;
-            this.label35.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label35.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label35.Location = new System.Drawing.Point(63, 59);
             this.label35.Name = "label35";
             this.label35.Size = new System.Drawing.Size(70, 20);
@@ -57,7 +57,7 @@
             // ok
             // 
             this.ok.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.ok.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ok.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ok.Location = new System.Drawing.Point(114, 129);
             this.ok.Name = "ok";
             this.ok.Size = new System.Drawing.Size(143, 48);

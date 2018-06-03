@@ -1,3 +1,6 @@
+C:\Users\LENOVO\Source\Repos\library_management_system\Quản lý thư viện\LibraryMangementSystem\obj\Debug\LibraryManagementSystem.frmLang.resources
+C:\Users\LENOVO\Source\Repos\library_management_system\Quản lý thư viện\LibraryMangementSystem\obj\Debug\LibraryManagementSystem.frmPackages.resources
+C:\Users\LENOVO\Source\Repos\library_management_system\Quản lý thư viện\LibraryMangementSystem\obj\Debug\LibraryManagementSystem.pdb
 C:\Users\LENOVO\Source\Repos\library_management_system\Quản lý thư viện\LibraryMangementSystem\bin\Debug\LibraryManagementSystem.exe.config
 C:\Users\LENOVO\Source\Repos\library_management_system\Quản lý thư viện\LibraryMangementSystem\bin\Debug\LibraryManagementSystem.exe
 C:\Users\LENOVO\Source\Repos\library_management_system\Quản lý thư viện\LibraryMangementSystem\bin\Debug\LibraryManagementSystem.pdb
@@ -22,12 +25,10 @@ C:\Users\LENOVO\Source\Repos\library_management_system\Quản lý thư viện\Li
 C:\Users\LENOVO\Source\Repos\library_management_system\Quản lý thư viện\LibraryMangementSystem\obj\Debug\LibraryManagementSystem.frmExploreMembers.resources
 C:\Users\LENOVO\Source\Repos\library_management_system\Quản lý thư viện\LibraryMangementSystem\obj\Debug\LibraryManagementSystem.frmExport.resources
 C:\Users\LENOVO\Source\Repos\library_management_system\Quản lý thư viện\LibraryMangementSystem\obj\Debug\LibraryManagementSystem.frmExtendDueDate.resources
-C:\Users\LENOVO\Source\Repos\library_management_system\Quản lý thư viện\LibraryMangementSystem\obj\Debug\LibraryManagementSystem.frmLang.resources
 C:\Users\LENOVO\Source\Repos\library_management_system\Quản lý thư viện\LibraryMangementSystem\obj\Debug\LibraryManagementSystem.frmLibInfo.resources
 C:\Users\LENOVO\Source\Repos\library_management_system\Quản lý thư viện\LibraryMangementSystem\obj\Debug\LibraryManagementSystem.frmOptions.resources
 C:\Users\LENOVO\Source\Repos\library_management_system\Quản lý thư viện\LibraryMangementSystem\obj\Debug\LibraryManagementSystem.frmManageUsers.resources
 C:\Users\LENOVO\Source\Repos\library_management_system\Quản lý thư viện\LibraryMangementSystem\obj\Debug\LibraryManagementSystem.frmMemberDetails.resources
-C:\Users\LENOVO\Source\Repos\library_management_system\Quản lý thư viện\LibraryMangementSystem\obj\Debug\LibraryManagementSystem.frmPackages.resources
 C:\Users\LENOVO\Source\Repos\library_management_system\Quản lý thư viện\LibraryMangementSystem\obj\Debug\LibraryManagementSystem.frmSetPackage.resources
 C:\Users\LENOVO\Source\Repos\library_management_system\Quản lý thư viện\LibraryMangementSystem\obj\Debug\LibraryManagementSystem.frmSummary.resources
 C:\Users\LENOVO\Source\Repos\library_management_system\Quản lý thư viện\LibraryMangementSystem\obj\Debug\LibraryManagementSystem.frmUserDetails.resources
@@ -39,4 +40,3 @@ C:\Users\LENOVO\Source\Repos\library_management_system\Quản lý thư viện\Li
 C:\Users\LENOVO\Source\Repos\library_management_system\Quản lý thư viện\LibraryMangementSystem\obj\Debug\LibraryManagementSystem.csproj.CoreCompileInputs.cache
 C:\Users\LENOVO\Source\Repos\library_management_system\Quản lý thư viện\LibraryMangementSystem\obj\Debug\LibraryManagementSystem.csproj.CopyComplete
 C:\Users\LENOVO\Source\Repos\library_management_system\Quản lý thư viện\LibraryMangementSystem\obj\Debug\LibraryManagementSystem.exe
-C:\Users\LENOVO\Source\Repos\library_management_system\Quản lý thư viện\LibraryMangementSystem\obj\Debug\LibraryManagementSystem.pdb

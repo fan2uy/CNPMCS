@@ -54,7 +54,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(53, 175);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
@@ -65,7 +65,7 @@
             // txtMemID
             // 
             this.txtMemID.BackColor = System.Drawing.SystemColors.Window;
-            this.txtMemID.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMemID.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMemID.Location = new System.Drawing.Point(259, 28);
             this.txtMemID.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtMemID.Name = "txtMemID";
@@ -75,7 +75,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.Location = new System.Drawing.Point(53, 31);
             this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
@@ -87,7 +87,7 @@
             // 
             this.txtMemID2.BackColor = System.Drawing.SystemColors.Control;
             this.txtMemID2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtMemID2.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMemID2.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMemID2.Location = new System.Drawing.Point(259, 86);
             this.txtMemID2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtMemID2.Name = "txtMemID2";
@@ -98,7 +98,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(53, 88);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
@@ -110,7 +110,7 @@
             // 
             this.txtName.BackColor = System.Drawing.SystemColors.Control;
             this.txtName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtName.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtName.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtName.Location = new System.Drawing.Point(259, 129);
             this.txtName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtName.Name = "txtName";
@@ -121,7 +121,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(53, 131);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
@@ -132,7 +132,7 @@
             // cmbPackage
             // 
             this.cmbPackage.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbPackage.Font = new System.Drawing.Font("Trebuchet MS", 11.25F);
+            this.cmbPackage.Font = new System.Drawing.Font("Tahoma", 11.25F);
             this.cmbPackage.FormattingEnabled = true;
             this.cmbPackage.Location = new System.Drawing.Point(259, 172);
             this.cmbPackage.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -144,7 +144,7 @@
             // lblmonth
             // 
             this.lblmonth.AutoSize = true;
-            this.lblmonth.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblmonth.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblmonth.Location = new System.Drawing.Point(53, 285);
             this.lblmonth.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblmonth.Name = "lblmonth";
@@ -154,7 +154,7 @@
             // 
             // btnPay
             // 
-            this.btnPay.Font = new System.Drawing.Font("Trebuchet MS", 11.25F);
+            this.btnPay.Font = new System.Drawing.Font("Tahoma", 11.25F);
             this.btnPay.Location = new System.Drawing.Point(186, 406);
             this.btnPay.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnPay.Name = "btnPay";
@@ -167,7 +167,7 @@
             // cmbMonths
             // 
             this.cmbMonths.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbMonths.Font = new System.Drawing.Font("Trebuchet MS", 11.25F);
+            this.cmbMonths.Font = new System.Drawing.Font("Tahoma", 11.25F);
             this.cmbMonths.FormattingEnabled = true;
             this.cmbMonths.Items.AddRange(new object[] {
             "1",
@@ -192,7 +192,7 @@
             // txtTotal
             // 
             this.txtTotal.BackColor = System.Drawing.SystemColors.Window;
-            this.txtTotal.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTotal.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTotal.Location = new System.Drawing.Point(259, 328);
             this.txtTotal.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtTotal.Name = "txtTotal";
@@ -203,7 +203,7 @@
             // lbltotal
             // 
             this.lbltotal.AutoSize = true;
-            this.lbltotal.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbltotal.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbltotal.Location = new System.Drawing.Point(53, 331);
             this.lbltotal.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbltotal.Name = "lbltotal";
@@ -213,7 +213,7 @@
             // 
             // btnOk
             // 
-            this.btnOk.Font = new System.Drawing.Font("Trebuchet MS", 11.25F);
+            this.btnOk.Font = new System.Drawing.Font("Tahoma", 11.25F);
             this.btnOk.Location = new System.Drawing.Point(512, 23);
             this.btnOk.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnOk.Name = "btnOk";
@@ -227,7 +227,7 @@
             // 
             this.txtMonthlyFee.BackColor = System.Drawing.SystemColors.Control;
             this.txtMonthlyFee.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtMonthlyFee.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMonthlyFee.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMonthlyFee.Location = new System.Drawing.Point(259, 218);
             this.txtMonthlyFee.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtMonthlyFee.Name = "txtMonthlyFee";
@@ -239,7 +239,7 @@
             // lblmfee
             // 
             this.lblmfee.AutoSize = true;
-            this.lblmfee.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblmfee.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblmfee.Location = new System.Drawing.Point(53, 220);
             this.lblmfee.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblmfee.Name = "lblmfee";
@@ -250,7 +250,7 @@
             // lblDuration
             // 
             this.lblDuration.AutoSize = true;
-            this.lblDuration.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDuration.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDuration.Location = new System.Drawing.Point(53, 372);
             this.lblDuration.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDuration.Name = "lblDuration";
@@ -262,7 +262,7 @@
             // 
             this.txtMaxBooks.BackColor = System.Drawing.SystemColors.Control;
             this.txtMaxBooks.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtMaxBooks.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMaxBooks.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMaxBooks.Location = new System.Drawing.Point(259, 250);
             this.txtMaxBooks.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtMaxBooks.Name = "txtMaxBooks";
@@ -274,7 +274,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(53, 252);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
@@ -284,7 +284,7 @@
             // 
             // btnCancel
             // 
-            this.btnCancel.Font = new System.Drawing.Font("Trebuchet MS", 11.25F);
+            this.btnCancel.Font = new System.Drawing.Font("Tahoma", 11.25F);
             this.btnCancel.Location = new System.Drawing.Point(386, 406);
             this.btnCancel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnCancel.Name = "btnCancel";
@@ -319,7 +319,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtMemID);
             this.Controls.Add(this.label11);
-            this.Font = new System.Drawing.Font("Trebuchet MS", 11.25F);
+            this.Font = new System.Drawing.Font("Tahoma", 11.25F);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frmSetPackage";

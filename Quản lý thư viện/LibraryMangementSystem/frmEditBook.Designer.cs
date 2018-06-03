@@ -85,7 +85,7 @@
                         | System.Windows.Forms.AnchorStyles.Right)));
             this.lblStatus.BackColor = System.Drawing.Color.Lavender;
             this.lblStatus.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblStatus.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStatus.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblStatus.Location = new System.Drawing.Point(1, 578);
             this.lblStatus.Name = "lblStatus";
             this.lblStatus.Size = new System.Drawing.Size(1013, 30);
@@ -96,7 +96,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(6, 14);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(70, 20);
@@ -108,7 +108,7 @@
             this.txtMBenterid.AcceptsReturn = true;
             this.txtMBenterid.BackColor = System.Drawing.SystemColors.Window;
             this.txtMBenterid.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtMBenterid.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMBenterid.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMBenterid.Location = new System.Drawing.Point(129, 12);
             this.txtMBenterid.Name = "txtMBenterid";
             this.txtMBenterid.Size = new System.Drawing.Size(238, 25);
@@ -117,7 +117,7 @@
             // btnMBeditdel
             // 
             this.btnMBeditdel.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnMBeditdel.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMBeditdel.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMBeditdel.Location = new System.Drawing.Point(374, 5);
             this.btnMBeditdel.Name = "btnMBeditdel";
             this.btnMBeditdel.Size = new System.Drawing.Size(275, 39);
@@ -141,7 +141,7 @@
             // 
             this.textMBauthor.BackColor = System.Drawing.SystemColors.Window;
             this.textMBauthor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textMBauthor.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textMBauthor.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textMBauthor.Location = new System.Drawing.Point(129, 193);
             this.textMBauthor.Name = "textMBauthor";
             this.textMBauthor.Size = new System.Drawing.Size(513, 25);
@@ -150,7 +150,7 @@
             // comboMBcateg
             // 
             this.comboMBcateg.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboMBcateg.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboMBcateg.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboMBcateg.FormattingEnabled = true;
             this.comboMBcateg.Location = new System.Drawing.Point(129, 373);
             this.comboMBcateg.Name = "comboMBcateg";
@@ -161,7 +161,7 @@
             // comboMBlang
             // 
             this.comboMBlang.BackColor = System.Drawing.SystemColors.Window;
-            this.comboMBlang.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboMBlang.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboMBlang.FormattingEnabled = true;
             this.comboMBlang.Items.AddRange(new object[] {
             "English",
@@ -173,7 +173,7 @@
             // 
             // btnMBopenpdf
             // 
-            this.btnMBopenpdf.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMBopenpdf.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMBopenpdf.Location = new System.Drawing.Point(804, 526);
             this.btnMBopenpdf.Name = "btnMBopenpdf";
             this.btnMBopenpdf.Size = new System.Drawing.Size(101, 36);
@@ -186,7 +186,7 @@
             // labelMBpdfsize
             // 
             this.labelMBpdfsize.AutoSize = true;
-            this.labelMBpdfsize.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelMBpdfsize.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelMBpdfsize.Location = new System.Drawing.Point(667, 537);
             this.labelMBpdfsize.Name = "labelMBpdfsize";
             this.labelMBpdfsize.Size = new System.Drawing.Size(41, 20);
@@ -196,7 +196,7 @@
             // textMBpdfurl
             // 
             this.textMBpdfurl.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textMBpdfurl.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textMBpdfurl.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textMBpdfurl.Location = new System.Drawing.Point(310, 535);
             this.textMBpdfurl.Name = "textMBpdfurl";
             this.textMBpdfurl.Size = new System.Drawing.Size(334, 25);
@@ -205,7 +205,7 @@
             // MBcombobtype
             // 
             this.MBcombobtype.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.MBcombobtype.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MBcombobtype.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MBcombobtype.FormattingEnabled = true;
             this.MBcombobtype.Items.AddRange(new object[] {
             "Hardcopy Only",
@@ -220,7 +220,7 @@
             // label48
             // 
             this.label48.AutoSize = true;
-            this.label48.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label48.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label48.Location = new System.Drawing.Point(6, 542);
             this.label48.Name = "label48";
             this.label48.Size = new System.Drawing.Size(89, 20);
@@ -230,7 +230,7 @@
             // labelMBpicsize
             // 
             this.labelMBpicsize.AutoSize = true;
-            this.labelMBpicsize.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelMBpicsize.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelMBpicsize.Location = new System.Drawing.Point(852, 387);
             this.labelMBpicsize.Name = "labelMBpicsize";
             this.labelMBpicsize.Size = new System.Drawing.Size(41, 20);
@@ -239,7 +239,7 @@
             // 
             // btnMBgbooksapi
             // 
-            this.btnMBgbooksapi.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMBgbooksapi.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMBgbooksapi.Location = new System.Drawing.Point(655, 117);
             this.btnMBgbooksapi.Name = "btnMBgbooksapi";
             this.btnMBgbooksapi.Size = new System.Drawing.Size(129, 89);
@@ -250,7 +250,7 @@
             // 
             // btnMBopenfile
             // 
-            this.btnMBopenfile.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMBopenfile.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMBopenfile.Location = new System.Drawing.Point(846, 343);
             this.btnMBopenfile.Name = "btnMBopenfile";
             this.btnMBopenfile.Size = new System.Drawing.Size(101, 36);
@@ -262,7 +262,7 @@
             // label34
             // 
             this.label34.AutoSize = true;
-            this.label34.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label34.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label34.Location = new System.Drawing.Point(6, 502);
             this.label34.Name = "label34";
             this.label34.Size = new System.Drawing.Size(104, 20);
@@ -272,7 +272,7 @@
             // textMBimgurl
             // 
             this.textMBimgurl.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textMBimgurl.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textMBimgurl.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textMBimgurl.Location = new System.Drawing.Point(129, 499);
             this.textMBimgurl.Name = "textMBimgurl";
             this.textMBimgurl.Size = new System.Drawing.Size(387, 25);
@@ -282,7 +282,7 @@
             // 
             this.textMBdesc.BackColor = System.Drawing.SystemColors.Window;
             this.textMBdesc.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textMBdesc.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textMBdesc.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textMBdesc.Location = new System.Drawing.Point(129, 224);
             this.textMBdesc.Multiline = true;
             this.textMBdesc.Name = "textMBdesc";
@@ -292,7 +292,7 @@
             // 
             // btnMBdelete
             // 
-            this.btnMBdelete.Font = new System.Drawing.Font("Trebuchet MS", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMBdelete.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMBdelete.Location = new System.Drawing.Point(655, 5);
             this.btnMBdelete.Name = "btnMBdelete";
             this.btnMBdelete.Size = new System.Drawing.Size(129, 89);
@@ -304,7 +304,7 @@
             // label32
             // 
             this.label32.AutoSize = true;
-            this.label32.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label32.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label32.Location = new System.Drawing.Point(6, 226);
             this.label32.Name = "label32";
             this.label32.Size = new System.Drawing.Size(94, 20);
@@ -313,7 +313,7 @@
             // 
             // btnMBeditsave
             // 
-            this.btnMBeditsave.Font = new System.Drawing.Font("Trebuchet MS", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMBeditsave.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMBeditsave.Location = new System.Drawing.Point(655, 233);
             this.btnMBeditsave.Name = "btnMBeditsave";
             this.btnMBeditsave.Size = new System.Drawing.Size(129, 89);
@@ -325,7 +325,7 @@
             // label33
             // 
             this.label33.AutoSize = true;
-            this.label33.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label33.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label33.Location = new System.Drawing.Point(6, 377);
             this.label33.Name = "label33";
             this.label33.Size = new System.Drawing.Size(80, 20);
@@ -336,7 +336,7 @@
             // 
             this.textMBdateadd.BackColor = System.Drawing.SystemColors.Window;
             this.textMBdateadd.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textMBdateadd.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textMBdateadd.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textMBdateadd.Location = new System.Drawing.Point(696, 457);
             this.textMBdateadd.Name = "textMBdateadd";
             this.textMBdateadd.Size = new System.Drawing.Size(107, 25);
@@ -346,7 +346,7 @@
             // 
             this.textMBshelf.BackColor = System.Drawing.SystemColors.Window;
             this.textMBshelf.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textMBshelf.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textMBshelf.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textMBshelf.Location = new System.Drawing.Point(696, 428);
             this.textMBshelf.Name = "textMBshelf";
             this.textMBshelf.Size = new System.Drawing.Size(107, 25);
@@ -356,7 +356,7 @@
             // 
             this.textMBpage.BackColor = System.Drawing.SystemColors.Window;
             this.textMBpage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textMBpage.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textMBpage.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textMBpage.Location = new System.Drawing.Point(696, 400);
             this.textMBpage.Name = "textMBpage";
             this.textMBpage.Size = new System.Drawing.Size(107, 25);
@@ -366,7 +366,7 @@
             // 
             this.textMBisbn.BackColor = System.Drawing.SystemColors.Window;
             this.textMBisbn.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textMBisbn.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textMBisbn.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textMBisbn.Location = new System.Drawing.Point(496, 90);
             this.textMBisbn.Name = "textMBisbn";
             this.textMBisbn.Size = new System.Drawing.Size(148, 25);
@@ -375,7 +375,7 @@
             // label36
             // 
             this.label36.AutoSize = true;
-            this.label36.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label36.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label36.Location = new System.Drawing.Point(6, 62);
             this.label36.Name = "label36";
             this.label36.Size = new System.Drawing.Size(70, 20);
@@ -385,7 +385,7 @@
             // label37
             // 
             this.label37.AutoSize = true;
-            this.label37.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label37.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label37.Location = new System.Drawing.Point(383, 91);
             this.label37.Name = "label37";
             this.label37.Size = new System.Drawing.Size(107, 20);
@@ -396,7 +396,7 @@
             // 
             this.textMBprice.BackColor = System.Drawing.SystemColors.Window;
             this.textMBprice.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textMBprice.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textMBprice.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textMBprice.Location = new System.Drawing.Point(129, 466);
             this.textMBprice.Name = "textMBprice";
             this.textMBprice.Size = new System.Drawing.Size(97, 25);
@@ -406,7 +406,7 @@
             // 
             this.textMBpub.BackColor = System.Drawing.SystemColors.Window;
             this.textMBpub.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textMBpub.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textMBpub.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textMBpub.Location = new System.Drawing.Point(129, 404);
             this.textMBpub.Name = "textMBpub";
             this.textMBpub.Size = new System.Drawing.Size(341, 25);
@@ -416,7 +416,7 @@
             // 
             this.textMByear.BackColor = System.Drawing.SystemColors.Window;
             this.textMByear.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textMByear.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textMByear.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textMByear.Location = new System.Drawing.Point(696, 372);
             this.textMByear.Name = "textMByear";
             this.textMByear.Size = new System.Drawing.Size(107, 25);
@@ -426,7 +426,7 @@
             // 
             this.textMBtitle.BackColor = System.Drawing.SystemColors.Window;
             this.textMBtitle.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textMBtitle.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textMBtitle.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textMBtitle.Location = new System.Drawing.Point(129, 121);
             this.textMBtitle.Multiline = true;
             this.textMBtitle.Name = "textMBtitle";
@@ -436,7 +436,7 @@
             // label38
             // 
             this.label38.AutoSize = true;
-            this.label38.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label38.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label38.Location = new System.Drawing.Point(578, 459);
             this.label38.Name = "label38";
             this.label38.Size = new System.Drawing.Size(97, 20);
@@ -446,7 +446,7 @@
             // label39
             // 
             this.label39.AutoSize = true;
-            this.label39.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label39.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label39.Location = new System.Drawing.Point(565, 428);
             this.label39.Name = "label39";
             this.label39.Size = new System.Drawing.Size(110, 20);
@@ -456,7 +456,7 @@
             // label40
             // 
             this.label40.AutoSize = true;
-            this.label40.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label40.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label40.Location = new System.Drawing.Point(617, 402);
             this.label40.Name = "label40";
             this.label40.Size = new System.Drawing.Size(58, 20);
@@ -466,7 +466,7 @@
             // label41
             // 
             this.label41.AutoSize = true;
-            this.label41.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label41.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label41.Location = new System.Drawing.Point(6, 477);
             this.label41.Name = "label41";
             this.label41.Size = new System.Drawing.Size(58, 20);
@@ -476,7 +476,7 @@
             // label42
             // 
             this.label42.AutoSize = true;
-            this.label42.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label42.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label42.Location = new System.Drawing.Point(6, 443);
             this.label42.Name = "label42";
             this.label42.Size = new System.Drawing.Size(73, 20);
@@ -486,7 +486,7 @@
             // label43
             // 
             this.label43.AutoSize = true;
-            this.label43.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label43.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label43.Location = new System.Drawing.Point(6, 413);
             this.label43.Name = "label43";
             this.label43.Size = new System.Drawing.Size(68, 20);
@@ -496,7 +496,7 @@
             // label44
             // 
             this.label44.AutoSize = true;
-            this.label44.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label44.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label44.Location = new System.Drawing.Point(624, 374);
             this.label44.Name = "label44";
             this.label44.Size = new System.Drawing.Size(51, 20);
@@ -506,7 +506,7 @@
             // label45
             // 
             this.label45.AutoSize = true;
-            this.label45.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label45.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label45.Location = new System.Drawing.Point(6, 196);
             this.label45.Name = "label45";
             this.label45.Size = new System.Drawing.Size(65, 20);
@@ -516,7 +516,7 @@
             // label46
             // 
             this.label46.AutoSize = true;
-            this.label46.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label46.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label46.Location = new System.Drawing.Point(6, 128);
             this.label46.Name = "label46";
             this.label46.Size = new System.Drawing.Size(50, 20);
@@ -525,7 +525,7 @@
             // 
             // BDlabelenlarge
             // 
-            this.BDlabelenlarge.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BDlabelenlarge.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BDlabelenlarge.Location = new System.Drawing.Point(804, 313);
             this.BDlabelenlarge.Name = "BDlabelenlarge";
             this.BDlabelenlarge.Size = new System.Drawing.Size(191, 20);
@@ -538,7 +538,7 @@
             this.textMBbookno.BackColor = System.Drawing.SystemColors.Window;
             this.textMBbookno.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textMBbookno.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.textMBbookno.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textMBbookno.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textMBbookno.Location = new System.Drawing.Point(129, 89);
             this.textMBbookno.Name = "textMBbookno";
             this.textMBbookno.Size = new System.Drawing.Size(238, 25);
@@ -547,7 +547,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(4, 91);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(110, 20);
@@ -558,7 +558,7 @@
             // 
             this.textMBbid.AutoSize = true;
             this.textMBbid.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textMBbid.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textMBbid.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textMBbid.Location = new System.Drawing.Point(129, 60);
             this.textMBbid.Name = "textMBbid";
             this.textMBbid.Size = new System.Drawing.Size(35, 22);
