@@ -1,10 +1,6 @@
-C:\Users\LENOVO\Desktop\Backup\LibraryMangementSystem\GlassButton\bin\Debug\GlassButton.dll
-C:\Users\LENOVO\Desktop\Backup\LibraryMangementSystem\GlassButton\bin\Debug\GlassButton.pdb
-C:\Users\LENOVO\Desktop\Backup\LibraryMangementSystem\GlassButton\obj\Debug\GlassButton.csprojResolveAssemblyReference.cache
-C:\Users\LENOVO\Desktop\Backup\LibraryMangementSystem\GlassButton\obj\Debug\GlassButton.dll
-C:\Users\LENOVO\Desktop\Backup\LibraryMangementSystem\GlassButton\obj\Debug\GlassButton.pdb
-C:\Users\LENOVO\Source\Repos\CNPMCS\Quản lý thư viện\LibraryMangementSystem\GlassButton\bin\Debug\GlassButton.dll
-C:\Users\LENOVO\Source\Repos\CNPMCS\Quản lý thư viện\LibraryMangementSystem\GlassButton\bin\Debug\GlassButton.pdb
-C:\Users\LENOVO\Source\Repos\CNPMCS\Quản lý thư viện\LibraryMangementSystem\GlassButton\obj\Debug\GlassButton.csprojResolveAssemblyReference.cache
-C:\Users\LENOVO\Source\Repos\CNPMCS\Quản lý thư viện\LibraryMangementSystem\GlassButton\obj\Debug\GlassButton.dll
-C:\Users\LENOVO\Source\Repos\CNPMCS\Quản lý thư viện\LibraryMangementSystem\GlassButton\obj\Debug\GlassButton.pdb
+C:\Users\LENOVO\Source\Repos\library_management_system\Quản lý thư viện\LibraryMangementSystem\GlassButton\bin\Debug\GlassButton.dll
+C:\Users\LENOVO\Source\Repos\library_management_system\Quản lý thư viện\LibraryMangementSystem\GlassButton\bin\Debug\GlassButton.pdb
+C:\Users\LENOVO\Source\Repos\library_management_system\Quản lý thư viện\LibraryMangementSystem\GlassButton\obj\Debug\GlassButton.csprojAssemblyReference.cache
+C:\Users\LENOVO\Source\Repos\library_management_system\Quản lý thư viện\LibraryMangementSystem\GlassButton\obj\Debug\GlassButton.csproj.CoreCompileInputs.cache
+C:\Users\LENOVO\Source\Repos\library_management_system\Quản lý thư viện\LibraryMangementSystem\GlassButton\obj\Debug\GlassButton.dll
+C:\Users\LENOVO\Source\Repos\library_management_system\Quản lý thư viện\LibraryMangementSystem\GlassButton\obj\Debug\GlassButton.pdb
