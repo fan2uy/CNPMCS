@@ -56,7 +56,7 @@ namespace LibraryManagementSystem
         byte[] byteArrayMBimage = null;
 
 
-        string selectallbooks = "SELECT BookID,Title,Author,BookNo,Category,Publisher,Language,Year,Price,Pages,Shelf,DateAdded,Type,ISBN,Available FROM BookDetails ";
+        string selectallbooks = "SELECT BookID as 'Mã cuốn sách',Title as 'Tựa sách', Author,BookNo,Category,Publisher,Language,Year,Price,Pages,Shelf,DateAdded,Type,ISBN,Available FROM BookDetails ";
         public MainForm()
         {
             InitializeComponent();
@@ -1670,7 +1670,7 @@ VALUES(@bid,@bookno,@isbn,@title,@author,@desc,@categ,@pub,@lang,
                     textIDname.Text = dataGridID.SelectedRows[0].Cells["MemberName"].Value.ToString();
                     textIDidate.Text = dataGridID.SelectedRows[0].Cells["IssueDate"].Value.ToString();
                     textIDdd.Text = dataGridID.SelectedRows[0].Cells["DueDate"].Value.ToString();
-
+                    
 
 
                     if (btnIDsubdet.BackColor == Color.LightBlue)
