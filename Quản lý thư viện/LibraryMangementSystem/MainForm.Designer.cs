@@ -1401,9 +1401,9 @@
             this.btnMMBooksToSubmit.Location = new System.Drawing.Point(1185, 196);
             this.btnMMBooksToSubmit.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnMMBooksToSubmit.Name = "btnMMBooksToSubmit";
-            this.btnMMBooksToSubmit.Size = new System.Drawing.Size(109, 96);
+            this.btnMMBooksToSubmit.Size = new System.Drawing.Size(133, 100);
             this.btnMMBooksToSubmit.TabIndex = 5;
-            this.btnMMBooksToSubmit.Text = "Xem thông tin mượn/trả sách";
+            this.btnMMBooksToSubmit.Text = "Xem thông tin mượn/trả sách của độc giả";
             this.btnMMBooksToSubmit.UseVisualStyleBackColor = true;
             this.btnMMBooksToSubmit.Click += new System.EventHandler(this.btnMMBooksToSubmit_Click);
             // 
@@ -1415,7 +1415,7 @@
             this.btnMMissret.Name = "btnMMissret";
             this.btnMMissret.Size = new System.Drawing.Size(204, 58);
             this.btnMMissret.TabIndex = 4;
-            this.btnMMissret.Text = "Issue / Return";
+            this.btnMMissret.Text = "Mượn/Trả sách";
             this.btnMMissret.UseVisualStyleBackColor = true;
             this.btnMMissret.Click += new System.EventHandler(this.btnMMissret_Click);
             // 
@@ -1427,7 +1427,7 @@
             this.btnEditDetails.Name = "btnEditDetails";
             this.btnEditDetails.Size = new System.Drawing.Size(204, 58);
             this.btnEditDetails.TabIndex = 3;
-            this.btnEditDetails.Text = "Edit Details";
+            this.btnEditDetails.Text = "Chỉnh sửa thông tin";
             this.btnEditDetails.UseVisualStyleBackColor = true;
             this.btnEditDetails.Click += new System.EventHandler(this.btnEditDetails_Click);
             // 
@@ -1439,7 +1439,7 @@
             this.btnSetPackage.Name = "btnSetPackage";
             this.btnSetPackage.Size = new System.Drawing.Size(204, 58);
             this.btnSetPackage.TabIndex = 1;
-            this.btnSetPackage.Text = "Set Package";
+            this.btnSetPackage.Text = "Thiết lập gói dịch vụ";
             this.btnSetPackage.UseVisualStyleBackColor = true;
             this.btnSetPackage.Click += new System.EventHandler(this.button3_Click_1);
             // 
@@ -1451,7 +1451,7 @@
             this.btnMMdetails.Name = "btnMMdetails";
             this.btnMMdetails.Size = new System.Drawing.Size(204, 58);
             this.btnMMdetails.TabIndex = 2;
-            this.btnMMdetails.Text = "Member Details";
+            this.btnMMdetails.Text = "Xem thông tin độc giả";
             this.btnMMdetails.UseVisualStyleBackColor = true;
             this.btnMMdetails.Click += new System.EventHandler(this.btnMMdetails_Click);
             // 
@@ -1520,7 +1520,7 @@
             this.btnMMviewall.Name = "btnMMviewall";
             this.btnMMviewall.Size = new System.Drawing.Size(236, 43);
             this.btnMMviewall.TabIndex = 2;
-            this.btnMMviewall.Text = "View All";
+            this.btnMMviewall.Text = "Xem tất cả";
             this.btnMMviewall.UseVisualStyleBackColor = true;
             this.btnMMviewall.Click += new System.EventHandler(this.btnMMviewall_Click);
             // 
@@ -1530,14 +1530,14 @@
             this.comboMMfields.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboMMfields.FormattingEnabled = true;
             this.comboMMfields.Items.AddRange(new object[] {
-            "MemberID",
-            "Name",
-            "Course",
-            "AdmissionYear",
-            "RollNo",
-            "Address",
-            "PhoneNumber",
-            "Dob",
+            "Mã độc giả",
+            "Tên độc giả",
+            "Khóa học",
+            "Năm nhập học",
+            "MSSV",
+            "Địa chỉ",
+            "Số điện thoại",
+            "Ngày sinh",
             "Email"});
             this.comboMMfields.Location = new System.Drawing.Point(749, 26);
             this.comboMMfields.Margin = new System.Windows.Forms.Padding(4);
@@ -1555,7 +1555,7 @@
             this.label55.Name = "label55";
             this.label55.Size = new System.Drawing.Size(68, 23);
             this.label55.TabIndex = 27;
-            this.label55.Text = "Field : ";
+            this.label55.Text = "Mục : ";
             // 
             // textMMsearchterm
             // 
@@ -1577,7 +1577,7 @@
             this.label50.Name = "label50";
             this.label50.Size = new System.Drawing.Size(87, 23);
             this.label50.TabIndex = 25;
-            this.label50.Text = "Search : ";
+            this.label50.Text = "Tìm kiếm : ";
             // 
             // btnMMadd
             // 
@@ -1587,7 +1587,7 @@
             this.btnMMadd.Name = "btnMMadd";
             this.btnMMadd.Size = new System.Drawing.Size(204, 58);
             this.btnMMadd.TabIndex = 0;
-            this.btnMMadd.Text = "Add New";
+            this.btnMMadd.Text = "Thêm độc giả mới";
             this.btnMMadd.UseVisualStyleBackColor = true;
             this.btnMMadd.Click += new System.EventHandler(this.btnMMadd_Click);
             // 
@@ -1680,7 +1680,7 @@
             this.label36.Name = "label36";
             this.label36.Size = new System.Drawing.Size(137, 23);
             this.label36.TabIndex = 133;
-            this.label36.Text = "Book Number :";
+            this.label36.Text = "Mã tự sách :";
             // 
             // pictureMB
             // 
@@ -1702,7 +1702,7 @@
             this.btnMBcopy.Name = "btnMBcopy";
             this.btnMBcopy.Size = new System.Drawing.Size(172, 103);
             this.btnMBcopy.TabIndex = 21;
-            this.btnMBcopy.Text = "Copy Book Details";
+            this.btnMBcopy.Text = "Sao chép thông tin cuốn sách";
             this.btnMBcopy.UseVisualStyleBackColor = true;
             this.btnMBcopy.Click += new System.EventHandler(this.btnMBcopy_Click);
             // 
@@ -1715,7 +1715,7 @@
             this.label35.Name = "label35";
             this.label35.Size = new System.Drawing.Size(89, 23);
             this.label35.TabIndex = 130;
-            this.label35.Text = "Book ID :";
+            this.label35.Text = "Mã cuốn sách :";
             // 
             // btnMBadd2
             // 
@@ -1725,7 +1725,7 @@
             this.btnMBadd2.Name = "btnMBadd2";
             this.btnMBadd2.Size = new System.Drawing.Size(172, 126);
             this.btnMBadd2.TabIndex = 20;
-            this.btnMBadd2.Text = "Add Book";
+            this.btnMBadd2.Text = "Thêm sách mới";
             this.btnMBadd2.UseVisualStyleBackColor = true;
             this.btnMBadd2.Click += new System.EventHandler(this.btnMBadd2_Click);
             // 
@@ -1738,7 +1738,7 @@
             this.btnMBeditdel.Name = "btnMBeditdel";
             this.btnMBeditdel.Size = new System.Drawing.Size(367, 48);
             this.btnMBeditdel.TabIndex = 1;
-            this.btnMBeditdel.Text = "Edit / Delete";
+            this.btnMBeditdel.Text = "Chỉnh sửa/Xóa sách";
             this.btnMBeditdel.UseVisualStyleBackColor = true;
             this.btnMBeditdel.Click += new System.EventHandler(this.btnMBeditdel_Click);
             // 
@@ -1786,7 +1786,7 @@
             this.labelMBenlarge.Name = "labelMBenlarge";
             this.labelMBenlarge.Size = new System.Drawing.Size(117, 23);
             this.labelMBenlarge.TabIndex = 128;
-            this.labelMBenlarge.Text = "Cover Image";
+            this.labelMBenlarge.Text = "Ảnh bìa sách";
             // 
             // btnMBopenpdf
             // 
@@ -1797,7 +1797,7 @@
             this.btnMBopenpdf.Size = new System.Drawing.Size(135, 44);
             this.btnMBopenpdf.TabIndex = 17;
             this.btnMBopenpdf.Tag = "";
-            this.btnMBopenpdf.Text = "Select PDF";
+            this.btnMBopenpdf.Text = "Thêm PDF";
             this.btnMBopenpdf.UseVisualStyleBackColor = true;
             this.btnMBopenpdf.Click += new System.EventHandler(this.btnMBopenpdf_Click);
             // 
@@ -1810,7 +1810,7 @@
             this.labelMBpdfsize.Name = "labelMBpdfsize";
             this.labelMBpdfsize.Size = new System.Drawing.Size(50, 23);
             this.labelMBpdfsize.TabIndex = 126;
-            this.labelMBpdfsize.Text = "Size:";
+            this.labelMBpdfsize.Text = "Kích thước :";
             // 
             // textMBpdfurl
             // 
@@ -1829,9 +1829,9 @@
             this.MBcombobtype.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MBcombobtype.FormattingEnabled = true;
             this.MBcombobtype.Items.AddRange(new object[] {
-            "Hardcopy Only",
-            "Ebook Only",
-            "Hardcopy and Ebook"});
+            "Bản cứng",
+            "Ebook ",
+            "Bản cứng và Ebook"});
             this.MBcombobtype.Location = new System.Drawing.Point(171, 661);
             this.MBcombobtype.Margin = new System.Windows.Forms.Padding(4);
             this.MBcombobtype.Name = "MBcombobtype";
@@ -1848,7 +1848,7 @@
             this.label48.Name = "label48";
             this.label48.Size = new System.Drawing.Size(110, 23);
             this.label48.TabIndex = 123;
-            this.label48.Text = "Book Type :";
+            this.label48.Text = "Loại lưu trữ :";
             // 
             // btnMBclear
             // 
@@ -1858,7 +1858,7 @@
             this.btnMBclear.Name = "btnMBclear";
             this.btnMBclear.Size = new System.Drawing.Size(356, 46);
             this.btnMBclear.TabIndex = 0;
-            this.btnMBclear.Text = "Clear";
+            this.btnMBclear.Text = "Xóa dữ liệu";
             this.btnMBclear.UseVisualStyleBackColor = true;
             this.btnMBclear.Click += new System.EventHandler(this.btnMBclear_Click);
             // 
@@ -1871,7 +1871,7 @@
             this.labelMBpicsize.Name = "labelMBpicsize";
             this.labelMBpicsize.Size = new System.Drawing.Size(50, 23);
             this.labelMBpicsize.TabIndex = 122;
-            this.labelMBpicsize.Text = "Size:";
+            this.labelMBpicsize.Text = "Kích thước:";
             this.labelMBpicsize.Visible = false;
             // 
             // btnMBgbooksapi
@@ -1882,7 +1882,7 @@
             this.btnMBgbooksapi.Name = "btnMBgbooksapi";
             this.btnMBgbooksapi.Size = new System.Drawing.Size(172, 110);
             this.btnMBgbooksapi.TabIndex = 19;
-            this.btnMBgbooksapi.Text = "Get Book Details from Google Books";
+            this.btnMBgbooksapi.Text = "Lấy thông tin sách từ Google Books";
             this.btnMBgbooksapi.UseVisualStyleBackColor = true;
             this.btnMBgbooksapi.Click += new System.EventHandler(this.btnMBgbooksapi_Click);
             // 
@@ -1894,7 +1894,7 @@
             this.btnMBopenfile.Name = "btnMBopenfile";
             this.btnMBopenfile.Size = new System.Drawing.Size(135, 79);
             this.btnMBopenfile.TabIndex = 18;
-            this.btnMBopenfile.Text = "Select Image";
+            this.btnMBopenfile.Text = "Thêm ảnh bìa sách";
             this.btnMBopenfile.UseVisualStyleBackColor = true;
             this.btnMBopenfile.Click += new System.EventHandler(this.btnMBopenfile_Click);
             // 
@@ -1907,7 +1907,7 @@
             this.label34.Name = "label34";
             this.label34.Size = new System.Drawing.Size(130, 23);
             this.label34.TabIndex = 114;
-            this.label34.Text = "Cover Image :";
+            this.label34.Text = "Ảnh bìa sách :";
             // 
             // textMBimgurl
             // 
@@ -1941,7 +1941,7 @@
             this.label32.Name = "label32";
             this.label32.Size = new System.Drawing.Size(116, 23);
             this.label32.TabIndex = 105;
-            this.label32.Text = "Description :";
+            this.label32.Text = "Mô tả :";
             // 
             // label33
             // 
@@ -1952,7 +1952,7 @@
             this.label33.Name = "label33";
             this.label33.Size = new System.Drawing.Size(97, 23);
             this.label33.TabIndex = 83;
-            this.label33.Text = "Category :";
+            this.label33.Text = "Thể loại :";
             // 
             // textMBdateadd
             // 
@@ -2007,7 +2007,7 @@
             this.label37.Name = "label37";
             this.label37.Size = new System.Drawing.Size(139, 23);
             this.label37.TabIndex = 98;
-            this.label37.Text = "ISBN Number :";
+            this.label37.Text = "Số ISBN :";
             // 
             // textMBprice
             // 
@@ -2063,7 +2063,7 @@
             this.label38.Name = "label38";
             this.label38.Size = new System.Drawing.Size(122, 23);
             this.label38.TabIndex = 90;
-            this.label38.Text = "Date Added :";
+            this.label38.Text = "Ngày nhập :";
             // 
             // label39
             // 
@@ -2074,7 +2074,7 @@
             this.label39.Name = "label39";
             this.label39.Size = new System.Drawing.Size(65, 23);
             this.label39.TabIndex = 89;
-            this.label39.Text = "Shelf :";
+            this.label39.Text = "Kệ :";
             // 
             // label40
             // 
@@ -2085,7 +2085,7 @@
             this.label40.Name = "label40";
             this.label40.Size = new System.Drawing.Size(72, 23);
             this.label40.TabIndex = 88;
-            this.label40.Text = "Pages :";
+            this.label40.Text = "Số trang :";
             // 
             // label41
             // 
@@ -2096,7 +2096,7 @@
             this.label41.Name = "label41";
             this.label41.Size = new System.Drawing.Size(69, 23);
             this.label41.TabIndex = 87;
-            this.label41.Text = "Price : ";
+            this.label41.Text = "Giá : ";
             // 
             // label42
             // 
@@ -2107,7 +2107,7 @@
             this.label42.Name = "label42";
             this.label42.Size = new System.Drawing.Size(106, 23);
             this.label42.TabIndex = 86;
-            this.label42.Text = "Language :";
+            this.label42.Text = "Ngôn ngữ :";
             // 
             // label43
             // 
@@ -2118,7 +2118,7 @@
             this.label43.Name = "label43";
             this.label43.Size = new System.Drawing.Size(99, 23);
             this.label43.TabIndex = 85;
-            this.label43.Text = "Publisher :";
+            this.label43.Text = "Nhà xuất bản :";
             // 
             // label44
             // 
@@ -2129,7 +2129,7 @@
             this.label44.Name = "label44";
             this.label44.Size = new System.Drawing.Size(61, 23);
             this.label44.TabIndex = 84;
-            this.label44.Text = "Year :";
+            this.label44.Text = "Năm phát hành:";
             // 
             // label45
             // 
@@ -2140,7 +2140,7 @@
             this.label45.Name = "label45";
             this.label45.Size = new System.Drawing.Size(79, 23);
             this.label45.TabIndex = 82;
-            this.label45.Text = "Author :";
+            this.label45.Text = "Tác giả :";
             // 
             // label46
             // 
@@ -2151,7 +2151,7 @@
             this.label46.Name = "label46";
             this.label46.Size = new System.Drawing.Size(58, 23);
             this.label46.TabIndex = 81;
-            this.label46.Text = "Title :";
+            this.label46.Text = "Tựa sách :";
             // 
             // panelIssueSubmit
             // 
@@ -2211,7 +2211,7 @@
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(147, 23);
             this.label30.TabIndex = 54;
-            this.label30.Text = "Member Name :";
+            this.label30.Text = "Tên độc giả :";
             // 
             // label23
             // 
@@ -2222,7 +2222,7 @@
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(118, 23);
             this.label23.TabIndex = 53;
-            this.label23.Text = "Member ID :";
+            this.label23.Text = "Mã độc giả :";
             // 
             // textISmid2
             // 
@@ -2245,7 +2245,7 @@
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(79, 23);
             this.label21.TabIndex = 51;
-            this.label21.Text = "Author :";
+            this.label21.Text = "Tác giả :";
             // 
             // label20
             // 
@@ -2256,7 +2256,7 @@
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(58, 23);
             this.label20.TabIndex = 50;
-            this.label20.Text = "Title :";
+            this.label20.Text = "Tựa sách :";
             // 
             // label17
             // 
@@ -2267,7 +2267,7 @@
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(89, 23);
             this.label17.TabIndex = 49;
-            this.label17.Text = "Book ID :";
+            this.label17.Text = "Mã cuốn sách :";
             // 
             // textISauthor
             // 
@@ -2311,9 +2311,9 @@
             this.btnISok.Location = new System.Drawing.Point(1140, 23);
             this.btnISok.Margin = new System.Windows.Forms.Padding(4);
             this.btnISok.Name = "btnISok";
-            this.btnISok.Size = new System.Drawing.Size(124, 53);
+            this.btnISok.Size = new System.Drawing.Size(200, 53);
             this.btnISok.TabIndex = 2;
-            this.btnISok.Text = "OK";
+            this.btnISok.Text = "Lâp phiếu mượn";
             this.btnISok.UseVisualStyleBackColor = true;
             this.btnISok.Click += new System.EventHandler(this.btnISok_Click);
             // 
@@ -2346,7 +2346,7 @@
             this.groupIssue.Size = new System.Drawing.Size(1045, 309);
             this.groupIssue.TabIndex = 37;
             this.groupIssue.TabStop = false;
-            this.groupIssue.Text = "Issue Book";
+            this.groupIssue.Text = "Thông tin mượn sách";
             // 
             // btnISIBchgdue
             // 
@@ -2356,7 +2356,7 @@
             this.btnISIBchgdue.Name = "btnISIBchgdue";
             this.btnISIBchgdue.Size = new System.Drawing.Size(197, 33);
             this.btnISIBchgdue.TabIndex = 2;
-            this.btnISIBchgdue.Text = "Change Due Date ";
+            this.btnISIBchgdue.Text = "Thay đổi ngày cần trả ";
             this.btnISIBchgdue.UseVisualStyleBackColor = true;
             this.btnISIBchgdue.Click += new System.EventHandler(this.btnISIBchgdue_Click);
             // 
@@ -2378,7 +2378,7 @@
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(165, 24);
             this.label31.TabIndex = 5;
-            this.label31.Text = "Days Issued For :";
+            this.label31.Text = "Số ngày mượn :";
             // 
             // btnISissue
             // 
@@ -2387,7 +2387,7 @@
             this.btnISissue.Name = "btnISissue";
             this.btnISissue.Size = new System.Drawing.Size(336, 44);
             this.btnISissue.TabIndex = 3;
-            this.btnISissue.Text = "Issue";
+            this.btnISissue.Text = "Xác nhận mượn sách";
             this.btnISissue.UseVisualStyleBackColor = true;
             this.btnISissue.Click += new System.EventHandler(this.btnISissue_Click);
             // 
@@ -2414,12 +2414,12 @@
             // 
             this.label25.AutoSize = true;
             this.label25.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(525, 80);
+            this.label25.Location = new System.Drawing.Point(515, 80);
             this.label25.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(108, 24);
             this.label25.TabIndex = 1;
-            this.label25.Text = "Due Date :";
+            this.label25.Text = "Ngày hết hạn :";
             // 
             // label24
             // 
@@ -2430,7 +2430,7 @@
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(119, 24);
             this.label24.TabIndex = 0;
-            this.label24.Text = "Issue Date :";
+            this.label24.Text = "Ngày mượn :";
             // 
             // groupSubmit
             // 
@@ -2452,7 +2452,7 @@
             this.groupSubmit.Size = new System.Drawing.Size(1045, 309);
             this.groupSubmit.TabIndex = 38;
             this.groupSubmit.TabStop = false;
-            this.groupSubmit.Text = "Return Book";
+            this.groupSubmit.Text = "Thông tin trả sách";
             // 
             // textISSBsubmitdate
             // 
@@ -2473,7 +2473,7 @@
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(134, 24);
             this.label29.TabIndex = 12;
-            this.label29.Text = "Submit Date :";
+            this.label29.Text = "Ngày trả :";
             // 
             // textISSBfine
             // 
@@ -2488,12 +2488,12 @@
             // 
             this.label28.AutoSize = true;
             this.label28.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.Location = new System.Drawing.Point(583, 129);
+            this.label28.Location = new System.Drawing.Point(543, 129);
             this.label28.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(72, 24);
             this.label28.TabIndex = 10;
-            this.label28.Text = "Fine  : ";
+            this.label28.Text = "Phí trễ hạn : ";
             // 
             // textISSBduedate
             // 
@@ -2512,7 +2512,7 @@
             this.btnISsubmitbook.Name = "btnISsubmitbook";
             this.btnISsubmitbook.Size = new System.Drawing.Size(336, 44);
             this.btnISsubmitbook.TabIndex = 9;
-            this.btnISsubmitbook.Text = "Return";
+            this.btnISsubmitbook.Text = "Xác nhận trả sách";
             this.btnISsubmitbook.UseVisualStyleBackColor = true;
             this.btnISsubmitbook.Click += new System.EventHandler(this.btnISsubmitbook_Click);
             // 
@@ -2530,12 +2530,12 @@
             // 
             this.label26.AutoSize = true;
             this.label26.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(543, 60);
+            this.label26.Location = new System.Drawing.Point(515, 60);
             this.label26.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(108, 24);
             this.label26.TabIndex = 6;
-            this.label26.Text = "Due Date :";
+            this.label26.Text = "Ngày hết hạn :";
             // 
             // label27
             // 
@@ -2546,7 +2546,7 @@
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(119, 24);
             this.label27.TabIndex = 5;
-            this.label27.Text = "Issue Date :";
+            this.label27.Text = "Ngày mượn :";
             // 
             // textISbid
             // 
@@ -2566,7 +2566,7 @@
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(89, 23);
             this.label15.TabIndex = 27;
-            this.label15.Text = "Book ID :";
+            this.label15.Text = "Mã cuốn sách :";
             // 
             // textISmid
             // 
@@ -2586,7 +2586,7 @@
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(118, 23);
             this.label22.TabIndex = 0;
-            this.label22.Text = "Member ID :";
+            this.label22.Text = "Mã độc giả :";
             // 
             // panelExtraMenu
             // 
@@ -2617,12 +2617,12 @@
             // 
             this.btnMenuCourses.BackColor = System.Drawing.Color.Transparent;
             this.btnMenuCourses.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMenuCourses.Location = new System.Drawing.Point(444, 593);
+            this.btnMenuCourses.Location = new System.Drawing.Point(444, 247);
             this.btnMenuCourses.Margin = new System.Windows.Forms.Padding(4);
             this.btnMenuCourses.Name = "btnMenuCourses";
             this.btnMenuCourses.Size = new System.Drawing.Size(203, 60);
             this.btnMenuCourses.TabIndex = 31;
-            this.btnMenuCourses.Text = "Member Courses";
+            this.btnMenuCourses.Text = "Quản lý khóa học";
             this.btnMenuCourses.UseVisualStyleBackColor = false;
             this.btnMenuCourses.Click += new System.EventHandler(this.btnMenuCourses_Click);
             // 
@@ -2630,12 +2630,12 @@
             // 
             this.btnMenuHelp.BackColor = System.Drawing.Color.Transparent;
             this.btnMenuHelp.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMenuHelp.Location = new System.Drawing.Point(675, 507);
+            this.btnMenuHelp.Location = new System.Drawing.Point(444, 593);
             this.btnMenuHelp.Margin = new System.Windows.Forms.Padding(4);
             this.btnMenuHelp.Name = "btnMenuHelp";
-            this.btnMenuHelp.Size = new System.Drawing.Size(203, 60);
+            this.btnMenuHelp.Size = new System.Drawing.Size(434, 60);
             this.btnMenuHelp.TabIndex = 9;
-            this.btnMenuHelp.Text = "Help";
+            this.btnMenuHelp.Text = "Hướng dẫn sử dụng";
             this.btnMenuHelp.UseVisualStyleBackColor = false;
             this.btnMenuHelp.Click += new System.EventHandler(this.btnMenuHelp_Click);
             // 
@@ -2643,12 +2643,12 @@
             // 
             this.btnMenuExport.BackColor = System.Drawing.Color.Transparent;
             this.btnMenuExport.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMenuExport.Location = new System.Drawing.Point(444, 507);
+            this.btnMenuExport.Location = new System.Drawing.Point(675, 422);
             this.btnMenuExport.Margin = new System.Windows.Forms.Padding(4);
             this.btnMenuExport.Name = "btnMenuExport";
             this.btnMenuExport.Size = new System.Drawing.Size(203, 60);
             this.btnMenuExport.TabIndex = 8;
-            this.btnMenuExport.Text = "Export Tables";
+            this.btnMenuExport.Text = "Thống kê dữ liệu";
             this.btnMenuExport.UseVisualStyleBackColor = false;
             this.btnMenuExport.Click += new System.EventHandler(this.btnMenuExport_Click);
             // 
@@ -2667,12 +2667,12 @@
             // 
             this.btnMenuLang.BackColor = System.Drawing.Color.Transparent;
             this.btnMenuLang.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMenuLang.Location = new System.Drawing.Point(444, 422);
+            this.btnMenuLang.Location = new System.Drawing.Point(676, 247);
             this.btnMenuLang.Margin = new System.Windows.Forms.Padding(4);
             this.btnMenuLang.Name = "btnMenuLang";
             this.btnMenuLang.Size = new System.Drawing.Size(203, 60);
             this.btnMenuLang.TabIndex = 6;
-            this.btnMenuLang.Text = "Book Languages";
+            this.btnMenuLang.Text = "Quản lý ngôn ngữ sách";
             this.btnMenuLang.UseVisualStyleBackColor = false;
             this.btnMenuLang.Click += new System.EventHandler(this.btnMenuLang_Click);
             // 
@@ -2680,12 +2680,12 @@
             // 
             this.btnMenuLibInfo.BackColor = System.Drawing.Color.Transparent;
             this.btnMenuLibInfo.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMenuLibInfo.Location = new System.Drawing.Point(675, 334);
+            this.btnMenuLibInfo.Location = new System.Drawing.Point(444, 422);
             this.btnMenuLibInfo.Margin = new System.Windows.Forms.Padding(4);
             this.btnMenuLibInfo.Name = "btnMenuLibInfo";
             this.btnMenuLibInfo.Size = new System.Drawing.Size(203, 60);
             this.btnMenuLibInfo.TabIndex = 5;
-            this.btnMenuLibInfo.Text = "Library Info";
+            this.btnMenuLibInfo.Text = "Bảng kê thông tin thư viện";
             this.btnMenuLibInfo.UseVisualStyleBackColor = false;
             this.btnMenuLibInfo.Click += new System.EventHandler(this.btnMenuLibInfo_Click);
             // 
@@ -2693,12 +2693,12 @@
             // 
             this.btnMenuOptions.BackColor = System.Drawing.Color.Transparent;
             this.btnMenuOptions.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMenuOptions.Location = new System.Drawing.Point(676, 247);
+            this.btnMenuOptions.Location = new System.Drawing.Point(675, 334);
             this.btnMenuOptions.Margin = new System.Windows.Forms.Padding(4);
             this.btnMenuOptions.Name = "btnMenuOptions";
             this.btnMenuOptions.Size = new System.Drawing.Size(203, 60);
             this.btnMenuOptions.TabIndex = 3;
-            this.btnMenuOptions.Text = "Options";
+            this.btnMenuOptions.Text = "Quản lý các quy định";
             this.btnMenuOptions.UseVisualStyleBackColor = false;
             this.btnMenuOptions.Click += new System.EventHandler(this.btnMenuOptions_Click);
             // 
@@ -2729,12 +2729,12 @@
             // 
             this.btnMenuUserDetails.BackColor = System.Drawing.Color.Transparent;
             this.btnMenuUserDetails.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMenuUserDetails.Location = new System.Drawing.Point(444, 334);
+            this.btnMenuUserDetails.Location = new System.Drawing.Point(444, 507);
             this.btnMenuUserDetails.Margin = new System.Windows.Forms.Padding(4);
             this.btnMenuUserDetails.Name = "btnMenuUserDetails";
             this.btnMenuUserDetails.Size = new System.Drawing.Size(203, 60);
             this.btnMenuUserDetails.TabIndex = 4;
-            this.btnMenuUserDetails.Text = "User Details";
+            this.btnMenuUserDetails.Text = "Thông tin tài khoản";
             this.btnMenuUserDetails.UseVisualStyleBackColor = false;
             this.btnMenuUserDetails.Click += new System.EventHandler(this.btnMenuUserDetails_Click);
             // 
@@ -2742,12 +2742,12 @@
             // 
             this.btnMenuUsers.BackColor = System.Drawing.Color.Transparent;
             this.btnMenuUsers.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMenuUsers.Location = new System.Drawing.Point(444, 247);
+            this.btnMenuUsers.Location = new System.Drawing.Point(444, 334);
             this.btnMenuUsers.Margin = new System.Windows.Forms.Padding(4);
             this.btnMenuUsers.Name = "btnMenuUsers";
             this.btnMenuUsers.Size = new System.Drawing.Size(203, 60);
             this.btnMenuUsers.TabIndex = 2;
-            this.btnMenuUsers.Text = "Manage Users";
+            this.btnMenuUsers.Text = "Quản lý phân quyền tài khoản";
             this.btnMenuUsers.UseVisualStyleBackColor = false;
             this.btnMenuUsers.Click += new System.EventHandler(this.btnMenuUsers_Click);
             // 
@@ -2755,12 +2755,12 @@
             // 
             this.btnMenuPackages.BackColor = System.Drawing.Color.Transparent;
             this.btnMenuPackages.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMenuPackages.Location = new System.Drawing.Point(441, 154);
+            this.btnMenuPackages.Location = new System.Drawing.Point(676, 154);
             this.btnMenuPackages.Margin = new System.Windows.Forms.Padding(4);
             this.btnMenuPackages.Name = "btnMenuPackages";
             this.btnMenuPackages.Size = new System.Drawing.Size(203, 60);
             this.btnMenuPackages.TabIndex = 0;
-            this.btnMenuPackages.Text = "Membership Packages";
+            this.btnMenuPackages.Text = "Quản lý gói dịch vụ độc giả";
             this.btnMenuPackages.UseVisualStyleBackColor = false;
             this.btnMenuPackages.Click += new System.EventHandler(this.btnMenuPackages_Click);
             // 
@@ -2768,12 +2768,12 @@
             // 
             this.btnMenuCateg.BackColor = System.Drawing.Color.Transparent;
             this.btnMenuCateg.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMenuCateg.Location = new System.Drawing.Point(676, 154);
+            this.btnMenuCateg.Location = new System.Drawing.Point(441, 154);
             this.btnMenuCateg.Margin = new System.Windows.Forms.Padding(4);
             this.btnMenuCateg.Name = "btnMenuCateg";
             this.btnMenuCateg.Size = new System.Drawing.Size(203, 60);
             this.btnMenuCateg.TabIndex = 1;
-            this.btnMenuCateg.Text = "Book Categories";
+            this.btnMenuCateg.Text = "Quản lý thể loại sách";
             this.btnMenuCateg.UseVisualStyleBackColor = false;
             this.btnMenuCateg.Click += new System.EventHandler(this.btnMenuCateg_Click);
             // 
@@ -2781,12 +2781,12 @@
             // 
             this.btnMenuAbout.BackColor = System.Drawing.Color.Transparent;
             this.btnMenuAbout.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMenuAbout.Location = new System.Drawing.Point(675, 422);
+            this.btnMenuAbout.Location = new System.Drawing.Point(675, 507);
             this.btnMenuAbout.Margin = new System.Windows.Forms.Padding(4);
             this.btnMenuAbout.Name = "btnMenuAbout";
             this.btnMenuAbout.Size = new System.Drawing.Size(203, 60);
             this.btnMenuAbout.TabIndex = 7;
-            this.btnMenuAbout.Text = "About";
+            this.btnMenuAbout.Text = "Thông tin phần mềm";
             this.btnMenuAbout.UseVisualStyleBackColor = false;
             this.btnMenuAbout.Click += new System.EventHandler(this.btnMenuAbout_Click);
             // 

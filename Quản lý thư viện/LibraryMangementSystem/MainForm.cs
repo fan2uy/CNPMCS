@@ -56,7 +56,10 @@ namespace LibraryManagementSystem
         byte[] byteArrayMBimage = null;
 
 
-        string selectallbooks = "SELECT BookID as 'Mã cuốn sách',Title as 'Tựa sách', Author,BookNo,Category,Publisher,Language,Year,Price,Pages,Shelf,DateAdded,Type,ISBN,Available FROM BookDetails ";
+        string selectallbooks = "SELECT BookID as 'Mã cuốn sách',Title as 'Tựa sách', Author as 'Tác giả', Available as 'Có sẵn'," +
+                                "BookNo as 'Mã tựa sách',Category as 'Thể loại',Publisher as 'Nhà xuất bản', Language as 'Ngôn ngữ'," +
+                                "Year as 'Năm',Price as 'Giá',Pages as 'Số trang',Shelf as 'Kệ',DateAdded as 'Ngày nhập',Type 'Loại lưu trữ'," +
+                                "ISBN as 'Số ISBN' FROM BookDetails ";
         public MainForm()
         {
             InitializeComponent();
