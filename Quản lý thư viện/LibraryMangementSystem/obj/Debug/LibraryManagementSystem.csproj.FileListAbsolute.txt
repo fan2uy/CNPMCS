@@ -1,5 +1,5 @@
-C:\Users\LENOVO\Source\Repos\library_management_system\Quản lý thư viện\LibraryMangementSystem\bin\Debug\LibraryManagementSystem.exe
 C:\Users\LENOVO\Source\Repos\library_management_system\Quản lý thư viện\LibraryMangementSystem\bin\Debug\LibraryManagementSystem.exe.config
+C:\Users\LENOVO\Source\Repos\library_management_system\Quản lý thư viện\LibraryMangementSystem\bin\Debug\LibraryManagementSystem.exe
 C:\Users\LENOVO\Source\Repos\library_management_system\Quản lý thư viện\LibraryMangementSystem\bin\Debug\LibraryManagementSystem.pdb
 C:\Users\LENOVO\Source\Repos\library_management_system\Quản lý thư viện\LibraryMangementSystem\bin\Debug\GlassButton.dll
 C:\Users\LENOVO\Source\Repos\library_management_system\Quản lý thư viện\LibraryMangementSystem\bin\Debug\Microsoft.Office.Interop.Excel.dll

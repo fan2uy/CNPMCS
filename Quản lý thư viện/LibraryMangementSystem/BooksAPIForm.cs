@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -49,7 +49,7 @@ namespace LibraryManagementSystem
         {
             if (String.IsNullOrEmpty(textQuery.Text))
             {
-                MessageBox.Show("Please Enter Search Term.", "Alert !", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("Vui lòng nhập từ khóa tìm kiếm.", "Cảnh báo!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 textQuery.Clear();
                 return;
             }
@@ -68,8 +68,8 @@ namespace LibraryManagementSystem
             btnprev.Enabled = false;
             btnSearch.Enabled = false;
             
-            labelSearchPageNo.Text = "Page " + (sindex / 10 + 1);
-            labelSearchstatus.Text = "Searching...";
+            labelSearchPageNo.Text = "Trang " + (sindex / 10 + 1);
+            labelSearchstatus.Text = "Đang tìm...";
             flowLayoutPanel.Hide();
             flowLayoutPanel.Controls.Clear();
             panellist.Clear();
@@ -153,11 +153,12 @@ namespace LibraryManagementSystem
             try
             {
                 var client = new WebClient();
-                string url = string.Format("https://www.googleapis.com/books/v1/volumes?q={0}&startIndex={1}&country=VN", searchtext, sindex);
+                string url = string.Format("https://www.googleapis.com/books/v1/volumes?q={0}&startIndex={1}&country=US", searchtext, sindex);
                 
                 string html = client.DownloadString(url);
                 
                 retObject = JsonConvert.DeserializeObject<BookResults>(html);
+
                 //MessageBox.Show(retObject.items.Count.ToString());
                 /*
                 BooksService bs = new BooksService();
@@ -177,7 +178,7 @@ namespace LibraryManagementSystem
                 int p = 0;
                 if (retObject.items == null)
                 {
-                    labelSearchstatus.Text = "No Books Found.";
+                    labelSearchstatus.Text = "Không tìm thấy sách.";
                     return;
                 }
                 
@@ -193,22 +194,21 @@ namespace LibraryManagementSystem
                     {
                         if (stoploading == true)
                         {
-                            labelSearchstatus.Text+= "Stopped.";
+                            labelSearchstatus.Text+= "Dừng lại.";
                             return;
                         }
                        
                         progressBar1.PerformStep();
                         labelPercent.Text = (progressBar1.Value*100 / progressBar1.Maximum) + " %";
-                        labelSearchstatus.Text =string.Format("Loading Book {0} of {1} Books...", p, retObject.items.Count.ToString());
+                        labelSearchstatus.Text =string.Format("Đang tải sách. Hoàn thành {0}/{1} ...", p, retObject.items.Count.ToString());
                         
                         
                         Panel pan = new Panel();
                         pan.Size = panelBook.Size;
 
-
                         Button rbtnsel = new Button();
-                        TextBox rlabelTitle = new TextBox();
-                        Label rlabelAuth = new Label();
+                        TextBox rlabelTitle = new TextBox();                      
+                        Label rlabelAuth = new Label();   
                         Label rlabelPage = new Label();
                         Label rlabelPub = new Label();
                         PictureBox rpicBox = new PictureBox();
@@ -224,12 +224,13 @@ namespace LibraryManagementSystem
 
                         rbtnsel.Size = btnSelect.Size;
                         rbtnsel.Location = btnSelect.Location;
-                        rbtnsel.Text = "Select";
+                        rbtnsel.Text = "Chọn";
                         rbtnsel.FlatStyle = FlatStyle.System;
 
 
                         rlabelTitle.Font = textTitle.Font;
                         rlabelTitle.Location = textTitle.Location;
+                        //rlabelTitle.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
                         rlabelTitle.ReadOnly = true;
                         //rlabelTitle.BackColor = SystemColors.Control;
                         rlabelTitle.BorderStyle = textTitle.BorderStyle;
@@ -240,8 +241,9 @@ namespace LibraryManagementSystem
 
                         rlabelAuth.Font = labelAuth.Font;
                         rlabelAuth.Location = labelAuth.Location;
+                        //rlabelAuth.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
                         rlabelAuth.AutoSize = true;
-                        rlabelAuth.Text = "Authors : ";
+                        rlabelAuth.Text = "Tác giả : ";
                      //   Volume newvol = new Volume();
 
 
@@ -259,25 +261,26 @@ namespace LibraryManagementSystem
                         }
                         else
                         {
-                            rlabelAuth.Text = "Authors : No Data";
+                            rlabelAuth.Text = "Tác giả : Không có dữ liệu";
                         }
 
                         rlabelPage.Font=labelPage.Font;
                         rlabelPage.Location = labelPage.Location;
                         rlabelPage.AutoSize = true;
-
-                        rlabelPage.Text = "Pages : ";
+                       // rlabelPage.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                        rlabelPage.Text = "Số trang : ";
 
                         if (v.volumeInfo.pageCount!= null)
                             rlabelPage.Text += v.volumeInfo.pageCount;
                         else
-                            rlabelPage.Text += "No Data";
+                            rlabelPage.Text += "Không có dữ liệu";
 
 
                         rlabelPub.Font=labelPub.Font;
                         rlabelPub.Location = labelPub.Location;
+                        //rlabelPub.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
                         rlabelPub.AutoSize = true;
-                        rlabelPub.Text = "Publisher : " + (v.volumeInfo.publisher?? "No Data");
+                        rlabelPub.Text = "NXB : " + (v.volumeInfo.publisher?? "Không có dữ liệu");
                         rpicBox.Location = picbox.Location;
                         rpicBox.Size = picbox.Size;
                         rpicBox.SizeMode = PictureBoxSizeMode.Zoom;

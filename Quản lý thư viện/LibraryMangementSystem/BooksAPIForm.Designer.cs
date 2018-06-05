@@ -1,4 +1,4 @@
-namespace LibraryManagementSystem
+﻿namespace LibraryManagementSystem
 {
     partial class BooksAPIForm
     {
@@ -60,43 +60,47 @@ namespace LibraryManagementSystem
             // btnSearch
             // 
             this.btnSearch.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearch.Location = new System.Drawing.Point(523, 11);
+            this.btnSearch.Location = new System.Drawing.Point(697, 14);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(4);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(120, 42);
+            this.btnSearch.Size = new System.Drawing.Size(160, 52);
             this.btnSearch.TabIndex = 4;
-            this.btnSearch.Text = "Search";
+            this.btnSearch.Text = "Tìm";
             this.btnSearch.UseVisualStyleBackColor = true;
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // textQuery
             // 
             this.textQuery.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textQuery.Location = new System.Drawing.Point(106, 19);
+            this.textQuery.Location = new System.Drawing.Point(141, 23);
+            this.textQuery.Margin = new System.Windows.Forms.Padding(4);
             this.textQuery.Name = "textQuery";
-            this.textQuery.Size = new System.Drawing.Size(400, 25);
+            this.textQuery.Size = new System.Drawing.Size(532, 30);
             this.textQuery.TabIndex = 5;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 19);
+            this.label1.Location = new System.Drawing.Point(16, 23);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(96, 20);
+            this.label1.Size = new System.Drawing.Size(99, 23);
             this.label1.TabIndex = 6;
-            this.label1.Text = "Book Name :";
+            this.label1.Text = "Tên sách :";
             // 
             // flowLayoutPanel
             // 
-            this.flowLayoutPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.flowLayoutPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.flowLayoutPanel.AutoScroll = true;
             this.flowLayoutPanel.BackColor = System.Drawing.SystemColors.Control;
             this.flowLayoutPanel.Controls.Add(this.panelBook);
-            this.flowLayoutPanel.Location = new System.Drawing.Point(2, 104);
+            this.flowLayoutPanel.Location = new System.Drawing.Point(3, 128);
+            this.flowLayoutPanel.Margin = new System.Windows.Forms.Padding(4);
             this.flowLayoutPanel.Name = "flowLayoutPanel";
-            this.flowLayoutPanel.Size = new System.Drawing.Size(997, 604);
+            this.flowLayoutPanel.Size = new System.Drawing.Size(1329, 743);
             this.flowLayoutPanel.TabIndex = 7;
             // 
             // panelBook
@@ -111,18 +115,21 @@ namespace LibraryManagementSystem
             this.panelBook.Controls.Add(this.labelAuth);
             this.panelBook.Controls.Add(this.picbox);
             this.panelBook.Controls.Add(this.btnSelect);
-            this.panelBook.Location = new System.Drawing.Point(3, 3);
+            this.panelBook.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panelBook.Location = new System.Drawing.Point(4, 4);
+            this.panelBook.Margin = new System.Windows.Forms.Padding(4);
             this.panelBook.Name = "panelBook";
-            this.panelBook.Size = new System.Drawing.Size(501, 183);
+            this.panelBook.Size = new System.Drawing.Size(667, 225);
             this.panelBook.TabIndex = 0;
             // 
             // labelNoImage
             // 
             this.labelNoImage.AutoSize = true;
             this.labelNoImage.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNoImage.Location = new System.Drawing.Point(39, 80);
+            this.labelNoImage.Location = new System.Drawing.Point(52, 98);
+            this.labelNoImage.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelNoImage.Name = "labelNoImage";
-            this.labelNoImage.Size = new System.Drawing.Size(73, 20);
+            this.labelNoImage.Size = new System.Drawing.Size(93, 23);
             this.labelNoImage.TabIndex = 7;
             this.labelNoImage.Text = "No Image";
             // 
@@ -130,12 +137,13 @@ namespace LibraryManagementSystem
             // 
             this.textTitle.BackColor = System.Drawing.SystemColors.Control;
             this.textTitle.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textTitle.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textTitle.Location = new System.Drawing.Point(160, 11);
+            this.textTitle.Font = new System.Drawing.Font("Tahoma", 11.25F);
+            this.textTitle.Location = new System.Drawing.Point(213, 14);
+            this.textTitle.Margin = new System.Windows.Forms.Padding(4);
             this.textTitle.Multiline = true;
             this.textTitle.Name = "textTitle";
             this.textTitle.ReadOnly = true;
-            this.textTitle.Size = new System.Drawing.Size(326, 67);
+            this.textTitle.Size = new System.Drawing.Size(435, 82);
             this.textTitle.TabIndex = 6;
             this.textTitle.Text = "Title";
             // 
@@ -143,39 +151,43 @@ namespace LibraryManagementSystem
             // 
             this.labelPub.AutoSize = true;
             this.labelPub.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPub.Location = new System.Drawing.Point(159, 142);
+            this.labelPub.Location = new System.Drawing.Point(212, 175);
+            this.labelPub.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelPub.Name = "labelPub";
-            this.labelPub.Size = new System.Drawing.Size(68, 20);
+            this.labelPub.Size = new System.Drawing.Size(45, 23);
             this.labelPub.TabIndex = 5;
-            this.labelPub.Text = "Publisher";
+            this.labelPub.Text = "NXB";
             // 
             // labelPage
             // 
             this.labelPage.AutoSize = true;
             this.labelPage.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPage.Location = new System.Drawing.Point(159, 119);
+            this.labelPage.Location = new System.Drawing.Point(212, 146);
+            this.labelPage.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelPage.Name = "labelPage";
-            this.labelPage.Size = new System.Drawing.Size(47, 20);
+            this.labelPage.Size = new System.Drawing.Size(82, 23);
             this.labelPage.TabIndex = 4;
-            this.labelPage.Text = "Pages";
+            this.labelPage.Text = "Số trang";
             // 
             // labelAuth
             // 
             this.labelAuth.AutoSize = true;
             this.labelAuth.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelAuth.Location = new System.Drawing.Point(159, 97);
+            this.labelAuth.Location = new System.Drawing.Point(212, 119);
+            this.labelAuth.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelAuth.Name = "labelAuth";
-            this.labelAuth.Size = new System.Drawing.Size(54, 20);
+            this.labelAuth.Size = new System.Drawing.Size(71, 23);
             this.labelAuth.TabIndex = 3;
-            this.labelAuth.Text = "Author";
+            this.labelAuth.Text = "Tác giả";
             // 
             // picbox
             // 
             this.picbox.BackColor = System.Drawing.Color.Gainsboro;
             this.picbox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.picbox.Location = new System.Drawing.Point(6, 4);
+            this.picbox.Location = new System.Drawing.Point(8, 5);
+            this.picbox.Margin = new System.Windows.Forms.Padding(4);
             this.picbox.Name = "picbox";
-            this.picbox.Size = new System.Drawing.Size(137, 171);
+            this.picbox.Size = new System.Drawing.Size(182, 210);
             this.picbox.TabIndex = 1;
             this.picbox.TabStop = false;
             // 
@@ -183,20 +195,22 @@ namespace LibraryManagementSystem
             // 
             this.btnSelect.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnSelect.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSelect.Location = new System.Drawing.Point(400, 136);
+            this.btnSelect.Location = new System.Drawing.Point(533, 167);
+            this.btnSelect.Margin = new System.Windows.Forms.Padding(4);
             this.btnSelect.Name = "btnSelect";
-            this.btnSelect.Size = new System.Drawing.Size(96, 42);
+            this.btnSelect.Size = new System.Drawing.Size(128, 52);
             this.btnSelect.TabIndex = 0;
-            this.btnSelect.Text = "Select";
+            this.btnSelect.Text = "Chọn";
             this.btnSelect.UseVisualStyleBackColor = true;
             // 
             // pictureLoading
             // 
             this.pictureLoading.BackColor = System.Drawing.SystemColors.Control;
             this.pictureLoading.Image = global::LibraryManagementSystem.Properties.Resources.gif3;
-            this.pictureLoading.Location = new System.Drawing.Point(516, 112);
+            this.pictureLoading.Location = new System.Drawing.Point(688, 138);
+            this.pictureLoading.Margin = new System.Windows.Forms.Padding(4);
             this.pictureLoading.Name = "pictureLoading";
-            this.pictureLoading.Size = new System.Drawing.Size(141, 135);
+            this.pictureLoading.Size = new System.Drawing.Size(188, 166);
             this.pictureLoading.TabIndex = 1;
             this.pictureLoading.TabStop = false;
             this.pictureLoading.Visible = false;
@@ -204,11 +218,11 @@ namespace LibraryManagementSystem
             // labelSearchstatus
             // 
             this.labelSearchstatus.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelSearchstatus.Location = new System.Drawing.Point(25, 66);
+            this.labelSearchstatus.Location = new System.Drawing.Point(33, 81);
+            this.labelSearchstatus.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelSearchstatus.Name = "labelSearchstatus";
-            this.labelSearchstatus.Size = new System.Drawing.Size(481, 22);
+            this.labelSearchstatus.Size = new System.Drawing.Size(641, 27);
             this.labelSearchstatus.TabIndex = 8;
-            this.labelSearchstatus.Text = "Status";
             this.labelSearchstatus.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // backgroundWorker1
@@ -220,33 +234,36 @@ namespace LibraryManagementSystem
             // btnNext
             // 
             this.btnNext.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNext.Location = new System.Drawing.Point(696, 54);
+            this.btnNext.Location = new System.Drawing.Point(928, 66);
+            this.btnNext.Margin = new System.Windows.Forms.Padding(4);
             this.btnNext.Name = "btnNext";
-            this.btnNext.Size = new System.Drawing.Size(100, 42);
+            this.btnNext.Size = new System.Drawing.Size(133, 52);
             this.btnNext.TabIndex = 9;
-            this.btnNext.Text = "Next >>";
+            this.btnNext.Text = "Kế tiếp >>";
             this.btnNext.UseVisualStyleBackColor = true;
             this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
             // 
             // btnprev
             // 
             this.btnprev.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnprev.Location = new System.Drawing.Point(523, 56);
+            this.btnprev.Location = new System.Drawing.Point(697, 69);
+            this.btnprev.Margin = new System.Windows.Forms.Padding(4);
             this.btnprev.Name = "btnprev";
-            this.btnprev.Size = new System.Drawing.Size(100, 42);
+            this.btnprev.Size = new System.Drawing.Size(133, 52);
             this.btnprev.TabIndex = 10;
-            this.btnprev.Text = "<< Previous";
+            this.btnprev.Text = "<< Trở lại";
             this.btnprev.UseVisualStyleBackColor = true;
             this.btnprev.Click += new System.EventHandler(this.btnprev_Click);
             // 
             // btnstop
             // 
             this.btnstop.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnstop.Location = new System.Drawing.Point(649, 11);
+            this.btnstop.Location = new System.Drawing.Point(865, 14);
+            this.btnstop.Margin = new System.Windows.Forms.Padding(4);
             this.btnstop.Name = "btnstop";
-            this.btnstop.Size = new System.Drawing.Size(100, 42);
+            this.btnstop.Size = new System.Drawing.Size(133, 52);
             this.btnstop.TabIndex = 11;
-            this.btnstop.Text = "Stop";
+            this.btnstop.Text = "Tạm dừng";
             this.btnstop.UseVisualStyleBackColor = true;
             this.btnstop.Click += new System.EventHandler(this.btnstop_Click);
             // 
@@ -254,17 +271,19 @@ namespace LibraryManagementSystem
             // 
             this.labelSearchPageNo.AutoSize = true;
             this.labelSearchPageNo.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelSearchPageNo.Location = new System.Drawing.Point(636, 65);
+            this.labelSearchPageNo.Location = new System.Drawing.Point(848, 80);
+            this.labelSearchPageNo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelSearchPageNo.Name = "labelSearchPageNo";
-            this.labelSearchPageNo.Size = new System.Drawing.Size(46, 20);
+            this.labelSearchPageNo.Size = new System.Drawing.Size(57, 23);
             this.labelSearchPageNo.TabIndex = 12;
             this.labelSearchPageNo.Text = "Page ";
             // 
             // progressBar1
             // 
-            this.progressBar1.Location = new System.Drawing.Point(756, 28);
+            this.progressBar1.Location = new System.Drawing.Point(1008, 34);
+            this.progressBar1.Margin = new System.Windows.Forms.Padding(4);
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(236, 23);
+            this.progressBar1.Size = new System.Drawing.Size(315, 28);
             this.progressBar1.Step = 1;
             this.progressBar1.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
             this.progressBar1.TabIndex = 13;
@@ -274,27 +293,29 @@ namespace LibraryManagementSystem
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(993, 70);
+            this.label2.Location = new System.Drawing.Point(1324, 86);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(0, 15);
+            this.label2.Size = new System.Drawing.Size(0, 18);
             this.label2.TabIndex = 14;
             // 
             // labelPercent
             // 
             this.labelPercent.AutoSize = true;
             this.labelPercent.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPercent.Location = new System.Drawing.Point(869, 4);
+            this.labelPercent.Location = new System.Drawing.Point(1159, 5);
+            this.labelPercent.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelPercent.Name = "labelPercent";
-            this.labelPercent.Size = new System.Drawing.Size(31, 20);
+            this.labelPercent.Size = new System.Drawing.Size(45, 23);
             this.labelPercent.TabIndex = 15;
             this.labelPercent.Text = "0 %";
             // 
             // BooksAPIForm
             // 
             this.AcceptButton = this.btnSearch;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1004, 712);
+            this.ClientSize = new System.Drawing.Size(1339, 876);
             this.Controls.Add(this.labelPercent);
             this.Controls.Add(this.pictureLoading);
             this.Controls.Add(this.label2);
@@ -309,6 +330,7 @@ namespace LibraryManagementSystem
             this.Controls.Add(this.textQuery);
             this.Controls.Add(this.btnSearch);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "BooksAPIForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Google Books";

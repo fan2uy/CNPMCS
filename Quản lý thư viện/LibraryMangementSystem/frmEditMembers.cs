@@ -35,7 +35,7 @@ namespace LibraryManagementSystem
             string memid = txtMemberID.Text;
             if (String.IsNullOrEmpty(memid.Trim()))
             {
-                MessageBox.Show("Please Enter Member ID.", "Alert !", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("Vui lòng nhập Mã độc giả.", "Alert !", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 txtMemberID.Clear();
                 clearedit();
                 return;
@@ -51,7 +51,7 @@ namespace LibraryManagementSystem
                 dr = cmd.ExecuteReader();
                 if (dr.HasRows == false)
                 {
-                    MessageBox.Show("Member not found.", "Alert !", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    MessageBox.Show("Không tìm thấy độc giả.", "Alert !", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                     txtMemberID.Clear();
                     dr.Close();
                     clearedit();
@@ -172,7 +172,7 @@ namespace LibraryManagementSystem
         {
             if (string.IsNullOrEmpty(txtName.Text))
             {
-                MessageBox.Show("Enter Name");
+                MessageBox.Show("Nhập Họ tên");
                 return;
             }
             
@@ -213,7 +213,7 @@ namespace LibraryManagementSystem
 
               
 
-                lblStatus.Text = "The Member '" +txtName.Text + "' ID: " + memid + " was MODIFIED successfully. ";
+                lblStatus.Text = "Độc giả '" +txtName.Text + "' Mã: " + memid + " chỉnh sửa thông tin thành công. ";
 
 
             }
@@ -232,14 +232,14 @@ namespace LibraryManagementSystem
         {
             string delid = txtmemid2.Text;
             string memname = txtName.Text;
-            DialogResult dres = MessageBox.Show("Do you want to DELETE this Member ?\nName: " + memname+"\nID: " + delid, "Confirm DELETE Operation", MessageBoxButtons.YesNo);
+            DialogResult dres = MessageBox.Show("Bạn có muốn xóa độc giả ?\nHọ tên: " + memname+"\nMã: " + delid, "Xác nhận xóa", MessageBoxButtons.YesNo);
             if (dres == DialogResult.Yes)
             {
 
 
                 cmd.CommandText = string.Format("DELETE FROM MemberDetails WHERE MemberID={0}", delid);
                 cmd.ExecuteNonQuery();
-                string msg = "The Member'" + memname + "'  ID:" + delid + " was DELETED successfully.";
+                string msg = "Độc giả'" + memname + "'  Mã:" + delid + " đã xóa thành công.";
                 lblStatus.Text = msg;
 
 
@@ -252,7 +252,7 @@ namespace LibraryManagementSystem
             }
             else
             {
-                lblStatus.Text = "DELETE Action was Cancelled.";
+                lblStatus.Text = "Thao tác Xóa đã hủy.";
             }
         }
 

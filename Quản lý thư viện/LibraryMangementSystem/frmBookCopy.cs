@@ -5,7 +5,7 @@ namespace LibraryManagementSystem
 {
     public partial class frmBookCopy : Form
     {
-        public string returnid { get; set; } 
+        public string returnbn { get; set; } 
         public frmBookCopy()
         {
             InitializeComponent();
@@ -18,7 +18,7 @@ namespace LibraryManagementSystem
 
         private void ok_Click(object sender, EventArgs e)
         {
-            returnid = textBid.Text;
+            returnbn = textBid.Text;
 
             this.DialogResult = DialogResult.OK;
         }

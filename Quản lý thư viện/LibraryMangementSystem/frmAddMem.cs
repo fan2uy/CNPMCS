@@ -140,7 +140,7 @@ namespace LibraryManagementSystem
                }
 
                               
-                               msg = "New Member Added.Member ID: "+id;
+                               msg = "Đã thêm độc giả. Mã độc giả: "+id;
                                lblStatus.Text = msg;
 
                 foreach (Control c in this.Controls)

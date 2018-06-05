@@ -71,7 +71,7 @@ namespace LibraryManagementSystem
             if (String.IsNullOrEmpty(bookid.Trim()))
             {
                // MessageBox.Show("Please Enter Book ID.", "Alert !", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                lblStatus.Text = "Please Enter Book ID.";
+                lblStatus.Text = "Vui lòng nhập mã cuốn sách.";
                 txtMBenterid.Clear();
                 clearedit();
 
@@ -94,7 +94,7 @@ namespace LibraryManagementSystem
                SQLiteDataReader dr = cmd.ExecuteReader();
                 if (dr.HasRows == false)
                 {
-                   MessageBox.Show("Book not found.", "Alert !", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                   MessageBox.Show("Không tình thấy sách.", "Alert !", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                   //  lblStatus.Text = "Book not found.";
                     txtMBenterid.Clear();
                     dr.Close();
@@ -158,7 +158,7 @@ namespace LibraryManagementSystem
                 pictureMB.Image = myImage;
                 MBpicboxsetsizemode(pictureMB);
                 if (pictureMB.SizeMode == PictureBoxSizeMode.Zoom)
-                    BDlabelenlarge.Text = "Click to Enlarge";
+                    BDlabelenlarge.Text = "Nhấp để xem kích thước lớn hơn";
                 else
                     BDlabelenlarge.Text = "";
                 pictureMB.Show();
@@ -208,19 +208,19 @@ namespace LibraryManagementSystem
             int c = Convert.ToInt32(comm.ExecuteScalar());
             if (c != 0)
             {
-                MessageBox.Show("This Book is already issued.Delete after submission.");
+                MessageBox.Show("Sách này đã được mượn. Chỉ có thể xóa sau khi độc giả đã trả sách.");
                 return;
             }
 
             SQLiteCommand cmd = new SQLiteCommand(con);
-            DialogResult dres = MessageBox.Show("Do you want to DELETE this Book ?\nTitle: " + textMBtitle.Text + "\nBook ID : " + textMBbid.Text, "Confirm DELETE Operation", MessageBoxButtons.YesNo);
+            DialogResult dres = MessageBox.Show("Bạn có muốn Xóa sách ?\nTitle: " + textMBtitle.Text + "\nMã cuốn sách : " + textMBbid.Text, "Xác nhận xóa", MessageBoxButtons.YesNo);
             if (dres == DialogResult.Yes)
             {
 
 
                 cmd.CommandText = string.Format("DELETE FROM BookDetails WHERE BookID='{0}'", textMBbid.Text);
                 cmd.ExecuteNonQuery();
-                lblStatus.Text = "The Book '" + textMBtitle.Text + "' ID: " + textMBbid.Text + " was DELETED successfully.";
+                lblStatus.Text = "Sách '" + textMBtitle.Text + "' Mã cuốn sách: " + textMBbid.Text + " đã xóa thành công.";
 
                 SQLiteCommand cm = new SQLiteCommand(con);
                 cm.CommandText = "INSERT INTO DeletedID(tablename,deletedID) VALUES(@tabname,@delid);";
@@ -237,7 +237,7 @@ namespace LibraryManagementSystem
             }
             else
             {
-                lblStatus.Text = "DELETE Action was Cancelled.";
+                lblStatus.Text = "Thao tác xóa đã hủy.";
             }
            
         }
@@ -349,7 +349,7 @@ Price=@price,Pages=@pages,Shelf=@shelf,DateAdded=@date,Type=@type WHERE BookID=@
                 }
 
                 
-                lblStatus.Text = "The Book '" + textMBtitle.Text + "' ID: " + textMBbid.Text + " was MODIFIED successfully. ";
+                lblStatus.Text = "Sách '" + textMBtitle.Text + "' Mã cuốn sách: " + textMBbid.Text + " đã chỉnh sửa thông tin thành công. ";
 
 
           
@@ -396,7 +396,7 @@ Price=@price,Pages=@pages,Shelf=@shelf,DateAdded=@date,Type=@type WHERE BookID=@
                 MBpicboxsetsizemode(pictureMB);
             }
             if (pictureMB.SizeMode != PictureBoxSizeMode.CenterImage)
-             BDlabelenlarge.Text = "Click to Enlarge";
+             BDlabelenlarge.Text = "Nhấp để xem kích thước lơn hơn";
             else
                BDlabelenlarge.Text = "";
         }
@@ -461,7 +461,7 @@ Price=@price,Pages=@pages,Shelf=@shelf,DateAdded=@date,Type=@type WHERE BookID=@
 
         private void MBcombobtype_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (MBcombobtype.Text == "Hardcopy Only")
+            if (MBcombobtype.Text == "Bản cứng")
             {
                
                 btnMBopenpdf.Hide();
@@ -556,7 +556,7 @@ Price=@price,Pages=@pages,Shelf=@shelf,DateAdded=@date,Type=@type WHERE BookID=@
         private void comboMBcateg_SelectedIndexChanged(object sender, EventArgs e)
         {
 
-            if (MBcombobtype.Text == "Hardcopy Only")
+            if (MBcombobtype.Text == "Bản cứng")
             {
                 textMBpdfurl.Hide();
                 labelMBpdfsize.Hide();

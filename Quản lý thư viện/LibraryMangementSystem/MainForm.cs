@@ -88,7 +88,7 @@ namespace LibraryManagementSystem
         private void MainForm_Load(object sender, EventArgs e)
         {
             loadlang();
-            treeViewExplore.Nodes.Add("nodeCateg", "Categories");
+            treeViewExplore.Nodes.Add("nodeCateg", "Thể loại");
             bool BDhasdel = LibraryManagementSystem.Properties.Settings.Default.BookDetails;
             int bookid =readonlyNextID(BDhasdel, "BookDetails");
             textMBbid.Text = bookid.ToString();
@@ -213,11 +213,11 @@ namespace LibraryManagementSystem
                     res = fillGrid(string.Format(selectallbooks + " where Category='{0}' ORDER BY BookID", selnode.Text));
                 if (res == 0)
                 {
-                    lblStatus.Text = "No Books to Display in the Category " + selnode.Text;
+                    lblStatus.Text = "Không có sách trong thể loại " + selnode.Text;
                 }
                 else
                 {
-                    lblStatus.Text = "Displaying " + res + " Books in the Category " + selnode.Text;
+                    lblStatus.Text = "Tìm thấy " + res + " sách trong thể loại " + selnode.Text;
                 }
            
             
@@ -231,7 +231,7 @@ namespace LibraryManagementSystem
             searchterm = textSearchTerm.Text.Replace(" ", "");
             if (string.IsNullOrEmpty(searchterm))
             {
-                lblStatus.Text = "Enter a Search Term for Searching Books.";
+                lblStatus.Text = "Nhập từ khóa tìm kiếm để tìm kiếm sách.";
                 return;
             }
 
@@ -245,13 +245,13 @@ namespace LibraryManagementSystem
                 gridviewExplore.DataSource = dt;
 
 
-                lblStatus.Text = string.Format("Displaying {2} Search Results for ' {0} ' in {1} of Books.", searchterm, comboSearchFields.Text, dt.Rows.Count);
+                lblStatus.Text = string.Format("Tìm thấy {2} sách cho từ khóa '{0}' trong mục {1}.", searchterm, comboSearchFields.Text, dt.Rows.Count);
             }
             else
             {
 
                 gridviewExplore.DataSource = null;
-                lblStatus.Text = lblStatus.Text = string.Format("No Search Results for ' {0} ' in {1} of Books.", searchterm, comboSearchFields.Text);
+                lblStatus.Text = lblStatus.Text = string.Format("Không tìm thấy sách cho từ khóa '{0}' trong mục {1}.", searchterm, comboSearchFields.Text);
 
             }
             dr.Close();
@@ -274,7 +274,7 @@ namespace LibraryManagementSystem
             string price = "";
             if (String.IsNullOrEmpty(bookid.Trim()))
             {
-                MessageBox.Show("Please Enter Book ID or Book No.", "Alert !", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("Vui lòng nhập mã cuốn sách hoặc mã tựa sách.", "Cảnh báo!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 textBDbookidok.Clear();
                 return;
             }
@@ -289,7 +289,7 @@ namespace LibraryManagementSystem
             SQLiteDataReader dr = cmd.ExecuteReader();
             if (dr.HasRows == false)
             {
-                MessageBox.Show("Book not found.", "Alert !", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("Không tìm thấy sách.", "Cảnh báo!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 textBDbookidok.Clear();
                 dr.Close();
                 return;
@@ -323,7 +323,7 @@ namespace LibraryManagementSystem
 
             if (available == "True")
             {
-                labelBDavail.Text = "This Book is Available";
+                labelBDavail.Text = "Sách này có sẵn";
                 labelBDavail.ForeColor = Color.Green;
                 btnBDissuedet.Hide();
 
@@ -332,7 +332,7 @@ namespace LibraryManagementSystem
             else
             {
 
-                labelBDavail.Text = "This Book is not Available";
+                labelBDavail.Text = "Sách này không có sẵn";
                 labelBDavail.ForeColor = Color.Red;
                 btnBDissuedet.Show();
 
@@ -353,7 +353,7 @@ namespace LibraryManagementSystem
                 picBookCover.Image = myImage;
                 MBpicboxsetsizemode(picBookCover);
                 if (picBookCover.SizeMode == PictureBoxSizeMode.Zoom)
-                    BDlabelenlarge.Text = "Click to Enlarge";
+                    BDlabelenlarge.Text = "Nhấp để xem kích thức lớn hơn";
                 else
                     BDlabelenlarge.Text = "";
 
@@ -572,7 +572,7 @@ namespace LibraryManagementSystem
             //bookid validate
             if (String.IsNullOrEmpty(bookid.Trim()))
             {
-                msg = "Please Enter Book ID.";
+                msg = "Vui lòng nhập Mã cuốn sách.";
                 MessageBox.Show(msg);
                 textISbid.Clear();
                 return false;
@@ -582,7 +582,7 @@ namespace LibraryManagementSystem
             //member id validate
             if (String.IsNullOrEmpty(memid.Trim()))
             {
-                msg = "Please Enter Member ID.";
+                msg = "Vui lòng nhập Mã độc giả.";
                 MessageBox.Show(msg);
                 textISmid.Clear();
                 return false;
@@ -594,7 +594,7 @@ namespace LibraryManagementSystem
             int c = Convert.ToInt32(com.ExecuteScalar());
             if (c == 0)
             {
-                MessageBox.Show("Book not found ! ID:" + bookid);
+                MessageBox.Show("Không tìm thấy sách ! Mã cuốn sách:" + bookid);
                 return false;
             }
 
@@ -604,7 +604,7 @@ namespace LibraryManagementSystem
             int c1 = Convert.ToInt32(com.ExecuteScalar());
             if (c1 == 0)
             {
-                MessageBox.Show("Member not found ! ID:" + memid);
+                MessageBox.Show("Không tìm thấy độc giả ! Mã độc giả:" + memid);
                 return false;
             }
             return true;
@@ -619,7 +619,7 @@ namespace LibraryManagementSystem
             string avail = com.ExecuteScalar().ToString();
             if (avail == "False")
             {
-                MessageBox.Show("The Book is not Available for Issuing.");
+                MessageBox.Show("Sách không có sẵn để cho mượn.");
                 return false;
 
             }
@@ -634,7 +634,7 @@ namespace LibraryManagementSystem
 
             if (c == 0)
             {
-                MessageBox.Show("This Member has not activated any Packages.\nDisable Packages for just setting a Maximum Books limit.");
+                MessageBox.Show("Độc giả chưa kích hoạt gói dịch vụ.\nTắt gói dịch vụ để cài đặt giới hạn sách tối đa có thể mượn.");
                 return false;
             }
 
@@ -670,7 +670,7 @@ namespace LibraryManagementSystem
             }
             if (foundmatchingpkg == false)
             {
-                MessageBox.Show("The current Package has expired for this member.");
+                MessageBox.Show("Gói dịch vụ hiện tại đã hết hạn cho thành viên này.");
                 return false;
             }
             else
@@ -683,7 +683,7 @@ namespace LibraryManagementSystem
 
                 if (pendingbook >= maxb)
                 {
-                    MessageBox.Show("Member has reached the maximum limit on books specified in the package");
+                    MessageBox.Show("Thành viên đã đạt đến giới hạn tối đa đối với số lượng sách có thể mượn được chỉ định trong gói dịch vụ");
                     return false;
                 }
                 else
@@ -706,7 +706,7 @@ namespace LibraryManagementSystem
 
             if (pendingbook >= Properties.Settings.Default.maxBooks)
             {
-                MessageBox.Show("Member has reached the maximum limit on books.");
+                MessageBox.Show("Thành viên đã đạt đến giới hạn tối đa số lượng sách có thể mượn.");
                 return false;
             }
             else
@@ -798,7 +798,7 @@ namespace LibraryManagementSystem
                 com.CommandText = cmdtext;
                 com.ExecuteNonQuery();
                 panelIScontainer.Hide();
-                lblStatus.Text = "The Book " + bid + " was successfully issued";
+                lblStatus.Text = "Sách " + bid + " đã mượn thành công";
                 pnlISshow.Hide();
                 dataGridID.DataSource = null;
 
@@ -849,7 +849,7 @@ namespace LibraryManagementSystem
                 cmd.ExecuteNonQuery();
                 panelIScontainer.Hide();
                 pnlISshow.Hide();
-                lblStatus.Text = "The Book " + bid + " was successfully Submitted";
+                lblStatus.Text = "Sách " + bid + " đã trả thành công";
 
 
                 btnIDextendDD.Hide();
@@ -871,7 +871,7 @@ namespace LibraryManagementSystem
 
         }
 
-        private void btnIDsubdet_Click(object sender, EventArgs e)
+        private void btnIDsubdet_Click(object sender, EventArgs e) 
         {
             SQLiteCommand com = new SQLiteCommand(con);
             SQLiteDataReader dtr;
@@ -888,7 +888,7 @@ namespace LibraryManagementSystem
             btnIDextendDD.Hide();
             btnIDsubmitbook.Hide();
 
-            string cmdtext = "select BookID,MemberID,BookTitle,MemberName,IssueDate,DueDate,SubmitDate,Fine from SubmittedBooks; ";
+            string cmdtext = "select BookID as 'Mã cuốn sách',MemberID as 'Mã độc giả',BookTitle as 'Tựa sách',MemberName as 'Tên độc giả',IssueDate as 'Ngày mượn',DueDate as 'Ngày hết hạn',SubmitDate as 'Ngày trả',Fine as 'Phí trễ hạn' from SubmittedBooks; ";
             com.CommandText = cmdtext;
             dtr = com.ExecuteReader();
             if (dtr.HasRows == true)
@@ -898,28 +898,26 @@ namespace LibraryManagementSystem
                 dtr.Close();
                 dataGridID.DataSource = dt;
 
-                textIDbid.Text = dataGridID.SelectedRows[0].Cells["BookID"].Value.ToString();
-                textIDmid.Text = dataGridID.SelectedRows[0].Cells["MemberID"].Value.ToString();
-                textIDtitle.Text = dataGridID.SelectedRows[0].Cells["BookTitle"].Value.ToString();
-                textIDname.Text = dataGridID.SelectedRows[0].Cells["MemberName"].Value.ToString();
-                textIDidate.Text = dataGridID.SelectedRows[0].Cells["IssueDate"].Value.ToString();
+                textIDbid.Text = dataGridID.SelectedRows[0].Cells["Mã cuốn sách"].Value.ToString();
+                textIDmid.Text = dataGridID.SelectedRows[0].Cells["Mã độc giả"].Value.ToString();
+                textIDtitle.Text = dataGridID.SelectedRows[0].Cells["Tựa sách"].Value.ToString();
+                textIDname.Text = dataGridID.SelectedRows[0].Cells["Tên độc giả"].Value.ToString();
+                textIDidate.Text = dataGridID.SelectedRows[0].Cells["Ngày mượn"].Value.ToString();
 
-
-
-                DateTime dta = Convert.ToDateTime(dataGridID.SelectedRows[0].Cells["DueDate"].Value.ToString(), System.Globalization.CultureInfo.CreateSpecificCulture("en-IN").DateTimeFormat);
+                DateTime dta = Convert.ToDateTime(dataGridID.SelectedRows[0].Cells["Ngày hết hạn"].Value.ToString(), System.Globalization.CultureInfo.CreateSpecificCulture("en-IN").DateTimeFormat);
 
                 textIDdd.Text = dta.ToString("dd/MM/yyyy");
 
-                textIDsubdate.Text = dataGridID.SelectedRows[0].Cells["SubmitDate"].Value.ToString();
-                textIDfine.Text = dataGridID.SelectedRows[0].Cells["Fine"].Value.ToString();
+                textIDsubdate.Text = dataGridID.SelectedRows[0].Cells["Ngày trả"].Value.ToString();
+                textIDfine.Text = dataGridID.SelectedRows[0].Cells["Phí trễ hạn"].Value.ToString();
 
                 dataGridID.Show();
-                lblStatus.Text = "List of Books which were Submitted Successfully.";
+                lblStatus.Text = "Tìm danh sách thành công.";
             }
             else
             {
                 dataGridID.Hide();
-                lblStatus.Text = "Submitted Books is Empty.";
+                lblStatus.Text = "Danh sách trống.";
             }
             dtr.Close();
         }
@@ -944,9 +942,9 @@ namespace LibraryManagementSystem
             btnIDextendDD.Show();
 
 
-            string cmdtext = "select BookID,MemberID,BookTitle,MemberName,IssueDate,DueDate from IssueDetails; ";
+            string cmdtext = "select BookID as 'Mã cuốn sách',MemberID as 'Mã độc giả',BookTitle as 'Tựa sách',MemberName as 'Tên độc giả',IssueDate as 'Ngày mượn',DueDate as 'Ngày hết hạn' from IssueDetails; ";
             com.CommandText = cmdtext;
-            dtr = com.ExecuteReader();
+           dtr = com.ExecuteReader();
             if (dtr.HasRows == true)
             {
                 DataTable dt = new DataTable();
@@ -955,27 +953,27 @@ namespace LibraryManagementSystem
 
                 dataGridID.DataSource = dt;
 
-                textIDbid.Text = dataGridID.SelectedRows[0].Cells["BookID"].Value.ToString();
-                textIDmid.Text = dataGridID.SelectedRows[0].Cells["MemberID"].Value.ToString();
-                textIDtitle.Text = dataGridID.SelectedRows[0].Cells["BookTitle"].Value.ToString();
-                textIDname.Text = dataGridID.SelectedRows[0].Cells["MemberName"].Value.ToString();
-                textIDidate.Text = dataGridID.SelectedRows[0].Cells["IssueDate"].Value.ToString();
+                textIDbid.Text = dataGridID.SelectedRows[0].Cells["Mã cuốn sách"].Value.ToString();
+                textIDmid.Text = dataGridID.SelectedRows[0].Cells["Mã độc giả"].Value.ToString();
+                textIDtitle.Text = dataGridID.SelectedRows[0].Cells["Tựa sách"].Value.ToString();
+                textIDname.Text = dataGridID.SelectedRows[0].Cells["Tên độc giả"].Value.ToString();
+                textIDidate.Text = dataGridID.SelectedRows[0].Cells["Ngày mượn"].Value.ToString();
 
-                DateTime dta = Convert.ToDateTime(dataGridID.SelectedRows[0].Cells["DueDate"].Value.ToString(), System.Globalization.CultureInfo.CreateSpecificCulture("en-IN").DateTimeFormat);
+                DateTime dta = Convert.ToDateTime(dataGridID.SelectedRows[0].Cells["Ngày hết hạn"].Value.ToString(), System.Globalization.CultureInfo.CreateSpecificCulture("en-IN").DateTimeFormat);
 
                 textIDdd.Text = dta.ToString("dd/MM/yyyy");
 
 
 
                 dataGridID.Show();
-                lblStatus.Text = "List of Books which were Issued but not Submitted.";
+                lblStatus.Text = "Tìm danh sách thành công.";
             }
             else
             {
 
                 btnIDsubmitbook.Hide();
                 dataGridID.Hide();
-                lblStatus.Text = "Issued Books is Empty.";
+                lblStatus.Text = "Danh sách trống.";
             }
 
         }
@@ -983,21 +981,20 @@ namespace LibraryManagementSystem
         private void dataGridID_CellClick(object sender, DataGridViewCellEventArgs e)
         {
 
-            textIDbid.Text = dataGridID.SelectedRows[0].Cells["BookID"].Value.ToString();
-            textIDmid.Text = dataGridID.SelectedRows[0].Cells["MemberID"].Value.ToString();
-            textIDtitle.Text = dataGridID.SelectedRows[0].Cells["BookTitle"].Value.ToString();
-            textIDname.Text = dataGridID.SelectedRows[0].Cells["MemberName"].Value.ToString();
-            textIDidate.Text = dataGridID.SelectedRows[0].Cells["IssueDate"].Value.ToString();
+            textIDbid.Text = dataGridID.SelectedRows[0].Cells["Mã cuốn sách"].Value.ToString();
+            textIDmid.Text = dataGridID.SelectedRows[0].Cells["Mã độc giả"].Value.ToString();
+            textIDtitle.Text = dataGridID.SelectedRows[0].Cells["Tựa sách"].Value.ToString();
+            textIDname.Text = dataGridID.SelectedRows[0].Cells["Tên độc giả"].Value.ToString();
+            textIDidate.Text = dataGridID.SelectedRows[0].Cells["Ngày mượn"].Value.ToString();
 
-            DateTime dt = Convert.ToDateTime(dataGridID.SelectedRows[0].Cells["DueDate"].Value.ToString(), System.Globalization.CultureInfo.CreateSpecificCulture("en-IN").DateTimeFormat);
+            DateTime dta = Convert.ToDateTime(dataGridID.SelectedRows[0].Cells["Ngày hết hạn"].Value.ToString(), System.Globalization.CultureInfo.CreateSpecificCulture("en-IN").DateTimeFormat);
 
-            // dateIDdd.Value = dt;
-            textIDdd.Text = dt.ToString("dd/MM/yyyy");
+            textIDdd.Text = dta.ToString("dd/MM/yyyy");
             if (btnIDsubdet.BackColor == Color.LightBlue)
             {
 
-                textIDsubdate.Text = dataGridID.SelectedRows[0].Cells["SubmitDate"].Value.ToString();
-                textIDfine.Text = dataGridID.SelectedRows[0].Cells["Fine"].Value.ToString();
+                textIDsubdate.Text = dataGridID.SelectedRows[0].Cells["Ngày trả"].Value.ToString();
+                textIDfine.Text = dataGridID.SelectedRows[0].Cells["Phí trễ hạn"].Value.ToString();
             }
 
         }
@@ -1029,12 +1026,12 @@ namespace LibraryManagementSystem
 
             if (string.IsNullOrEmpty(textMBtitle.Text))
             {
-                MessageBox.Show("Enter Title");
+                MessageBox.Show("Nhập tựa sách");
                 return;
             }
-            if (MBcombobtype.Text != "Hardcopy Only" && textMBpdfurl.Text == "")
+            if (MBcombobtype.Text != "Bản cứng" && textMBpdfurl.Text == "")
             {
-                MessageBox.Show("Select pdf file");
+                MessageBox.Show("Chọn file PDF");
                 return;
             }
             string price = null;
@@ -1114,7 +1111,7 @@ VALUES(@bid,@bookno,@isbn,@title,@author,@desc,@categ,@pub,@lang,
 
             }
 
-            lblStatus.Text = "The Book '" + textMBtitle.Text + "' ID: " + bookid + " was ADDED successfully. " + "ADD another Book ..";
+            lblStatus.Text = "Tựa sách '" + textMBtitle.Text + "' Mã cuốn sách: " + bookid + " đã thêm thành công. " + "Thêm sách khác ..";
             btnMBclear_Click(null, null);
 
 
@@ -1182,7 +1179,7 @@ VALUES(@bid,@bookno,@isbn,@title,@author,@desc,@categ,@pub,@lang,
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error while generating next id :" + ex.Message + "\n Source :" + ex.Source);
+                MessageBox.Show("Lỗi khi tạo mã tăng tự động :" + ex.Message + "\n Source :" + ex.Source);
                 return 1;
             }
 
@@ -1232,7 +1229,7 @@ VALUES(@bid,@bookno,@isbn,@title,@author,@desc,@categ,@pub,@lang,
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error while generating next id :" + ex.Message + "\n Source :" + ex.Source);
+                MessageBox.Show("Lỗi khi tạo mã tăng tự động :" + ex.Message + "\n Source :" + ex.Source);
                 return 1;
             }
 
@@ -1298,13 +1295,13 @@ VALUES(@bid,@bookno,@isbn,@title,@author,@desc,@categ,@pub,@lang,
 
                 MBpicboxsetsizemode(pictureMB);
                 if (pictureMB.SizeMode != PictureBoxSizeMode.CenterImage)
-                    labelMBenlarge.Text = "Click to Enlarge";
+                    labelMBenlarge.Text = "Nhấp để xem kích thước lớn hơn";
                 else
                     labelMBenlarge.Text = "";
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error with opening file :" + ex.Message);
+                MessageBox.Show("Lỗi khi mở tệp :" + ex.Message);
             }
         }
 
@@ -1409,7 +1406,7 @@ VALUES(@bid,@bookno,@isbn,@title,@author,@desc,@categ,@pub,@lang,
 
         private void MBcombobtype_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (MBcombobtype.Text == "Hardcopy Only")
+            if (MBcombobtype.Text == "Bản cứng")
             {
                 textMBpdfurl.Hide();
                 labelMBpdfsize.Hide();
@@ -1538,9 +1535,9 @@ VALUES(@bid,@bookno,@isbn,@title,@author,@desc,@categ,@pub,@lang,
             SQLiteDataReader dr;
 
             if(limit==0)
-            cmd.CommandText = "SELECT MemberID,Name,Course,AdmissionYear,RollNo,PhoneNumber,Dob,Email from MemberDetails ORDER BY MemberID";
+            cmd.CommandText = "SELECT MemberID as 'Mã độc giả',Name as 'Họ tên',RollNo as 'MSSV',Course as 'Khóa',AdmissionYear as 'Năm nhập học',PhoneNumber as 'SĐT',Dob as 'Ngày sinh',Email from MemberDetails ORDER BY MemberID";
             else
-                cmd.CommandText = "SELECT MemberID,Name,Course,AdmissionYear,RollNo,PhoneNumber,Dob,Email from MemberDetails ORDER BY MemberID limit "+limit.ToString();
+                cmd.CommandText = "SELECT MemberID as 'Mã độc giả',Name as 'Họ tên',RollNo as 'MSSV',Course as 'Khóa',AdmissionYear as 'Năm nhập học',PhoneNumber as 'SĐT',Dob as 'Ngày sinh',Email from MemberDetails ORDER BY MemberID limit " + limit.ToString();
 
 
             dr = cmd.ExecuteReader();
@@ -1552,13 +1549,13 @@ VALUES(@bid,@bookno,@isbn,@title,@author,@desc,@categ,@pub,@lang,
 
 
 
-                lblStatus.Text = "Displaying Details of All " + dt.Rows.Count + " Library Members.";
+                lblStatus.Text = "Tìm thấy tất cả " + dt.Rows.Count + " độc giả.";
             }
             else
             {
 
 
-                lblStatus.Text = "Member Details is Empty.";
+                lblStatus.Text = "Danh sách độc giả trống.";
                 dataGridMM.DataSource = null;
             }
             dr.Close();
@@ -1566,16 +1563,39 @@ VALUES(@bid,@bookno,@isbn,@title,@author,@desc,@categ,@pub,@lang,
         private void mmsearch()
         {
             string searchterm;
-            string selectcmd;
+            string selectcmd="";
             try
             {
                 searchterm = textMMsearchterm.Text;
                 if (string.IsNullOrEmpty(searchterm))
                 {
-                    lblStatus.Text = "Enter a Search Term for Searching Library Members.";
+                    lblStatus.Text = "Nhập từ khóa để tìm kiếm độc giả.";
                     return;
                 }
-                selectcmd = string.Format("select MemberID,Name,Course,AdmissionYear,RollNo,PhoneNumber,Dob,Email from MemberDetails where {0} LIKE('%{1}%')", comboMMfields.Text, searchterm);
+                if (comboMMfields.Text == "Mã độc giả")
+                selectcmd = string.Format("SELECT MemberID as 'Mã độc giả',Name as 'Họ tên',RollNo as 'MSSV',Course as 'Khóa',AdmissionYear as 'Năm nhập học'," +
+                    "PhoneNumber as 'SĐT',Dob as 'Ngày sinh',Email  from MemberDetails where MemberID LIKE('%{0}%')", searchterm);
+                if (comboMMfields.Text == "Họ tên")
+                    selectcmd = string.Format("SELECT MemberID as 'Mã độc giả',Name as 'Họ tên',RollNo as 'MSSV',Course as 'Khóa',AdmissionYear as 'Năm nhập học'," +
+                        "PhoneNumber as 'SĐT',Dob as 'Ngày sinh',Email  from MemberDetails where Name LIKE('%{0}%')", searchterm);
+                if (comboMMfields.Text == "MSSV")
+                    selectcmd = string.Format("SELECT MemberID as 'Mã độc giả',Name as 'Họ tên',RollNo as 'MSSV',Course as 'Khóa',AdmissionYear as 'Năm nhập học'," +
+                        "PhoneNumber as 'SĐT',Dob as 'Ngày sinh',Email  from MemberDetails where RollNo LIKE('%{0}%')", searchterm);
+                if (comboMMfields.Text == "Khóa")
+                    selectcmd = string.Format("SELECT MemberID as 'Mã độc giả',Name as 'Họ tên',RollNo as 'MSSV',Course as 'Khóa',AdmissionYear as 'Năm nhập học'," +
+                        "PhoneNumber as 'SĐT',Dob as 'Ngày sinh',Email  from MemberDetails where Course LIKE('%{0}%')", searchterm);
+                if (comboMMfields.Text == "Năm nhập học")
+                    selectcmd = string.Format("SELECT MemberID as 'Mã độc giả',Name as 'Họ tên',RollNo as 'MSSV',Course as 'Khóa',AdmissionYear as 'Năm nhập học'," +
+                        "PhoneNumber as 'SĐT',Dob as 'Ngày sinh',Email  from MemberDetails where AdmissionYear LIKE('%{0}%')", searchterm);
+                if (comboMMfields.Text == "SĐT")
+                    selectcmd = string.Format("SELECT MemberID as 'Mã độc giả',Name as 'Họ tên',RollNo as 'MSSV',Course as 'Khóa',AdmissionYear as 'Năm nhập học'," +
+                        "PhoneNumber as 'SĐT',Dob as 'Ngày sinh',Email  from MemberDetails where PhoneNumber LIKE('%{0}%')", searchterm);
+                if (comboMMfields.Text == "Ngày sinh")
+                    selectcmd = string.Format("SELECT MemberID as 'Mã độc giả',Name as 'Họ tên',RollNo as 'MSSV',Course as 'Khóa',AdmissionYear as 'Năm nhập học'," +
+                        "PhoneNumber as 'SĐT',Dob as 'Ngày sinh',Email  from MemberDetails where Dob LIKE('%{0}%')", searchterm);
+                if (comboMMfields.Text == "Email")
+                    selectcmd = string.Format("SELECT MemberID as 'Mã độc giả',Name as 'Họ tên',RollNo as 'MSSV',Course as 'Khóa',AdmissionYear as 'Năm nhập học'," +
+                        "PhoneNumber as 'SĐT',Dob as 'Ngày sinh',Email  from MemberDetails where Email LIKE('%{0}%')", searchterm);
                 SQLiteCommand cmd = new SQLiteCommand(selectcmd, con);
                 SQLiteDataReader dr;
                 dr = cmd.ExecuteReader();
@@ -1587,13 +1607,13 @@ VALUES(@bid,@bookno,@isbn,@title,@author,@desc,@categ,@pub,@lang,
 
 
 
-                    lblStatus.Text = string.Format("Displaying {2} Search Results for ' {0} ' in {1} of Library Members.", searchterm, comboMMfields.Text, dt.Rows.Count);
+                    lblStatus.Text = string.Format("Tìm thấy {2} độc giả cho từ khóa '{0}' trong mục {1}.", searchterm, comboMMfields.Text, dt.Rows.Count);
                 }
                 else
                 {
 
                     dataGridMM.DataSource = null;
-                    lblStatus.Text = lblStatus.Text = string.Format("No Search Results for '{0}' in {1} of Library Members.", searchterm, comboMMfields.Text);
+                    lblStatus.Text = lblStatus.Text = string.Format("Không tìm được độc giả cho từ khóa '{0}' trong mục {1}.", searchterm, comboMMfields.Text);
 
                 }
                 dr.Close();
@@ -1622,7 +1642,7 @@ VALUES(@bid,@bookno,@isbn,@title,@author,@desc,@categ,@pub,@lang,
                 searchterm = textIDsearch.Text;
                 if (string.IsNullOrEmpty(searchterm))
                 {
-                    lblStatus.Text = "Enter a Search Term for Searching Library Users.";
+                    lblStatus.Text = "Nhập từ khóa để tìm kiếm.";
                     return;
                 }
 
@@ -1688,7 +1708,7 @@ VALUES(@bid,@bookno,@isbn,@title,@author,@desc,@categ,@pub,@lang,
                 {
 
 
-                    lblStatus.Text = lblStatus.Text = "No Search Results .";
+                    lblStatus.Text = lblStatus.Text = "Không tìm thấy dữ liệu .";
                     dataGridID.DataSource = null;
 
                 }
@@ -1759,7 +1779,7 @@ VALUES(@bid,@bookno,@isbn,@title,@author,@desc,@categ,@pub,@lang,
         private void btnEBviewall_Click(object sender, EventArgs e)
         {
             int res=fillGrid(selectallbooks + " ORDER BY BookID ");
-            lblStatus.Text = "Displaying All " + res + " Books ";
+            lblStatus.Text = "Tìm thấy tất cả " + res + " cuốn sách ";
         }
 
 
@@ -1784,14 +1804,40 @@ VALUES(@bid,@bookno,@isbn,@title,@author,@desc,@categ,@pub,@lang,
             SQLiteDataReader dtr;
 
             string searchterm;
-            string selectcmd;
+            string selectcmd="";
             searchterm = textSearchTerm.Text.Replace(" ", "");
             if (string.IsNullOrEmpty(searchterm))
             {
-                lblStatus.Text = "Enter a Search Term for Searching Books.";
+                lblStatus.Text = "Nhập từ khóa tìm kiếm để tìm kiếm sách.";
                 return;
             }
-            selectcmd = string.Format(selectallbooks + " where REPLACE({0}, ' ', '') LIKE('%{1}%')", comboSearchFields.Text, searchterm);
+            //"SELECT BookID as 'Mã cuốn sách',Title as 'Tựa sách', Author as 'Tác giả', Available as 'Có sẵn'," +
+           // "BookNo as 'Mã tựa sách',Category as 'Thể loại',Publisher as 'Nhà xuất bản', Language as 'Ngôn ngữ'," +
+            //"Year as 'Năm',Price as 'Giá',Pages as 'Số trang',Shelf as 'Kệ',DateAdded as 'Ngày nhập',Type 'Loại lưu trữ'," +
+           // "ISBN as 'Số ISBN' FROM BookDetails ";
+            if (comboIDfield.Text == "Mã cuốn sách")
+                selectcmd = string.Format(selectallbooks + " where REPLACE( BookID, ' ', '') LIKE('%{0}%')", searchterm);
+            if (comboIDfield.Text == "Tựa sách")
+                selectcmd = string.Format(selectallbooks + " where REPLACE( Title, ' ', '') LIKE('%{0}%')", searchterm);
+            if (comboIDfield.Text == "Tác giả")
+                selectcmd = string.Format(selectallbooks + " where REPLACE( Author, ' ', '') LIKE('%{0}%')", searchterm);
+            if (comboIDfield.Text == "Mã tựa sách")
+                selectcmd = string.Format(selectallbooks + " where REPLACE( BookNo, ' ', '') LIKE('%{0}%')", searchterm);
+            if (comboIDfield.Text == "Số ISBN")
+                selectcmd = string.Format(selectallbooks + " where REPLACE( ISBN, ' ', '') LIKE('%{0}%')", searchterm);
+            if (comboIDfield.Text == "Ngôn ngữ sách")
+                selectcmd = string.Format(selectallbooks + " where REPLACE( Language, ' ', '') LIKE('%{0}%')", searchterm);
+            if (comboIDfield.Text == "Nhà xuất bản")
+                selectcmd = string.Format(selectallbooks + " where REPLACE( Publisher, ' ', '') LIKE('%{0}%')", searchterm);
+            if (comboIDfield.Text == "Kệ sách")
+                selectcmd = string.Format(selectallbooks + " where REPLACE( Shelf, ' ', '') LIKE('%{0}%')", searchterm);
+            if (comboIDfield.Text == "Loại lưu trữ")
+                selectcmd = string.Format(selectallbooks + " where REPLACE( Type, ' ', '') LIKE('%{0}%')", searchterm);
+            if (comboIDfield.Text == "Ngày nhập sách")
+                selectcmd = string.Format(selectallbooks + " where REPLACE( DateAdded, ' ', '') LIKE('%{0}%')", searchterm);
+            if (comboIDfield.Text == "Năm phát hành")
+                selectcmd = string.Format(selectallbooks + " where REPLACE( Year, ' ', '') LIKE('%{0}%')", searchterm);
+
             com.CommandText = selectcmd;
             dtr = com.ExecuteReader();
             if (dtr.HasRows == true)
@@ -1802,13 +1848,13 @@ VALUES(@bid,@bookno,@isbn,@title,@author,@desc,@categ,@pub,@lang,
                 gridviewExplore.DataSource = dt;
 
 
-                lblStatus.Text = string.Format("Displaying {2} Search Results for ' {0} ' in {1} of Books.", searchterm, comboSearchFields.Text, dt.Rows.Count);
+                lblStatus.Text = string.Format("Tìm thấy {2} sách cho từ khóa '{0}' trong mục {1} .", searchterm, comboSearchFields.Text, dt.Rows.Count);
             }
             else
             {
 
                 gridviewExplore.DataSource = null;
-                lblStatus.Text = lblStatus.Text = string.Format("No Search Results for ' {0} ' in {1} of Books.", searchterm, comboSearchFields.Text);
+                lblStatus.Text = lblStatus.Text = string.Format("Không tìm thấy sách cho từ từ khóa '{0}' trong mục {1}.", searchterm, comboSearchFields.Text);
 
             }
 
@@ -1838,7 +1884,7 @@ VALUES(@bid,@bookno,@isbn,@title,@author,@desc,@categ,@pub,@lang,
             if (dataGridMM.RowCount == 0)
                 return;
 
-            frmMemberDetails.openwithmid = dataGridMM.SelectedRows[0].Cells["MemberID"].Value.ToString();
+            frmMemberDetails.openwithmid = dataGridMM.SelectedRows[0].Cells["Mã độc giả"].Value.ToString();
             frmMemberDetails md = new frmMemberDetails();
             md.Show();
         }
@@ -1848,7 +1894,7 @@ VALUES(@bid,@bookno,@isbn,@title,@author,@desc,@categ,@pub,@lang,
             if (dataGridMM.RowCount == 0)
                 return;
 
-            frmSetPackage.openwithmid = dataGridMM.SelectedRows[0].Cells["MemberID"].Value.ToString();
+            frmSetPackage.openwithmid = dataGridMM.SelectedRows[0].Cells["Mã độc giả"].Value.ToString();
             frmSetPackage pf = new frmSetPackage();
             pf.ShowDialog();
             lblStatus.Text = msg;
@@ -1858,7 +1904,7 @@ VALUES(@bid,@bookno,@isbn,@title,@author,@desc,@categ,@pub,@lang,
         {
             if (dataGridMM.RowCount == 0)
                 return;
-            frmEditMembers.openwithmid = dataGridMM.SelectedRows[0].Cells["MemberID"].Value.ToString();
+            frmEditMembers.openwithmid = dataGridMM.SelectedRows[0].Cells["Mã độc giả"].Value.ToString();
             frmEditMembers em = new frmEditMembers();
             em.ShowDialog();
             btnMMviewall_Click(null, null);
@@ -2041,10 +2087,10 @@ VALUES(@bid,@bookno,@isbn,@title,@author,@desc,@categ,@pub,@lang,
             frmBookCopy bc = new frmBookCopy();
 
             DialogResult drs = bc.ShowDialog();
-            string id="";
+            string bn="";
             if (drs == DialogResult.OK)
             {
-              id = bc.returnid;
+              bn = bc.returnbn;
                 
             }
 
@@ -2058,12 +2104,12 @@ VALUES(@bid,@bookno,@isbn,@title,@author,@desc,@categ,@pub,@lang,
             byte[] img = null;
 
             string price = "";
-            if (String.IsNullOrEmpty(id))
+            if (String.IsNullOrEmpty(bn))
             {
                 
                 return;
             }
-            string cmdtext = String.Format("select * from BookDetails where BookID={0};",id);
+            string cmdtext = String.Format("select * from BookDetails where BookNo='{0}';", bn);
             SQLiteCommand cmd = new SQLiteCommand(cmdtext, con);
 
             SQLiteDataReader dr = cmd.ExecuteReader();
@@ -2144,7 +2190,7 @@ VALUES(@bid,@bookno,@isbn,@title,@author,@desc,@categ,@pub,@lang,
         {
             if (dataGridMM.RowCount == 0)
                 return;
-            textISmid.Text = dataGridMM.SelectedRows[0].Cells["MemberID"].Value.ToString();
+            textISmid.Text = dataGridMM.SelectedRows[0].Cells["Mã độc giả"].Value.ToString();
             cmdIssueSubmitBook_Click(null, null);
         }
 
@@ -2176,7 +2222,7 @@ VALUES(@bid,@bookno,@isbn,@title,@author,@desc,@categ,@pub,@lang,
         {
             if (dataGridMM.RowCount == 0)
                 return;
-            textIDsearch.Text= dataGridMM.SelectedRows[0].Cells["MemberID"].Value.ToString();
+            textIDsearch.Text= dataGridMM.SelectedRows[0].Cells["Mã độc giả"].Value.ToString();
             comboIDfield.Text = "MemberID";
             cmdIssueDetails_Click(null, null);
         }

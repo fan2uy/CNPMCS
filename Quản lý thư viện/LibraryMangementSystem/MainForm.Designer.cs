@@ -233,11 +233,11 @@
             this.pnlMenu = new System.Windows.Forms.Panel();
             this.cmdMenu = new Glass.GlassButton();
             this.cmdIssueDetails = new Glass.GlassButton();
-            this.cmdBookDetails = new Glass.GlassButton();
             this.cmdExplore = new Glass.GlassButton();
             this.cmdManageMembers = new Glass.GlassButton();
             this.cmdIssueSubmitBook = new Glass.GlassButton();
             this.cmdManageBooks = new Glass.GlassButton();
+            this.cmdBookDetails = new Glass.GlassButton();
             this.panelExplore.SuspendLayout();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -279,7 +279,6 @@
             this.lblStatus.Name = "lblStatus";
             this.lblStatus.Size = new System.Drawing.Size(1365, 36);
             this.lblStatus.TabIndex = 8;
-            this.lblStatus.Text = "Trạng thái";
             this.lblStatus.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblStatus.TextChanged += new System.EventHandler(this.lblStatus_TextChanged);
             // 
@@ -415,12 +414,12 @@
             // 
             // comboSearchFields
             // 
+            this.comboSearchFields.BackColor = System.Drawing.SystemColors.InfoText;
             this.comboSearchFields.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboSearchFields.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboSearchFields.FormattingEnabled = true;
             this.comboSearchFields.Items.AddRange(new object[] {
             "Tựa sách",
-            "Mô tả sách",
             "Tác giả",
             "Mã tựa sách",
             "Mã cuốn sách",
@@ -451,6 +450,7 @@
             // 
             // textSearchTerm
             // 
+            this.textSearchTerm.BackColor = System.Drawing.SystemColors.Window;
             this.textSearchTerm.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textSearchTerm.Location = new System.Drawing.Point(119, 9);
             this.textSearchTerm.Margin = new System.Windows.Forms.Padding(4);
@@ -595,7 +595,7 @@
             this.comboIDfield.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboIDfield.FormattingEnabled = true;
             this.comboIDfield.Items.AddRange(new object[] {
-            "Mã cuốn sách", // lấy theo tên cột trong bảng
+            "Mã cuốn sách",
             "Mã độc giả",
             "Tựa sách",
             "Tên độc giả",
@@ -615,7 +615,7 @@
             this.label61.Location = new System.Drawing.Point(617, 25);
             this.label61.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label61.Name = "label61";
-            this.label61.Size = new System.Drawing.Size(68, 23);
+            this.label61.Size = new System.Drawing.Size(64, 23);
             this.label61.TabIndex = 52;
             this.label61.Text = "Mục : ";
             // 
@@ -637,7 +637,7 @@
             this.label63.Location = new System.Drawing.Point(65, 23);
             this.label63.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label63.Name = "label63";
-            this.label63.Size = new System.Drawing.Size(87, 23);
+            this.label63.Size = new System.Drawing.Size(105, 23);
             this.label63.TabIndex = 50;
             this.label63.Text = "Tìm kiếm : ";
             // 
@@ -671,7 +671,7 @@
             this.label65.Location = new System.Drawing.Point(73, 43);
             this.label65.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label65.Name = "label65";
-            this.label65.Size = new System.Drawing.Size(104, 23);
+            this.label65.Size = new System.Drawing.Size(100, 23);
             this.label65.TabIndex = 57;
             this.label65.Text = "Tựa sách :";
             // 
@@ -682,7 +682,7 @@
             this.label64.Location = new System.Drawing.Point(549, 95);
             this.label64.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label64.Name = "label64";
-            this.label64.Size = new System.Drawing.Size(147, 23);
+            this.label64.Size = new System.Drawing.Size(122, 23);
             this.label64.TabIndex = 56;
             this.label64.Text = "Tên độc giả :";
             // 
@@ -761,7 +761,7 @@
             this.labelIDsubd.Location = new System.Drawing.Point(571, 196);
             this.labelIDsubd.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelIDsubd.Name = "labelIDsubd";
-            this.labelIDsubd.Size = new System.Drawing.Size(127, 23);
+            this.labelIDsubd.Size = new System.Drawing.Size(139, 23);
             this.labelIDsubd.TabIndex = 9;
             this.labelIDsubd.Text = "Ngày trả sách :";
             // 
@@ -772,7 +772,7 @@
             this.labelIDfine.Location = new System.Drawing.Point(125, 245);
             this.labelIDfine.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelIDfine.Name = "labelIDfine";
-            this.labelIDfine.Size = new System.Drawing.Size(58, 23);
+            this.labelIDfine.Size = new System.Drawing.Size(170, 23);
             this.labelIDfine.TabIndex = 8;
             this.labelIDfine.Text = "Tiền phạt trễ hạn :";
             // 
@@ -783,7 +783,7 @@
             this.labelIDdd.Location = new System.Drawing.Point(81, 196);
             this.labelIDdd.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelIDdd.Name = "labelIDdd";
-            this.labelIDdd.Size = new System.Drawing.Size(102, 23);
+            this.labelIDdd.Size = new System.Drawing.Size(137, 23);
             this.labelIDdd.TabIndex = 6;
             this.labelIDdd.Text = "Ngày hết hạn :";
             // 
@@ -794,7 +794,7 @@
             this.labelIDid.Location = new System.Drawing.Point(72, 148);
             this.labelIDid.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelIDid.Name = "labelIDid";
-            this.labelIDid.Size = new System.Drawing.Size(112, 23);
+            this.labelIDid.Size = new System.Drawing.Size(121, 23);
             this.labelIDid.TabIndex = 5;
             this.labelIDid.Text = "Ngày mượn :";
             // 
@@ -805,7 +805,7 @@
             this.labelIDmid.Location = new System.Drawing.Point(584, 148);
             this.labelIDmid.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelIDmid.Name = "labelIDmid";
-            this.labelIDmid.Size = new System.Drawing.Size(118, 23);
+            this.labelIDmid.Size = new System.Drawing.Size(115, 23);
             this.labelIDmid.TabIndex = 4;
             this.labelIDmid.Text = "Mã độc giả :";
             // 
@@ -816,7 +816,7 @@
             this.labelIDbid.Location = new System.Drawing.Point(96, 94);
             this.labelIDbid.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelIDbid.Name = "labelIDbid";
-            this.labelIDbid.Size = new System.Drawing.Size(89, 23);
+            this.labelIDbid.Size = new System.Drawing.Size(92, 23);
             this.labelIDbid.TabIndex = 3;
             this.labelIDbid.Text = "Mã sách :";
             // 
@@ -954,7 +954,7 @@
             this.label49.Location = new System.Drawing.Point(33, 143);
             this.label49.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(137, 23);
+            this.label49.Size = new System.Drawing.Size(126, 23);
             this.label49.TabIndex = 142;
             this.label49.Text = "Mã tựa sách :";
             // 
@@ -998,7 +998,7 @@
             this.label8.Location = new System.Drawing.Point(895, 389);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(110, 23);
+            this.label8.Size = new System.Drawing.Size(120, 23);
             this.label8.TabIndex = 140;
             this.label8.Text = "Loại lưu trữ :";
             // 
@@ -1009,7 +1009,7 @@
             this.label11.Location = new System.Drawing.Point(367, 390);
             this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(97, 23);
+            this.label11.Size = new System.Drawing.Size(89, 23);
             this.label11.TabIndex = 135;
             this.label11.Text = "Thể loại :";
             // 
@@ -1031,7 +1031,7 @@
             this.label12.Location = new System.Drawing.Point(401, 542);
             this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(69, 23);
+            this.label12.Size = new System.Drawing.Size(56, 23);
             this.label12.TabIndex = 137;
             this.label12.Text = "Giá : ";
             // 
@@ -1042,7 +1042,7 @@
             this.label47.Location = new System.Drawing.Point(361, 486);
             this.label47.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(106, 23);
+            this.label47.Size = new System.Drawing.Size(108, 23);
             this.label47.TabIndex = 136;
             this.label47.Text = "Ngôn ngữ :";
             // 
@@ -1124,7 +1124,7 @@
             this.label7.Location = new System.Drawing.Point(368, 178);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(116, 23);
+            this.label7.Size = new System.Drawing.Size(114, 23);
             this.label7.TabIndex = 59;
             this.label7.Text = "Mô tả sách :";
             // 
@@ -1190,7 +1190,7 @@
             this.label19.Location = new System.Drawing.Point(33, 64);
             this.label19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(89, 23);
+            this.label19.Size = new System.Drawing.Size(139, 23);
             this.label19.TabIndex = 50;
             this.label19.Text = "Mã cuốn sách :";
             // 
@@ -1201,7 +1201,7 @@
             this.label18.Location = new System.Drawing.Point(33, 103);
             this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(139, 23);
+            this.label18.Size = new System.Drawing.Size(92, 23);
             this.label18.TabIndex = 49;
             this.label18.Text = "Số ISBN :";
             // 
@@ -1257,7 +1257,7 @@
             this.label16.Location = new System.Drawing.Point(895, 591);
             this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(122, 23);
+            this.label16.Size = new System.Drawing.Size(159, 23);
             this.label16.TabIndex = 38;
             this.label16.Text = "Ngày nhập sách :";
             // 
@@ -1268,7 +1268,7 @@
             this.label14.Location = new System.Drawing.Point(895, 542);
             this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(65, 23);
+            this.label14.Size = new System.Drawing.Size(44, 23);
             this.label14.TabIndex = 36;
             this.label14.Text = "Kệ :";
             // 
@@ -1279,7 +1279,7 @@
             this.label13.Location = new System.Drawing.Point(895, 491);
             this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(59, 23);
+            this.label13.Size = new System.Drawing.Size(82, 23);
             this.label13.TabIndex = 35;
             this.label13.Text = "Số trang";
             // 
@@ -1290,7 +1290,7 @@
             this.label10.Location = new System.Drawing.Point(368, 438);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(99, 23);
+            this.label10.Size = new System.Drawing.Size(137, 23);
             this.label10.TabIndex = 32;
             this.label10.Text = "Nhà xuất bản :";
             // 
@@ -1301,7 +1301,7 @@
             this.label9.Location = new System.Drawing.Point(895, 441);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(61, 23);
+            this.label9.Size = new System.Drawing.Size(155, 23);
             this.label9.TabIndex = 31;
             this.label9.Text = "Năm phát hành :";
             // 
@@ -1312,7 +1312,7 @@
             this.label6.Location = new System.Drawing.Point(565, 119);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(79, 23);
+            this.label6.Size = new System.Drawing.Size(84, 23);
             this.label6.TabIndex = 28;
             this.label6.Text = "Tác giả :";
             // 
@@ -1320,15 +1320,16 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(573, 26);
+            this.label5.Location = new System.Drawing.Point(561, 26);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(58, 23);
+            this.label5.Size = new System.Drawing.Size(100, 23);
             this.label5.TabIndex = 27;
             this.label5.Text = "Tựa sách :";
             // 
             // textBDbookidok
             // 
+            this.textBDbookidok.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.textBDbookidok.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.textBDbookidok.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBDbookidok.Location = new System.Drawing.Point(193, 15);
@@ -1553,7 +1554,7 @@
             this.label55.Location = new System.Drawing.Point(652, 31);
             this.label55.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(68, 23);
+            this.label55.Size = new System.Drawing.Size(64, 23);
             this.label55.TabIndex = 27;
             this.label55.Text = "Mục : ";
             // 
@@ -1575,7 +1576,7 @@
             this.label50.Location = new System.Drawing.Point(93, 33);
             this.label50.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(87, 23);
+            this.label50.Size = new System.Drawing.Size(105, 23);
             this.label50.TabIndex = 25;
             this.label50.Text = "Tìm kiếm : ";
             // 
@@ -1678,7 +1679,7 @@
             this.label36.Location = new System.Drawing.Point(500, 103);
             this.label36.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(137, 23);
+            this.label36.Size = new System.Drawing.Size(116, 23);
             this.label36.TabIndex = 133;
             this.label36.Text = "Mã tự sách :";
             // 
@@ -1702,7 +1703,7 @@
             this.btnMBcopy.Name = "btnMBcopy";
             this.btnMBcopy.Size = new System.Drawing.Size(172, 103);
             this.btnMBcopy.TabIndex = 21;
-            this.btnMBcopy.Text = "Sao chép thông tin cuốn sách";
+            this.btnMBcopy.Text = "Sao chép thông tin tựa sách";
             this.btnMBcopy.UseVisualStyleBackColor = true;
             this.btnMBcopy.Click += new System.EventHandler(this.btnMBcopy_Click);
             // 
@@ -1713,7 +1714,7 @@
             this.label35.Location = new System.Drawing.Point(7, 63);
             this.label35.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(89, 23);
+            this.label35.Size = new System.Drawing.Size(139, 23);
             this.label35.TabIndex = 130;
             this.label35.Text = "Mã cuốn sách :";
             // 
@@ -1784,7 +1785,7 @@
             this.labelMBenlarge.Location = new System.Drawing.Point(1135, 395);
             this.labelMBenlarge.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelMBenlarge.Name = "labelMBenlarge";
-            this.labelMBenlarge.Size = new System.Drawing.Size(117, 23);
+            this.labelMBenlarge.Size = new System.Drawing.Size(118, 23);
             this.labelMBenlarge.TabIndex = 128;
             this.labelMBenlarge.Text = "Ảnh bìa sách";
             // 
@@ -1808,7 +1809,7 @@
             this.labelMBpdfsize.Location = new System.Drawing.Point(881, 665);
             this.labelMBpdfsize.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelMBpdfsize.Name = "labelMBpdfsize";
-            this.labelMBpdfsize.Size = new System.Drawing.Size(50, 23);
+            this.labelMBpdfsize.Size = new System.Drawing.Size(112, 23);
             this.labelMBpdfsize.TabIndex = 126;
             this.labelMBpdfsize.Text = "Kích thước :";
             // 
@@ -1846,7 +1847,7 @@
             this.label48.Location = new System.Drawing.Point(7, 671);
             this.label48.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(110, 23);
+            this.label48.Size = new System.Drawing.Size(120, 23);
             this.label48.TabIndex = 123;
             this.label48.Text = "Loại lưu trữ :";
             // 
@@ -1869,7 +1870,7 @@
             this.labelMBpicsize.Location = new System.Drawing.Point(1127, 513);
             this.labelMBpicsize.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelMBpicsize.Name = "labelMBpicsize";
-            this.labelMBpicsize.Size = new System.Drawing.Size(50, 23);
+            this.labelMBpicsize.Size = new System.Drawing.Size(106, 23);
             this.labelMBpicsize.TabIndex = 122;
             this.labelMBpicsize.Text = "Kích thước:";
             this.labelMBpicsize.Visible = false;
@@ -1905,7 +1906,7 @@
             this.label34.Location = new System.Drawing.Point(7, 623);
             this.label34.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(130, 23);
+            this.label34.Size = new System.Drawing.Size(131, 23);
             this.label34.TabIndex = 114;
             this.label34.Text = "Ảnh bìa sách :";
             // 
@@ -1939,7 +1940,7 @@
             this.label32.Location = new System.Drawing.Point(7, 270);
             this.label32.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(116, 23);
+            this.label32.Size = new System.Drawing.Size(70, 23);
             this.label32.TabIndex = 105;
             this.label32.Text = "Mô tả :";
             // 
@@ -1950,7 +1951,7 @@
             this.label33.Location = new System.Drawing.Point(7, 458);
             this.label33.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(97, 23);
+            this.label33.Size = new System.Drawing.Size(89, 23);
             this.label33.TabIndex = 83;
             this.label33.Text = "Thể loại :";
             // 
@@ -2005,7 +2006,7 @@
             this.label37.Location = new System.Drawing.Point(7, 103);
             this.label37.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(139, 23);
+            this.label37.Size = new System.Drawing.Size(92, 23);
             this.label37.TabIndex = 98;
             this.label37.Text = "Số ISBN :";
             // 
@@ -2061,7 +2062,7 @@
             this.label38.Location = new System.Drawing.Point(761, 577);
             this.label38.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(122, 23);
+            this.label38.Size = new System.Drawing.Size(115, 23);
             this.label38.TabIndex = 90;
             this.label38.Text = "Ngày nhập :";
             // 
@@ -2072,7 +2073,7 @@
             this.label39.Location = new System.Drawing.Point(761, 538);
             this.label39.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(65, 23);
+            this.label39.Size = new System.Drawing.Size(44, 23);
             this.label39.TabIndex = 89;
             this.label39.Text = "Kệ :";
             // 
@@ -2083,7 +2084,7 @@
             this.label40.Location = new System.Drawing.Point(761, 502);
             this.label40.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(72, 23);
+            this.label40.Size = new System.Drawing.Size(95, 23);
             this.label40.TabIndex = 88;
             this.label40.Text = "Số trang :";
             // 
@@ -2094,7 +2095,7 @@
             this.label41.Location = new System.Drawing.Point(7, 591);
             this.label41.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(69, 23);
+            this.label41.Size = new System.Drawing.Size(56, 23);
             this.label41.TabIndex = 87;
             this.label41.Text = "Giá : ";
             // 
@@ -2105,7 +2106,7 @@
             this.label42.Location = new System.Drawing.Point(7, 549);
             this.label42.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(106, 23);
+            this.label42.Size = new System.Drawing.Size(108, 23);
             this.label42.TabIndex = 86;
             this.label42.Text = "Ngôn ngữ :";
             // 
@@ -2116,7 +2117,7 @@
             this.label43.Location = new System.Drawing.Point(7, 512);
             this.label43.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(99, 23);
+            this.label43.Size = new System.Drawing.Size(137, 23);
             this.label43.TabIndex = 85;
             this.label43.Text = "Nhà xuất bản :";
             // 
@@ -2127,7 +2128,7 @@
             this.label44.Location = new System.Drawing.Point(761, 466);
             this.label44.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(61, 23);
+            this.label44.Size = new System.Drawing.Size(149, 23);
             this.label44.TabIndex = 84;
             this.label44.Text = "Năm phát hành:";
             // 
@@ -2138,7 +2139,7 @@
             this.label45.Location = new System.Drawing.Point(7, 226);
             this.label45.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(79, 23);
+            this.label45.Size = new System.Drawing.Size(84, 23);
             this.label45.TabIndex = 82;
             this.label45.Text = "Tác giả :";
             // 
@@ -2149,7 +2150,7 @@
             this.label46.Location = new System.Drawing.Point(7, 149);
             this.label46.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(58, 23);
+            this.label46.Size = new System.Drawing.Size(100, 23);
             this.label46.TabIndex = 81;
             this.label46.Text = "Tựa sách :";
             // 
@@ -2184,7 +2185,7 @@
             this.pnlISshow.Controls.Add(this.textISauthor);
             this.pnlISshow.Controls.Add(this.textISbid2);
             this.pnlISshow.Controls.Add(this.textIStitle);
-            this.pnlISshow.Location = new System.Drawing.Point(64, 92);
+            this.pnlISshow.Location = new System.Drawing.Point(158, 92);
             this.pnlISshow.Margin = new System.Windows.Forms.Padding(4);
             this.pnlISshow.Name = "pnlISshow";
             this.pnlISshow.Size = new System.Drawing.Size(1063, 237);
@@ -2195,34 +2196,34 @@
             this.textIsName.BackColor = System.Drawing.Color.WhiteSmoke;
             this.textIsName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textIsName.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textIsName.Location = new System.Drawing.Point(755, 68);
+            this.textIsName.Location = new System.Drawing.Point(715, 68);
             this.textIsName.Margin = new System.Windows.Forms.Padding(4);
             this.textIsName.Name = "textIsName";
             this.textIsName.ReadOnly = true;
-            this.textIsName.Size = new System.Drawing.Size(293, 30);
+            this.textIsName.Size = new System.Drawing.Size(333, 30);
             this.textIsName.TabIndex = 55;
             // 
             // label30
             // 
             this.label30.AutoSize = true;
             this.label30.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.Location = new System.Drawing.Point(589, 71);
+            this.label30.Location = new System.Drawing.Point(595, 71);
             this.label30.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(147, 23);
+            this.label30.Size = new System.Drawing.Size(116, 23);
             this.label30.TabIndex = 54;
-            this.label30.Text = "Tên độc giả :";
+            this.label30.Text = "Tên độc giả:";
             // 
             // label23
             // 
             this.label23.AutoSize = true;
             this.label23.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(8, 71);
+            this.label23.Location = new System.Drawing.Point(2, 71);
             this.label23.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(118, 23);
+            this.label23.Size = new System.Drawing.Size(109, 23);
             this.label23.TabIndex = 53;
-            this.label23.Text = "Mã độc giả :";
+            this.label23.Text = "Mã độc giả:";
             // 
             // textISmid2
             // 
@@ -2240,34 +2241,34 @@
             // 
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(4, 167);
+            this.label21.Location = new System.Drawing.Point(2, 167);
             this.label21.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(79, 23);
+            this.label21.Size = new System.Drawing.Size(78, 23);
             this.label21.TabIndex = 51;
-            this.label21.Text = "Tác giả :";
+            this.label21.Text = "Tác giả:";
             // 
             // label20
             // 
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(4, 117);
+            this.label20.Location = new System.Drawing.Point(2, 117);
             this.label20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(58, 23);
+            this.label20.Size = new System.Drawing.Size(94, 23);
             this.label20.TabIndex = 50;
-            this.label20.Text = "Tựa sách :";
+            this.label20.Text = "Tựa sách:";
             // 
             // label17
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(8, 26);
-            this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label17.Location = new System.Drawing.Point(2, 26);
+            this.label17.Margin = new System.Windows.Forms.Padding(2, 0, 4, 0);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(89, 23);
+            this.label17.Size = new System.Drawing.Size(133, 23);
             this.label17.TabIndex = 49;
-            this.label17.Text = "Mã cuốn sách :";
+            this.label17.Text = "Mã cuốn sách:";
             // 
             // textISauthor
             // 
@@ -2321,7 +2322,7 @@
             // 
             this.panelIScontainer.Controls.Add(this.groupIssue);
             this.panelIScontainer.Controls.Add(this.groupSubmit);
-            this.panelIScontainer.Location = new System.Drawing.Point(73, 348);
+            this.panelIScontainer.Location = new System.Drawing.Point(165, 348);
             this.panelIScontainer.Margin = new System.Windows.Forms.Padding(4);
             this.panelIScontainer.Name = "panelIScontainer";
             this.panelIScontainer.Size = new System.Drawing.Size(1045, 309);
@@ -2356,7 +2357,7 @@
             this.btnISIBchgdue.Name = "btnISIBchgdue";
             this.btnISIBchgdue.Size = new System.Drawing.Size(197, 33);
             this.btnISIBchgdue.TabIndex = 2;
-            this.btnISIBchgdue.Text = "Thay đổi ngày cần trả ";
+            this.btnISIBchgdue.Text = "Thay đổi ngày hết hạn";
             this.btnISIBchgdue.UseVisualStyleBackColor = true;
             this.btnISIBchgdue.Click += new System.EventHandler(this.btnISIBchgdue_Click);
             // 
@@ -2376,7 +2377,7 @@
             this.label31.Location = new System.Drawing.Point(44, 154);
             this.label31.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(165, 24);
+            this.label31.Size = new System.Drawing.Size(151, 24);
             this.label31.TabIndex = 5;
             this.label31.Text = "Số ngày mượn :";
             // 
@@ -2417,7 +2418,7 @@
             this.label25.Location = new System.Drawing.Point(515, 80);
             this.label25.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(108, 24);
+            this.label25.Size = new System.Drawing.Size(142, 24);
             this.label25.TabIndex = 1;
             this.label25.Text = "Ngày hết hạn :";
             // 
@@ -2428,7 +2429,7 @@
             this.label24.Location = new System.Drawing.Point(37, 80);
             this.label24.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(119, 24);
+            this.label24.Size = new System.Drawing.Size(125, 24);
             this.label24.TabIndex = 0;
             this.label24.Text = "Ngày mượn :";
             // 
@@ -2471,7 +2472,7 @@
             this.label29.Location = new System.Drawing.Point(37, 129);
             this.label29.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(134, 24);
+            this.label29.Size = new System.Drawing.Size(99, 24);
             this.label29.TabIndex = 12;
             this.label29.Text = "Ngày trả :";
             // 
@@ -2491,7 +2492,7 @@
             this.label28.Location = new System.Drawing.Point(543, 129);
             this.label28.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(72, 24);
+            this.label28.Size = new System.Drawing.Size(126, 24);
             this.label28.TabIndex = 10;
             this.label28.Text = "Phí trễ hạn : ";
             // 
@@ -2533,7 +2534,7 @@
             this.label26.Location = new System.Drawing.Point(515, 60);
             this.label26.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(108, 24);
+            this.label26.Size = new System.Drawing.Size(142, 24);
             this.label26.TabIndex = 6;
             this.label26.Text = "Ngày hết hạn :";
             // 
@@ -2544,7 +2545,7 @@
             this.label27.Location = new System.Drawing.Point(61, 60);
             this.label27.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(119, 24);
+            this.label27.Size = new System.Drawing.Size(125, 24);
             this.label27.TabIndex = 5;
             this.label27.Text = "Ngày mượn :";
             // 
@@ -2564,7 +2565,7 @@
             this.label15.Location = new System.Drawing.Point(55, 39);
             this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(89, 23);
+            this.label15.Size = new System.Drawing.Size(139, 23);
             this.label15.TabIndex = 27;
             this.label15.Text = "Mã cuốn sách :";
             // 
@@ -2584,7 +2585,7 @@
             this.label22.Location = new System.Drawing.Point(663, 37);
             this.label22.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(118, 23);
+            this.label22.Size = new System.Drawing.Size(115, 23);
             this.label22.TabIndex = 0;
             this.label22.Text = "Mã độc giả :";
             // 
@@ -2837,21 +2838,6 @@
             this.cmdIssueDetails.Text = "Tra cứu thông tin mượn/trả sách";
             this.cmdIssueDetails.Click += new System.EventHandler(this.cmdIssueDetails_Click);
             // 
-            // cmdBookDetails
-            // 
-            this.cmdBookDetails.BackColor = System.Drawing.Color.DarkBlue;
-            this.cmdBookDetails.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdBookDetails.GlowColor = System.Drawing.Color.Cyan;
-            this.cmdBookDetails.Location = new System.Drawing.Point(202, 43);
-            this.cmdBookDetails.Margin = new System.Windows.Forms.Padding(4);
-            this.cmdBookDetails.Name = "cmdBookDetails";
-            this.cmdBookDetails.OuterBorderColor = System.Drawing.Color.Transparent;
-            this.cmdBookDetails.Size = new System.Drawing.Size(197, 63);
-            this.cmdBookDetails.TabIndex = 1;
-            this.cmdBookDetails.Tag = "1";
-            this.cmdBookDetails.Text = "Tra cứu thông tin cuốn sách";
-            this.cmdBookDetails.Click += new System.EventHandler(this.cmdBookDetails_Click);
-            // 
             // cmdExplore
             // 
             this.cmdExplore.BackColor = System.Drawing.Color.DarkBlue;
@@ -2913,6 +2899,21 @@
             this.cmdManageBooks.Tag = "4";
             this.cmdManageBooks.Text = "Quản lý sách";
             this.cmdManageBooks.Click += new System.EventHandler(this.cmdManageBooks_Click);
+            // 
+            // cmdBookDetails
+            // 
+            this.cmdBookDetails.BackColor = System.Drawing.Color.DarkBlue;
+            this.cmdBookDetails.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdBookDetails.GlowColor = System.Drawing.Color.Cyan;
+            this.cmdBookDetails.Location = new System.Drawing.Point(202, 43);
+            this.cmdBookDetails.Margin = new System.Windows.Forms.Padding(4);
+            this.cmdBookDetails.Name = "cmdBookDetails";
+            this.cmdBookDetails.OuterBorderColor = System.Drawing.Color.Transparent;
+            this.cmdBookDetails.Size = new System.Drawing.Size(197, 63);
+            this.cmdBookDetails.TabIndex = 1;
+            this.cmdBookDetails.Tag = "1";
+            this.cmdBookDetails.Text = "Tra cứu thông tin cuốn sách";
+            this.cmdBookDetails.Click += new System.EventHandler(this.cmdBookDetails_Click);
             // 
             // MainForm
             // 

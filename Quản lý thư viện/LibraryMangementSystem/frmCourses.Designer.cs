@@ -46,9 +46,10 @@
             this.btnDown.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnDown.FlatAppearance.BorderSize = 0;
             this.btnDown.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDown.Location = new System.Drawing.Point(388, 272);
+            this.btnDown.Location = new System.Drawing.Point(517, 335);
+            this.btnDown.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnDown.Name = "btnDown";
-            this.btnDown.Size = new System.Drawing.Size(50, 50);
+            this.btnDown.Size = new System.Drawing.Size(67, 62);
             this.btnDown.TabIndex = 212;
             this.toolTip1.SetToolTip(this.btnDown, "Move Down");
             this.btnDown.UseVisualStyleBackColor = true;
@@ -60,9 +61,10 @@
             this.btnUp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnUp.FlatAppearance.BorderSize = 0;
             this.btnUp.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUp.Location = new System.Drawing.Point(388, 179);
+            this.btnUp.Location = new System.Drawing.Point(517, 220);
+            this.btnUp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnUp.Name = "btnUp";
-            this.btnUp.Size = new System.Drawing.Size(50, 50);
+            this.btnUp.Size = new System.Drawing.Size(67, 62);
             this.btnUp.TabIndex = 211;
             this.toolTip1.SetToolTip(this.btnUp, "Move Up");
             this.btnUp.UseVisualStyleBackColor = true;
@@ -72,61 +74,65 @@
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(39, 36);
+            this.label14.Location = new System.Drawing.Point(52, 44);
+            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(65, 20);
+            this.label14.Size = new System.Drawing.Size(65, 23);
             this.label14.TabIndex = 210;
-            this.label14.Text = "Course :";
+            this.label14.Text = "Khóa :";
             // 
             // txtCourseName
             // 
             this.txtCourseName.BackColor = System.Drawing.SystemColors.Window;
             this.txtCourseName.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCourseName.Location = new System.Drawing.Point(158, 33);
-            this.txtCourseName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtCourseName.Location = new System.Drawing.Point(211, 41);
+            this.txtCourseName.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtCourseName.Name = "txtCourseName";
-            this.txtCourseName.Size = new System.Drawing.Size(257, 25);
+            this.txtCourseName.Size = new System.Drawing.Size(341, 30);
             this.txtCourseName.TabIndex = 209;
             // 
             // listCourse
             // 
             this.listCourse.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listCourse.FormattingEnabled = true;
-            this.listCourse.ItemHeight = 20;
-            this.listCourse.Location = new System.Drawing.Point(80, 124);
+            this.listCourse.ItemHeight = 23;
+            this.listCourse.Location = new System.Drawing.Point(107, 153);
+            this.listCourse.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.listCourse.Name = "listCourse";
-            this.listCourse.Size = new System.Drawing.Size(290, 264);
+            this.listCourse.Size = new System.Drawing.Size(385, 303);
             this.listCourse.TabIndex = 208;
             // 
             // btnAdd
             // 
             this.btnAdd.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdd.Location = new System.Drawing.Point(117, 80);
+            this.btnAdd.Location = new System.Drawing.Point(156, 98);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(216, 38);
+            this.btnAdd.Size = new System.Drawing.Size(288, 47);
             this.btnAdd.TabIndex = 207;
-            this.btnAdd.Text = "Add";
+            this.btnAdd.Text = "Thêm";
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnDelete
             // 
             this.btnDelete.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDelete.Location = new System.Drawing.Point(117, 396);
+            this.btnDelete.Location = new System.Drawing.Point(156, 487);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(216, 36);
+            this.btnDelete.Size = new System.Drawing.Size(288, 44);
             this.btnDelete.TabIndex = 206;
             this.btnDelete.Tag = "";
-            this.btnDelete.Text = "Delete";
+            this.btnDelete.Text = "Xóa";
             this.btnDelete.UseVisualStyleBackColor = true;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // frmCourses
             // 
             this.AcceptButton = this.btnAdd;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(478, 456);
+            this.ClientSize = new System.Drawing.Size(637, 561);
             this.Controls.Add(this.btnDown);
             this.Controls.Add(this.btnUp);
             this.Controls.Add(this.label14);
@@ -135,12 +141,13 @@
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.btnDelete);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmCourses";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Courses";
+            this.Text = "Quản lý khóa học";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmCourses_FormClosing);
             this.Load += new System.EventHandler(this.frmCourses_Load);
             this.Shown += new System.EventHandler(this.frmCourses_Shown);
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmCourses_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 

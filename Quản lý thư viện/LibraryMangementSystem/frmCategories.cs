@@ -55,7 +55,7 @@ namespace LibraryManagementSystem
             {
                 if (string.IsNullOrEmpty(txtAddCateg.Text.Trim()))
                 {
-                    MessageBox.Show("Enter Category Name");
+                    MessageBox.Show("Nhập tên thể loại");
                     txtAddCateg.Clear();
                     txtAddCateg.Focus();
                     return;
@@ -71,7 +71,7 @@ namespace LibraryManagementSystem
                 cmd.Parameters.Add("@categ", DbType.String).Value = txtAddCateg.Text;
                 cmd.Parameters.Add("@shelf", DbType.String).Value = txtAddShelf.Text;
                 cmd.ExecuteNonQuery();
-                lblStatus.Text = "Category " + txtAddCateg.Text + " was added.";
+                lblStatus.Text = "Thể loại " + txtAddCateg.Text + " đã được thêm.";
                 txtAddCateg.Clear();
                 txtAddShelf.Clear();
            
@@ -86,7 +86,7 @@ namespace LibraryManagementSystem
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            lblStatus.Text= "Add new Category";
+            lblStatus.Text= "Thêm thể loại mới";
             pnlAddCateg.Show();
             pnlAddCateg.BringToFront();
             txtAddCateg.Focus();
@@ -110,7 +110,7 @@ namespace LibraryManagementSystem
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
-           lblStatus.Text = "Edit Category";
+           lblStatus.Text = "Chỉnh sửa thể loại";
             editid = datagridCateg.SelectedRows[0].Cells["ID"].Value.ToString();
          
             if (String.IsNullOrEmpty(editid.Trim()))

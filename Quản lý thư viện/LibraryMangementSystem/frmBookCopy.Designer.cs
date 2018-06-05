@@ -39,28 +39,31 @@
             this.textBid.BackColor = System.Drawing.SystemColors.Window;
             this.textBid.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBid.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBid.Location = new System.Drawing.Point(160, 57);
+            this.textBid.Location = new System.Drawing.Point(213, 70);
+            this.textBid.Margin = new System.Windows.Forms.Padding(4);
             this.textBid.Name = "textBid";
-            this.textBid.Size = new System.Drawing.Size(148, 25);
+            this.textBid.Size = new System.Drawing.Size(197, 30);
             this.textBid.TabIndex = 0;
             // 
             // label35
             // 
             this.label35.AutoSize = true;
             this.label35.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label35.Location = new System.Drawing.Point(63, 59);
+            this.label35.Location = new System.Drawing.Point(84, 73);
+            this.label35.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(70, 20);
+            this.label35.Size = new System.Drawing.Size(126, 23);
             this.label35.TabIndex = 133;
-            this.label35.Text = "Book ID :";
+            this.label35.Text = "Mã tựa sách :";
             // 
             // ok
             // 
             this.ok.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.ok.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ok.Location = new System.Drawing.Point(114, 129);
+            this.ok.Location = new System.Drawing.Point(152, 159);
+            this.ok.Margin = new System.Windows.Forms.Padding(4);
             this.ok.Name = "ok";
-            this.ok.Size = new System.Drawing.Size(143, 48);
+            this.ok.Size = new System.Drawing.Size(191, 59);
             this.ok.TabIndex = 1;
             this.ok.Text = "OK";
             this.ok.UseVisualStyleBackColor = true;
@@ -69,16 +72,17 @@
             // frmBookCopy
             // 
             this.AcceptButton = this.ok;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(371, 215);
+            this.ClientSize = new System.Drawing.Size(495, 265);
             this.Controls.Add(this.textBid);
             this.Controls.Add(this.label35);
             this.Controls.Add(this.ok);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmBookCopy";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Book Copy";
+            this.Text = "Sao chép thông tin tựa sách";
             this.Load += new System.EventHandler(this.frmBookCopy_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -55,13 +55,13 @@
             // 
             // txtmemid2
             // 
-            this.txtmemid2.BackColor = System.Drawing.SystemColors.Window;
+            this.txtmemid2.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.txtmemid2.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtmemid2.Location = new System.Drawing.Point(257, 121);
-            this.txtmemid2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtmemid2.Margin = new System.Windows.Forms.Padding(4);
             this.txtmemid2.Name = "txtmemid2";
             this.txtmemid2.ReadOnly = true;
-            this.txtmemid2.Size = new System.Drawing.Size(259, 29);
+            this.txtmemid2.Size = new System.Drawing.Size(259, 30);
             this.txtmemid2.TabIndex = 218;
             // 
             // label5
@@ -71,9 +71,9 @@
             this.label5.Location = new System.Drawing.Point(33, 127);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(114, 24);
+            this.label5.Size = new System.Drawing.Size(115, 23);
             this.label5.TabIndex = 217;
-            this.label5.Text = "Member ID :";
+            this.label5.Text = "Mã độc giả :";
             // 
             // txtEmail
             // 
@@ -81,9 +81,9 @@
             this.txtEmail.BackColor = System.Drawing.SystemColors.Window;
             this.txtEmail.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmail.Location = new System.Drawing.Point(257, 453);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(4);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(244, 29);
+            this.txtEmail.Size = new System.Drawing.Size(244, 30);
             this.txtEmail.TabIndex = 216;
             // 
             // label4
@@ -93,7 +93,7 @@
             this.label4.Location = new System.Drawing.Point(33, 457);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(70, 24);
+            this.label4.Size = new System.Drawing.Size(68, 23);
             this.label4.TabIndex = 215;
             this.label4.Text = "Email :";
             // 
@@ -103,9 +103,9 @@
             this.txtPhone.BackColor = System.Drawing.SystemColors.Window;
             this.txtPhone.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPhone.Location = new System.Drawing.Point(257, 500);
-            this.txtPhone.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPhone.Margin = new System.Windows.Forms.Padding(4);
             this.txtPhone.Name = "txtPhone";
-            this.txtPhone.Size = new System.Drawing.Size(244, 29);
+            this.txtPhone.Size = new System.Drawing.Size(244, 30);
             this.txtPhone.TabIndex = 214;
             // 
             // label2
@@ -115,16 +115,16 @@
             this.label2.Location = new System.Drawing.Point(33, 503);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(143, 24);
+            this.label2.Size = new System.Drawing.Size(133, 23);
             this.label2.TabIndex = 213;
-            this.label2.Text = "Phone number :";
+            this.label2.Text = "Số điện thoại :";
             // 
             // txtAddress
             // 
             this.txtAddress.BackColor = System.Drawing.SystemColors.Window;
             this.txtAddress.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAddress.Location = new System.Drawing.Point(257, 279);
-            this.txtAddress.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtAddress.Margin = new System.Windows.Forms.Padding(4);
             this.txtAddress.Multiline = true;
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Size = new System.Drawing.Size(504, 150);
@@ -135,9 +135,9 @@
             this.txtName.BackColor = System.Drawing.SystemColors.Window;
             this.txtName.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtName.Location = new System.Drawing.Point(257, 180);
-            this.txtName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtName.Margin = new System.Windows.Forms.Padding(4);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(244, 29);
+            this.txtName.Size = new System.Drawing.Size(259, 30);
             this.txtName.TabIndex = 210;
             // 
             // label8
@@ -147,9 +147,9 @@
             this.label8.Location = new System.Drawing.Point(33, 282);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(89, 24);
+            this.label8.Size = new System.Drawing.Size(80, 23);
             this.label8.TabIndex = 209;
-            this.label8.Text = "Address :";
+            this.label8.Text = "Địa chỉ :";
             // 
             // label11
             // 
@@ -158,9 +158,9 @@
             this.label11.Location = new System.Drawing.Point(33, 180);
             this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(71, 24);
+            this.label11.Size = new System.Drawing.Size(79, 23);
             this.label11.TabIndex = 208;
-            this.label11.Text = "Name :";
+            this.label11.Text = "Họ tên :";
             // 
             // label10
             // 
@@ -169,28 +169,28 @@
             this.label10.Location = new System.Drawing.Point(33, 231);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(133, 24);
+            this.label10.Size = new System.Drawing.Size(106, 23);
             this.label10.TabIndex = 207;
-            this.label10.Text = "Date of Birth :";
+            this.label10.Text = "Ngày sinh :";
             // 
             // txtMemberID
             // 
             this.txtMemberID.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMemberID.Location = new System.Drawing.Point(257, 20);
-            this.txtMemberID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtMemberID.Location = new System.Drawing.Point(421, 20);
+            this.txtMemberID.Margin = new System.Windows.Forms.Padding(4);
             this.txtMemberID.Name = "txtMemberID";
-            this.txtMemberID.Size = new System.Drawing.Size(259, 29);
+            this.txtMemberID.Size = new System.Drawing.Size(259, 30);
             this.txtMemberID.TabIndex = 206;
             // 
             // btnEdit
             // 
             this.btnEdit.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEdit.Location = new System.Drawing.Point(575, 18);
-            this.btnEdit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEdit.Location = new System.Drawing.Point(689, 16);
+            this.btnEdit.Margin = new System.Windows.Forms.Padding(4);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(119, 36);
             this.btnEdit.TabIndex = 205;
-            this.btnEdit.Text = "Edit";
+            this.btnEdit.Text = "Tìm";
             this.btnEdit.UseVisualStyleBackColor = true;
             this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
@@ -198,19 +198,19 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(33, 26);
+            this.label3.Location = new System.Drawing.Point(253, 23);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(114, 24);
+            this.label3.Size = new System.Drawing.Size(160, 23);
             this.label3.TabIndex = 204;
-            this.label3.Text = "Member ID :";
+            this.label3.Text = "Nhập Mã độc giả:";
             // 
             // picPhoto
             // 
             this.picPhoto.Image = global::LibraryManagementSystem.Properties.Resources.BlankFace;
             this.picPhoto.InitialImage = null;
             this.picPhoto.Location = new System.Drawing.Point(811, 127);
-            this.picPhoto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.picPhoto.Margin = new System.Windows.Forms.Padding(4);
             this.picPhoto.Name = "picPhoto";
             this.picPhoto.Size = new System.Drawing.Size(197, 174);
             this.picPhoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -221,11 +221,11 @@
             // 
             this.btnSave.Font = new System.Drawing.Font("Tahoma", 11.25F);
             this.btnSave.Location = new System.Drawing.Point(257, 562);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(4);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(245, 50);
             this.btnSave.TabIndex = 221;
-            this.btnSave.Text = "Save Changes";
+            this.btnSave.Text = "Lưu các thay đổi";
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
@@ -237,7 +237,7 @@
             // 
             this.btnPhoto.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPhoto.Location = new System.Drawing.Point(811, 308);
-            this.btnPhoto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnPhoto.Margin = new System.Windows.Forms.Padding(4);
             this.btnPhoto.Name = "btnPhoto";
             this.btnPhoto.Size = new System.Drawing.Size(200, 46);
             this.btnPhoto.TabIndex = 222;
@@ -251,20 +251,20 @@
             this.dateDob.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateDob.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateDob.Location = new System.Drawing.Point(257, 230);
-            this.dateDob.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dateDob.Margin = new System.Windows.Forms.Padding(4);
             this.dateDob.Name = "dateDob";
-            this.dateDob.Size = new System.Drawing.Size(265, 29);
+            this.dateDob.Size = new System.Drawing.Size(265, 30);
             this.dateDob.TabIndex = 223;
             // 
             // btnDelete
             // 
             this.btnDelete.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelete.Location = new System.Drawing.Point(551, 562);
-            this.btnDelete.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(4);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(257, 50);
             this.btnDelete.TabIndex = 224;
-            this.btnDelete.Text = "Delete Member";
+            this.btnDelete.Text = "Xóa độc giả";
             this.btnDelete.UseVisualStyleBackColor = true;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
@@ -309,10 +309,10 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.picPhoto);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmEditMembers";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmEditMembers";
+            this.Text = "Chỉnh sửa thông tin độc giả";
             this.Load += new System.EventHandler(this.frmEditMembers_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picPhoto)).EndInit();
             this.ResumeLayout(false);
